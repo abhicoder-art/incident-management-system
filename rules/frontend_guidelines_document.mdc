@@ -1,0 +1,228 @@
+# Frontend Development Guidelines
+
+## Project Structure
+
+### Directory Organization
+```
+src/
+├── components/         # Reusable components
+├── pages/             # Route components
+├── hooks/             # Custom hooks
+├── lib/              # Utilities and services
+├── types/            # TypeScript types/interfaces
+├── styles/           # Global styles
+└── assets/           # Static assets
+```
+
+## Component Guidelines
+
+### Component Organization
+1. **Atomic Design Principles**
+   - Atoms (basic components)
+   - Molecules (component combinations)
+   - Organisms (complex components)
+   - Templates (page layouts)
+   - Pages (route components)
+
+2. **Component Structure**
+   ```typescript
+   // Imports
+   import React from 'react'
+   import styles from './ComponentName.module.css'
+   
+   // Types
+   interface Props {
+     // Props definition
+   }
+   
+   // Component
+   export default function ComponentName(props: Props) {
+     // Implementation
+   }
+   ```
+
+### State Management
+1. **Local State**
+   - Use `useState` for component-level state
+   - Use `useReducer` for complex state logic
+
+2. **Global State**
+   - Use React Context for theme/auth
+   - Consider Redux for complex state
+   - Use React Query for server state
+
+## Styling Guidelines
+
+### Tailwind CSS Usage
+1. **Utility Classes**
+   - Use utility classes for common styles
+   - Create component classes for repeated patterns
+   - Use @apply for complex combinations
+
+2. **Responsive Design**
+   - Use Tailwind breakpoints
+   - Mobile-first approach
+   - Consistent spacing scale
+
+3. **Theme Configuration**
+   ```javascript
+   // tailwind.config.js
+   module.exports = {
+     theme: {
+       extend: {
+         colors: {
+           primary: {...},
+           secondary: {...}
+         }
+       }
+     }
+   }
+   ```
+
+## Form Handling
+
+### Best Practices
+1. **Validation**
+   - Client-side validation
+   - Server-side validation
+   - Real-time feedback
+   - Clear error messages
+
+2. **Accessibility**
+   - Proper labels
+   - ARIA attributes
+   - Keyboard navigation
+   - Error announcements
+
+3. **Example Implementation**
+   ```typescript
+   function Form() {
+     const [data, setData] = useState({})
+     const [errors, setErrors] = useState({})
+     
+     const handleSubmit = async (e) => {
+       e.preventDefault()
+       // Validation and submission logic
+     }
+     
+     return (
+       <form onSubmit={handleSubmit}>
+         // Form fields
+       </form>
+     )
+   }
+   ```
+
+## Error Handling
+
+### Error Boundaries
+```typescript
+class ErrorBoundary extends React.Component {
+  state = { hasError: false }
+  
+  static getDerivedStateFromError(error) {
+    return { hasError: true }
+  }
+  
+  render() {
+    if (this.state.hasError) {
+      return <ErrorFallback />
+    }
+    return this.props.children
+  }
+}
+```
+
+### API Error Handling
+```typescript
+async function fetchData() {
+  try {
+    const response = await api.get('/endpoint')
+    return response.data
+  } catch (error) {
+    handleApiError(error)
+  }
+}
+```
+
+## Performance Optimization
+
+### Code Splitting
+```typescript
+const LazyComponent = React.lazy(() => 
+  import('./Component')
+)
+
+function App() {
+  return (
+    <Suspense fallback={<Loading />}>
+      <LazyComponent />
+    </Suspense>
+  )
+}
+```
+
+### Memoization
+```typescript
+const MemoizedComponent = React.memo(function Component(props) {
+  // Component logic
+})
+
+const memoizedValue = useMemo(() => 
+  computeExpensiveValue(deps), [deps]
+)
+```
+
+## Testing Strategy
+
+### Component Testing
+```typescript
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+
+test('component renders correctly', () => {
+  render(<Component />)
+  expect(screen.getByRole('button')).toBeInTheDocument()
+})
+```
+
+### Integration Testing
+```typescript
+test('form submission works', async () => {
+  render(<Form />)
+  await userEvent.type(screen.getByLabelText('Name'), 'John')
+  await userEvent.click(screen.getByRole('button'))
+  expect(await screen.findByText('Success')).toBeInTheDocument()
+})
+```
+
+## Accessibility Guidelines
+
+### ARIA Implementation
+```typescript
+function AccessibleComponent() {
+  return (
+    <div role="dialog" aria-labelledby="title">
+      <h2 id="title">Dialog Title</h2>
+      <button aria-label="Close dialog">×</button>
+    </div>
+  )
+}
+```
+
+### Keyboard Navigation
+```typescript
+function KeyboardNav() {
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      // Handle action
+    }
+  }
+  
+  return (
+    <div tabIndex={0} onKeyPress={handleKeyPress}>
+      // Content
+    </div>
+  )
+}
+``` 
