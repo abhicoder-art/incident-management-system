@@ -2,6 +2,21 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const { createClient } = require('@supabase/supabase-js');
+const axios = require('axios');
+const fs = require('fs');
+const path = require('path');
+
+// Set up logging
+const logFile = path.join(__dirname, 'server.log');
+const logStream = fs.createWriteStream(logFile, { flags: 'a' });
+
+// Custom logging function
+function log(message) {
+  const timestamp = new Date().toISOString();
+  const logMessage = `[${timestamp}] ${message}\n`;
+  console.log(message);
+  logStream.write(logMessage);
+}
 
 const app = express();
 const port = 3001;
@@ -26,6 +41,16 @@ app.use(express.json());
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
   next();
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error('Error:', err);
+  res.status(500).json({
+    error: 'Internal Server Error',
+    message: err.message,
+    stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
+  });
 });
 
 // Root path handler
@@ -153,7 +178,71 @@ app.get('/api/incidents/:id', async (req, res) => {
   }
 });
 
-// Add a new incident
+// Get all team members
+app.get('/api/team-members', async (req, res) => {
+  try {
+    console.log('Fetching team members from Supabase...');
+    
+    // First check if the table exists
+    const { data: tableExists, error: tableError } = await supabase
+      .from('team_members')
+      .select('id')
+      .limit(1);
+    
+    if (tableError) {
+      console.error('Error checking team_members table:', tableError);
+      throw tableError;
+    }
+
+    // If we got here, the table exists, now fetch all members
+    const { data, error } = await supabase
+      .from('team_members')
+      .select('*')
+      .order('full_name');
+
+    if (error) {
+      console.error('Supabase error:', error);
+      throw error;
+    }
+
+    if (!data || data.length === 0) {
+      console.log('No team members found in the database');
+      return res.json([]);
+    }
+
+    console.log('Successfully fetched team members:', data);
+    res.json(data);
+  } catch (error) {
+    console.error('Error in /api/team-members:', error);
+    res.status(500).json({ 
+      error: 'Failed to fetch team members',
+      details: error.message,
+      code: error.code
+    });
+  }
+});
+
+// Get a single team member
+app.get('/api/team-members/:id', async (req, res) => {
+  try {
+    const { data, error } = await supabase
+      .from('team_members')
+      .select('*')
+      .eq('id', req.params.id)
+      .single();
+
+    if (error) throw error;
+    if (!data) {
+      return res.status(404).json({ error: 'Team member not found' });
+    }
+    res.json(data);
+  } catch (error) {
+    console.error('Error fetching team member:', error);
+    res.status(500).json({ error: 'Failed to fetch team member' });
+  }
+});
+
+// Update the incidents endpoint to handle team member relationships
 app.post('/api/incidents', async (req, res) => {
   try {
     console.log('Received POST request to /api/incidents');
@@ -163,6 +252,19 @@ app.post('/api/incidents', async (req, res) => {
     
     if (!title || !description) {
       throw new Error('Title and description are required');
+    }
+
+    // If assigned_to is provided, verify the team member exists
+    if (assigned_to) {
+      const { data: teamMember, error: teamMemberError } = await supabase
+        .from('team_members')
+        .select('id')
+        .eq('id', assigned_to)
+        .single();
+
+      if (teamMemberError || !teamMember) {
+        throw new Error('Invalid team member ID provided');
+      }
     }
 
     const { data, error } = await supabase
@@ -175,7 +277,16 @@ app.post('/api/incidents', async (req, res) => {
         assigned_to,
         resolution
       }])
-      .select()
+      .select(`
+        *,
+        assigned_team_member:team_members (
+          id,
+          full_name,
+          email,
+          role,
+          department
+        )
+      `)
       .single();
 
     if (error) {
@@ -254,12 +365,141 @@ app.put('/api/incidents/:id/status', async (req, res) => {
   }
 });
 
+// Update incident team member assignment
+app.put('/api/incidents/:id/assign', async (req, res) => {
+  log('PUT /api/incidents/:id/assign - Request received');
+  log(`Params: ${JSON.stringify(req.params)}`);
+  log(`Body: ${JSON.stringify(req.body)}`);
+  
+  try {
+    const { id } = req.params;
+    const { assigned_to } = req.body;
+    
+    // If assigned_to is provided, verify the team member exists
+    if (assigned_to) {
+      const { data: teamMember, error: teamMemberError } = await supabase
+        .from('team_members')
+        .select('id, full_name, telegram_chat_id')
+        .eq('id', assigned_to)
+        .single();
+
+      if (teamMemberError || !teamMember) {
+        log(`Error: Invalid team member ID provided - ${assigned_to}`);
+        return res.status(400).json({ error: 'Invalid team member ID provided' });
+      }
+
+      // Get the incident details
+      const { data: incident, error: incidentError } = await supabase
+        .from('incidents')
+        .select('*')
+        .eq('id', id)
+        .single();
+
+      if (incidentError || !incident) {
+        log(`Error: Incident not found - ${id}`);
+        return res.status(404).json({ error: 'Incident not found' });
+      }
+
+      // If team member has a Telegram chat ID, send notification
+      if (teamMember.telegram_chat_id) {
+        try {
+          const botToken = process.env.TELEGRAM_BOT_TOKEN;
+          log('=== Telegram Notification Debug ===');
+          log(`Bot token exists: ${!!botToken}`);
+          log(`Bot token length: ${botToken ? botToken.length : 0}`);
+          log(`Team member Telegram chat ID: ${teamMember.telegram_chat_id}`);
+          
+          if (!botToken) {
+            log('Error: Telegram bot token is not configured');
+          } else {
+            log(`Sending Telegram notification to chat ID: ${teamMember.telegram_chat_id}`);
+            const message = `🚨 New Incident Assignment\n\nTitle: ${incident.title}\nPriority: ${incident.priority}\nStatus: ${incident.status}\n\nYou have been assigned to this incident.`;
+            
+            log(`Message to send: ${message}`);
+            log(`Telegram API URL: https://api.telegram.org/bot${botToken}/sendMessage`);
+            
+            const response = await axios.post(
+              `https://api.telegram.org/bot${botToken}/sendMessage`,
+              {
+                chat_id: teamMember.telegram_chat_id,
+                text: message
+              }
+            );
+
+            log(`Telegram API Response: ${JSON.stringify(response.data, null, 2)}`);
+            if (response.data.ok) {
+              log('Telegram notification sent successfully');
+            } else {
+              log(`Error: Telegram API returned error: ${JSON.stringify(response.data)}`);
+            }
+          }
+        } catch (error) {
+          log('=== Telegram Notification Error ===');
+          log(`Error message: ${error.message}`);
+          if (error.response) {
+            log(`Error response data: ${JSON.stringify(error.response.data)}`);
+            log(`Error status: ${error.response.status}`);
+            log(`Error headers: ${JSON.stringify(error.response.headers)}`);
+          }
+          if (error.request) {
+            log(`Error request: ${JSON.stringify(error.request)}`);
+          }
+        }
+      } else {
+        log(`No Telegram chat ID found for team member: ${teamMember.id}`);
+      }
+    }
+
+    const { data, error } = await supabase
+      .from('incidents')
+      .update({ 
+        assigned_to,
+        updated_at: new Date().toISOString()
+      })
+      .eq('id', id)
+      .select(`
+        *,
+        assigned_team_member:team_members (
+          id,
+          full_name,
+          email,
+          role,
+          department
+        )
+      `)
+      .single();
+
+    if (error) {
+      console.error('Supabase error:', error);
+      return res.status(500).json({ 
+        error: 'Database error', 
+        details: error.message 
+      });
+    }
+
+    if (!data) {
+      return res.status(404).json({ error: 'Incident not found' });
+    }
+
+    console.log('Successfully updated incident assignment:', data);
+    return res.json(data);
+  } catch (error) {
+    console.error('Error updating incident assignment:', error);
+    return res.status(500).json({ 
+      error: 'Failed to update incident assignment', 
+      details: error.message 
+    });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
   console.log('Available endpoints:');
   console.log('  GET  /api/incidents');
   console.log('  POST /api/incidents');
   console.log('  GET  /api/incidents/:id');
+  console.log('  PUT  /api/incidents/:id/status');
+  console.log('  PUT  /api/incidents/:id/assign');
   console.log('Supabase URL:', process.env.SUPABASE_URL);
   console.log('Has Supabase Anon Key:', !!process.env.SUPABASE_ANON_KEY);
 }); 
