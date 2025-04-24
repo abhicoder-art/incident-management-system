@@ -248,7 +248,7 @@ app.post('/api/incidents', async (req, res) => {
     console.log('Received POST request to /api/incidents');
     console.log('Request body:', req.body);
     
-    const { title, description, status, priority, assigned_to, resolution } = req.body;
+    const { title, description, status, priority, assigned_to, resolution, source, client } = req.body;
     
     if (!title || !description) {
       throw new Error('Title and description are required');
@@ -275,7 +275,9 @@ app.post('/api/incidents', async (req, res) => {
         status: status || 'Open',
         priority: priority || 'Medium',
         assigned_to,
-        resolution
+        resolution,
+        source,
+        client
       }])
       .select(`
         *,
@@ -487,6 +489,63 @@ app.put('/api/incidents/:id/assign', async (req, res) => {
     console.error('Error updating incident assignment:', error);
     return res.status(500).json({ 
       error: 'Failed to update incident assignment', 
+      details: error.message 
+    });
+  }
+});
+
+// Update incident details
+app.put('/api/incidents/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { title, description, status, priority, assigned_to, resolution, source, client } = req.body;
+    
+    console.log(`Updating incident ${id} with data:`, req.body);
+
+    const { data, error } = await supabase
+      .from('incidents')
+      .update({ 
+        title,
+        description,
+        status,
+        priority,
+        assigned_to,
+        resolution,
+        source,
+        client,
+        updated_at: new Date().toISOString()
+      })
+      .eq('id', id)
+      .select(`
+        *,
+        assigned_team_member:team_members (
+          id,
+          full_name,
+          email,
+          role,
+          department
+        )
+      `)
+      .single();
+
+    if (error) {
+      console.error('Supabase error:', error);
+      return res.status(500).json({ 
+        error: 'Database error', 
+        details: error.message 
+      });
+    }
+
+    if (!data) {
+      return res.status(404).json({ error: 'Incident not found' });
+    }
+
+    console.log('Successfully updated incident:', data);
+    return res.json(data);
+  } catch (error) {
+    console.error('Error updating incident:', error);
+    return res.status(500).json({ 
+      error: 'Failed to update incident', 
       details: error.message 
     });
   }

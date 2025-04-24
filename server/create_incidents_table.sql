@@ -11,7 +11,9 @@ create table public.incidents (
   status text not null default 'Open',
   priority text not null default 'Medium',
   assigned_to bigint references public.team_members(id),
-  resolution text
+  resolution text,
+  source text,
+  client text
 );
 
 -- Enable Row Level Security (RLS)
