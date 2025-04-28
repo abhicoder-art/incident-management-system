@@ -14,6 +14,7 @@ export default function CategoryAnalytics() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [errorDetails, setErrorDetails] = useState<string | null>(null)
+  const [teamStats, setTeamStats] = useState<any[]>([])
 
   useEffect(() => {
     const fetchAnalytics = async () => {
@@ -54,6 +55,18 @@ export default function CategoryAnalytics() {
     }
 
     fetchAnalytics()
+  }, [])
+
+  useEffect(() => {
+    const fetchTeamStats = async () => {
+      try {
+        const response = await axios.get('http://localhost:3001/api/incidents/analytics/team-member')
+        setTeamStats(response.data)
+      } catch (err) {
+        // Optionally handle error
+      }
+    }
+    fetchTeamStats()
   }, [])
 
   if (loading) {
@@ -164,39 +177,36 @@ export default function CategoryAnalytics() {
             </div>
           )
         })}
-        {stats.map((stat) => (
-          <div 
-            key={stat.category}
-            className="border rounded-lg p-4 hover:shadow-lg transition-shadow"
-          >
-            <h3 className="text-xl font-semibold mb-4">
-              {stat.category} Incidents
-            </h3>
-            <div className="space-y-3">
-              <div className="flex justify-between items-center">
-                <span className="text-gray-600">Total</span>
-                <span className="font-medium">{stat.total}</span>
+      </div>
+      {/* Team Member Analytics Section */}
+      <h2 className="text-2xl font-bold text-gray-800 mt-10 mb-6">Team Member Analytics</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {teamStats.map((member) => (
+          <div key={member.id} className="border border-gray-100 rounded-lg p-6 bg-gradient-to-br from-white to-gray-50 hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
+            </div>
+            <div className="space-y-2">
+              <div className="flex justify-between text-sm">
+                <span className="text-gray-600">Assigned</span>
+                <span className="font-medium">{member.assignedCount}</span>
               </div>
-              <div className="flex justify-between items-center">
-                <span className="text-green-600">Open</span>
-                <span className="font-medium">{stat.open}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-yellow-600">In Progress</span>
-                <span className="font-medium">{stat.inProgress}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-gray-600">Closed</span>
-                <span className="font-medium">{stat.closed}</span>
+              <div className="flex justify-between text-sm">
+                <span className="text-blue-600">Resolved</span>
+                <span className="font-medium">{member.resolvedCount}</span>
               </div>
             </div>
-            <div className="mt-4 pt-4 border-t">
-              <div className="flex justify-between items-center">
-                <span className="text-gray-600">Completion Rate</span>
-                <span className="font-medium">
-                  {stat.total > 0 
-                    ? `${Math.round((stat.closed / stat.total) * 100)}%`
-                    : '0%'}
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <span className="text-sm text-gray-500">Resolved / Assigned</span>
+              <div className="w-full bg-gray-200 rounded-full h-2 mt-2">
+                <div
+                  className="bg-indigo-500 h-2 rounded-full"
+                  style={{ width: `${member.assignedCount > 0 ? (member.resolvedCount / member.assignedCount) * 100 : 0}%` }}
+                ></div>
+              </div>
+              <div className="flex justify-end mt-1">
+                <span className="text-indigo-600 font-bold text-sm">
+                  {member.assignedCount > 0 ? `${Math.round((member.resolvedCount / member.assignedCount) * 100)}%` : '0%'}
                 </span>
               </div>
             </div>

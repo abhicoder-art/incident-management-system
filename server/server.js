@@ -901,6 +901,47 @@ app.get('/api/incidents/analytics/category', async (req, res) => {
   }
 })
 
+// Get team member analytics
+app.get('/api/incidents/analytics/team-member', async (req, res) => {
+  try {
+    log('Fetching team member analytics...')
+    // Fetch all team members
+    const { data: teamMembers, error: teamError } = await supabase
+      .from('team_members')
+      .select('id, full_name')
+      .order('full_name')
+    if (teamError) {
+      log(`Error fetching team members: ${teamError.message}`)
+      return res.status(500).json({ error: 'Database error', details: teamError.message })
+    }
+    // Fetch all incidents with assigned_to and status
+    const { data: incidents, error: incidentError } = await supabase
+      .from('incidents')
+      .select('assigned_to, status')
+    if (incidentError) {
+      log(`Error fetching incidents: ${incidentError.message}`)
+      return res.status(500).json({ error: 'Database error', details: incidentError.message })
+    }
+    // Calculate stats for each team member
+    const stats = teamMembers.map(member => {
+      const assigned = incidents.filter(inc => inc.assigned_to === member.id)
+      const resolved = assigned.filter(inc => inc.status === 'Closed')
+      return {
+        id: member.id,
+        name: member.full_name,
+        assignedCount: assigned.length,
+        resolvedCount: resolved.length
+      }
+    })
+    log('Successfully fetched team member analytics:', stats)
+    return res.json(stats)
+  } catch (error) {
+    log(`Error in team member analytics: ${error.message}`)
+    log('Error stack:', error.stack)
+    return res.status(500).json({ error: 'Internal server error', details: error.message })
+  }
+})
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
   console.log('Available endpoints:');
