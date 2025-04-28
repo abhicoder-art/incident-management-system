@@ -692,134 +692,157 @@ app.post('/api/incidents/:id/analyze', aiLimiter, async (req, res) => {
       .from('incident_analysis')
       .select('*')
       .eq('incident_id', id)
+      .order('created_at', { ascending: false })
+      .limit(1)
       .single()
 
+    let shouldReanalyze = false
     if (cacheError) {
       log(`Error checking cache: ${cacheError.message}`)
-      // Continue with API call if cache check fails
+      shouldReanalyze = true
     } else if (cachedAnalysis) {
-      log(`Using cached analysis for incident ${id}`)
-      return res.json(cachedAnalysis)
+      // Compare incident.title/description with cachedAnalysis.title/description
+      if (
+        cachedAnalysis.title !== incident.title ||
+        cachedAnalysis.description !== incident.description
+      ) {
+        log('Incident title or description has changed. Will reanalyze.')
+        shouldReanalyze = true
+        // Optionally, delete the old analysis
+        await supabase
+          .from('incident_analysis')
+          .delete()
+          .eq('id', cachedAnalysis.id)
+      } else {
+        log(`Using cached analysis for incident ${id}`)
+        return res.json(cachedAnalysis)
+      }
+    } else {
+      shouldReanalyze = true
     }
 
-    // Call Together AI API
-    log('Preparing Together AI API request...')
-    const togetherRequest = {
-      model: "deepseek-ai/deepseek-r1-distill-llama-70b", // Using DeepSeek R1 Distill Llama 70B
-      messages: [
-        {
-          role: "system",
-          content: "You are an IT incident response expert. Your task is to analyze IT incidents and provide clear, actionable insights. Always format your response exactly as follows:\n\nPossible Cause: [Your analysis of the likely cause]\n\nSuggested Solution: [Your recommended solution]\n\nDo not include any additional text or explanations outside these sections."
-        },
-        {
-          role: "user",
-          content: `Incident Title: ${incident.title}\n\nDescription: ${incident.description}\n\nPlease analyze this incident and provide a possible cause and suggested solution.`
-        }
-      ],
-      temperature: 0.7,
-      max_tokens: 500
-    }
-    
-    log(`Sending request to Together AI API...`)
-    try {
-      const response = await axios.post(
-        'https://api.together.xyz/v1/chat/completions',
-        togetherRequest,
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.TOGETHER_API_KEY}`
+    if (shouldReanalyze) {
+      // Call Together AI API
+      log('Preparing Together AI API request...')
+      const togetherRequest = {
+        model: "deepseek-ai/deepseek-r1-distill-llama-70b", // Using DeepSeek R1 Distill Llama 70B
+        messages: [
+          {
+            role: "system",
+            content: "You are an IT incident response expert. Your task is to analyze IT incidents and provide clear, actionable insights. Always format your response exactly as follows:\n\nPossible Cause: [Your analysis of the likely cause]\n\nSuggested Solution: [Your recommended solution]\n\nDo not include any additional text or explanations outside these sections."
+          },
+          {
+            role: "user",
+            content: `Incident Title: ${incident.title}\n\nDescription: ${incident.description}\n\nPlease analyze this incident and provide a possible cause and suggested solution.`
           }
-        }
-      )
-
-      if (!response.data?.choices?.[0]?.message?.content) {
-        throw new Error('Invalid response format from Together AI API')
+        ],
+        temperature: 0.7,
+        max_tokens: 500
       }
-
-      log(`Received response from Together AI API`)
-      const content = response.data.choices[0].message.content
       
-      // Improved parsing logic
-      let possible_cause = ''
-      let suggested_solution = ''
-      
-      // Split content into lines and process each line
-      const lines = content.split('\n')
-      for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim()
+      log(`Sending request to Together AI API...`)
+      try {
+        const response = await axios.post(
+          'https://api.together.xyz/v1/chat/completions',
+          togetherRequest,
+          {
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${process.env.TOGETHER_API_KEY}`
+            }
+          }
+        )
+
+        if (!response.data?.choices?.[0]?.message?.content) {
+          throw new Error('Invalid response format from Together AI API')
+        }
+
+        log(`Received response from Together AI API`)
+        const content = response.data.choices[0].message.content
         
-        // Check for possible cause
-        if (line.toLowerCase().includes('possible cause')) {
-          possible_cause = line.split(':')[1]?.trim() || ''
-          // If the cause is empty, try to get the next line
-          if (!possible_cause && i + 1 < lines.length) {
-            possible_cause = lines[i + 1].trim()
-          }
-        }
+        // Improved parsing logic
+        let possible_cause = ''
+        let suggested_solution = ''
         
-        // Check for suggested solution
-        if (line.toLowerCase().includes('suggested solution')) {
-          suggested_solution = line.split(':')[1]?.trim() || ''
-          // If the solution is empty, try to get the next line
-          if (!suggested_solution && i + 1 < lines.length) {
-            suggested_solution = lines[i + 1].trim()
+        // Split content into lines and process each line
+        const lines = content.split('\n')
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i].trim()
+          
+          // Check for possible cause
+          if (line.toLowerCase().includes('possible cause')) {
+            possible_cause = line.split(':')[1]?.trim() || ''
+            // If the cause is empty, try to get the next line
+            if (!possible_cause && i + 1 < lines.length) {
+              possible_cause = lines[i + 1].trim()
+            }
+          }
+          
+          // Check for suggested solution
+          if (line.toLowerCase().includes('suggested solution')) {
+            suggested_solution = line.split(':')[1]?.trim() || ''
+            // If the solution is empty, try to get the next line
+            if (!suggested_solution && i + 1 < lines.length) {
+              suggested_solution = lines[i + 1].trim()
+            }
           }
         }
-      }
 
-      // If we still don't have values, try to extract from the content directly
-      if (!possible_cause || !suggested_solution) {
-        const sections = content.split('\n\n')
-        if (sections.length >= 2) {
-          if (!possible_cause) {
-            possible_cause = sections[0].replace('Possible Cause:', '').trim()
-          }
-          if (!suggested_solution) {
-            suggested_solution = sections[1].replace('Suggested Solution:', '').trim()
+        // If we still don't have values, try to extract from the content directly
+        if (!possible_cause || !suggested_solution) {
+          const sections = content.split('\n\n')
+          if (sections.length >= 2) {
+            if (!possible_cause) {
+              possible_cause = sections[0].replace('Possible Cause:', '').trim()
+            }
+            if (!suggested_solution) {
+              suggested_solution = sections[1].replace('Suggested Solution:', '').trim()
+            }
           }
         }
-      }
 
-      // Final fallback if we still don't have values
-      if (!possible_cause) {
-        possible_cause = 'Unable to determine cause'
-      }
-      if (!suggested_solution) {
-        suggested_solution = 'No solution suggested'
-      }
+        // Final fallback if we still don't have values
+        if (!possible_cause) {
+          possible_cause = 'Unable to determine cause'
+        }
+        if (!suggested_solution) {
+          suggested_solution = 'No solution suggested'
+        }
 
-      log(`Extracted analysis - Cause: ${possible_cause}, Solution: ${suggested_solution}`)
+        log(`Extracted analysis - Cause: ${possible_cause}, Solution: ${suggested_solution}`)
 
-      // Cache the analysis in database
-      log('Caching analysis in database...')
-      const { data: analysis, error: analysisError } = await supabase
-        .from('incident_analysis')
-        .insert([{
-          incident_id: id,
-          possible_cause,
-          suggested_solution,
-          created_at: new Date().toISOString()
-        }])
-        .select()
-        .single()
+        // Cache the analysis in database
+        log('Caching analysis in database...')
+        const { data: analysis, error: analysisError } = await supabase
+          .from('incident_analysis')
+          .insert([{
+            incident_id: id,
+            possible_cause,
+            suggested_solution,
+            created_at: new Date().toISOString(),
+            title: incident.title,
+            description: incident.description
+          }])
+          .select()
+          .single()
 
-      if (analysisError) {
-        log(`Error caching analysis: ${analysisError.message}`)
-        // Return the analysis even if caching fails
-        return res.json({ possible_cause, suggested_solution })
+        if (analysisError) {
+          log(`Error caching analysis: ${analysisError.message}`)
+          // Return the analysis even if caching fails
+          return res.json({ possible_cause, suggested_solution })
+        }
+
+        return res.json(analysis)
+      } catch (error) {
+        log(`Together AI API error: ${error.message}`)
+        if (error.response) {
+          log(`Together AI API error details: ${JSON.stringify(error.response.data)}`)
+        }
+        return res.status(500).json({ 
+          error: 'AI analysis failed',
+          details: error.message
+        })
       }
-
-      return res.json(analysis)
-    } catch (error) {
-      log(`Together AI API error: ${error.message}`)
-      if (error.response) {
-        log(`Together AI API error details: ${JSON.stringify(error.response.data)}`)
-      }
-      return res.status(500).json({ 
-        error: 'AI analysis failed',
-        details: error.message
-      })
     }
   } catch (error) {
     log(`General error in AI analysis: ${error.message}`)
