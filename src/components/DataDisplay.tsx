@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import CategoryAnalytics from './CategoryAnalytics'
 
 interface ApiData {
   id: number
@@ -46,20 +47,29 @@ export default function DataDisplay() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">Comments</h1>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {data.map((item) => (
-          <div
-            key={item.id}
-            className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
-          >
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-semibold">{item.name}</h2>
-              <span className="text-gray-500 text-sm">ID: {item.id}</span>
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold text-gray-800 mb-4">Dashboard</h1>
+        <p className="text-gray-600">Welcome to your incident management dashboard</p>
+      </div>
+
+      <CategoryAnalytics />
+
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-800 mb-6">Recent Comments</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {data.map((item) => (
+            <div
+              key={item.id}
+              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+            >
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-xl font-semibold text-gray-800">{item.name}</h2>
+                <span className="text-gray-500 text-sm">ID: {item.id}</span>
+              </div>
+              <p className="text-gray-600">{item.comment}</p>
             </div>
-            <p className="text-gray-600">{item.comment}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   )

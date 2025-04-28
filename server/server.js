@@ -1,10 +1,46 @@
-require('dotenv').config();
+const path = require('path');
+const fs = require('fs');
+const dotenv = require('dotenv');
+
+// Clear any existing environment variables
+delete process.env.OPENAI_API_KEY;
+delete process.env.SUPABASE_URL;
+delete process.env.SUPABASE_ANON_KEY;
+
+// Load .env file manually
+const envPath = path.join(__dirname, '.env');
+console.log('Attempting to load .env file from:', envPath);
+
+if (fs.existsSync(envPath)) {
+  console.log('.env file exists');
+  const envContent = fs.readFileSync(envPath, 'utf8');
+  console.log('.env file content:', envContent);
+  
+  const result = dotenv.config({ path: envPath });
+  if (result.error) {
+    console.error('Error loading .env file:', result.error);
+  } else {
+    console.log('Successfully loaded .env file');
+    console.log('Parsed environment variables:', result.parsed);
+  }
+} else {
+  console.error('No .env file found at:', envPath);
+}
+
+// Debug logging for environment variables
+console.log('\n=== Environment Variables Check ===');
+console.log('Current directory:', __dirname);
+console.log('OPENAI_API_KEY exists:', !!process.env.OPENAI_API_KEY);
+console.log('OPENAI_API_KEY value:', process.env.OPENAI_API_KEY ? '***' + process.env.OPENAI_API_KEY.slice(-4) : 'undefined');
+console.log('SUPABASE_URL exists:', !!process.env.SUPABASE_URL);
+console.log('SUPABASE_ANON_KEY exists:', !!process.env.SUPABASE_ANON_KEY);
+console.log('==================================\n');
+
 const express = require('express');
 const cors = require('cors');
 const { createClient } = require('@supabase/supabase-js');
 const axios = require('axios');
-const fs = require('fs');
-const path = require('path');
+const rateLimit = require('express-rate-limit');
 
 // Set up logging
 const logFile = path.join(__dirname, 'server.log');
@@ -26,6 +62,13 @@ const supabase = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_ANON_KEY
 );
+
+// Add rate limiter
+const aiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+  message: 'Too many requests, please try again later'
+});
 
 // Enable CORS for the React frontend
 app.use(cors({
@@ -52,6 +95,12 @@ app.use((err, req, res, next) => {
     stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
   });
 });
+
+// Log all routes
+app.use((req, res, next) => {
+  log(`Incoming request: ${req.method} ${req.url}`)
+  next()
+})
 
 // Root path handler
 app.get('/', (req, res) => {
@@ -550,6 +599,307 @@ app.put('/api/incidents/:id', async (req, res) => {
     });
   }
 });
+
+// Update incident category
+app.put('/api/incidents/:id/category', async (req, res) => {
+  try {
+    const { id } = req.params
+    const { category } = req.body
+
+    log(`Updating category for incident ${id} to ${category}`)
+
+    if (!category || !['Hardware', 'Software', 'Services'].includes(category)) {
+      return res.status(400).json({ 
+        error: 'Invalid category',
+        details: 'Category must be one of: Hardware, Software, Services'
+      })
+    }
+
+    const { data, error } = await supabase
+      .from('incidents')
+      .update({ 
+        category,
+        updated_at: new Date().toISOString()
+      })
+      .eq('id', id)
+      .select()
+      .single()
+
+    if (error) {
+      log(`Error updating category: ${error.message}`)
+      return res.status(500).json({ 
+        error: 'Database error',
+        details: error.message
+      })
+    }
+
+    if (!data) {
+      return res.status(404).json({ error: 'Incident not found' })
+    }
+
+    log(`Successfully updated category for incident ${id}`)
+    return res.json(data)
+  } catch (error) {
+    log(`Error in category update: ${error.message}`)
+    return res.status(500).json({ 
+      error: 'Internal server error',
+      details: error.message
+    })
+  }
+})
+
+// AI Analysis endpoint
+app.post('/api/incidents/:id/analyze', aiLimiter, async (req, res) => {
+  try {
+    const { id } = req.params
+    log(`=== Starting Analysis for Incident ${id} ===`)
+    
+    // Validate Together AI API key
+    if (!process.env.TOGETHER_API_KEY) {
+      log('Error: TOGETHER_API_KEY is not set')
+      return res.status(500).json({ 
+        error: 'AI service configuration error',
+        details: 'Together AI API key is not configured'
+      })
+    }
+    
+    // Get incident from database
+    log('Fetching incident from database...')
+    const { data: incident, error: incidentError } = await supabase
+      .from('incidents')
+      .select('*')
+      .eq('id', id)
+      .single()
+
+    if (incidentError) {
+      log(`Error fetching incident: ${incidentError.message}`)
+      return res.status(500).json({ 
+        error: 'Database error',
+        details: incidentError.message
+      })
+    }
+
+    if (!incident) {
+      log(`Error: Incident not found - ${id}`)
+      return res.status(404).json({ error: 'Incident not found' })
+    }
+
+    log(`Successfully fetched incident: ${JSON.stringify(incident)}`)
+
+    // Check if we have a cached analysis
+    log('Checking for cached analysis...')
+    const { data: cachedAnalysis, error: cacheError } = await supabase
+      .from('incident_analysis')
+      .select('*')
+      .eq('incident_id', id)
+      .single()
+
+    if (cacheError) {
+      log(`Error checking cache: ${cacheError.message}`)
+      // Continue with API call if cache check fails
+    } else if (cachedAnalysis) {
+      log(`Using cached analysis for incident ${id}`)
+      return res.json(cachedAnalysis)
+    }
+
+    // Call Together AI API
+    log('Preparing Together AI API request...')
+    const togetherRequest = {
+      model: "deepseek-ai/deepseek-r1-distill-llama-70b", // Using DeepSeek R1 Distill Llama 70B
+      messages: [
+        {
+          role: "system",
+          content: "You are an IT incident response expert. Your task is to analyze IT incidents and provide clear, actionable insights. Always format your response exactly as follows:\n\nPossible Cause: [Your analysis of the likely cause]\n\nSuggested Solution: [Your recommended solution]\n\nDo not include any additional text or explanations outside these sections."
+        },
+        {
+          role: "user",
+          content: `Incident Title: ${incident.title}\n\nDescription: ${incident.description}\n\nPlease analyze this incident and provide a possible cause and suggested solution.`
+        }
+      ],
+      temperature: 0.7,
+      max_tokens: 500
+    }
+    
+    log(`Sending request to Together AI API...`)
+    try {
+      const response = await axios.post(
+        'https://api.together.xyz/v1/chat/completions',
+        togetherRequest,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.TOGETHER_API_KEY}`
+          }
+        }
+      )
+
+      if (!response.data?.choices?.[0]?.message?.content) {
+        throw new Error('Invalid response format from Together AI API')
+      }
+
+      log(`Received response from Together AI API`)
+      const content = response.data.choices[0].message.content
+      
+      // Improved parsing logic
+      let possible_cause = ''
+      let suggested_solution = ''
+      
+      // Split content into lines and process each line
+      const lines = content.split('\n')
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim()
+        
+        // Check for possible cause
+        if (line.toLowerCase().includes('possible cause')) {
+          possible_cause = line.split(':')[1]?.trim() || ''
+          // If the cause is empty, try to get the next line
+          if (!possible_cause && i + 1 < lines.length) {
+            possible_cause = lines[i + 1].trim()
+          }
+        }
+        
+        // Check for suggested solution
+        if (line.toLowerCase().includes('suggested solution')) {
+          suggested_solution = line.split(':')[1]?.trim() || ''
+          // If the solution is empty, try to get the next line
+          if (!suggested_solution && i + 1 < lines.length) {
+            suggested_solution = lines[i + 1].trim()
+          }
+        }
+      }
+
+      // If we still don't have values, try to extract from the content directly
+      if (!possible_cause || !suggested_solution) {
+        const sections = content.split('\n\n')
+        if (sections.length >= 2) {
+          if (!possible_cause) {
+            possible_cause = sections[0].replace('Possible Cause:', '').trim()
+          }
+          if (!suggested_solution) {
+            suggested_solution = sections[1].replace('Suggested Solution:', '').trim()
+          }
+        }
+      }
+
+      // Final fallback if we still don't have values
+      if (!possible_cause) {
+        possible_cause = 'Unable to determine cause'
+      }
+      if (!suggested_solution) {
+        suggested_solution = 'No solution suggested'
+      }
+
+      log(`Extracted analysis - Cause: ${possible_cause}, Solution: ${suggested_solution}`)
+
+      // Cache the analysis in database
+      log('Caching analysis in database...')
+      const { data: analysis, error: analysisError } = await supabase
+        .from('incident_analysis')
+        .insert([{
+          incident_id: id,
+          possible_cause,
+          suggested_solution,
+          created_at: new Date().toISOString()
+        }])
+        .select()
+        .single()
+
+      if (analysisError) {
+        log(`Error caching analysis: ${analysisError.message}`)
+        // Return the analysis even if caching fails
+        return res.json({ possible_cause, suggested_solution })
+      }
+
+      return res.json(analysis)
+    } catch (error) {
+      log(`Together AI API error: ${error.message}`)
+      if (error.response) {
+        log(`Together AI API error details: ${JSON.stringify(error.response.data)}`)
+      }
+      return res.status(500).json({ 
+        error: 'AI analysis failed',
+        details: error.message
+      })
+    }
+  } catch (error) {
+    log(`General error in AI analysis: ${error.message}`)
+    return res.status(500).json({ 
+      error: 'Internal server error',
+      details: error.message
+    })
+  }
+})
+
+// Test endpoint
+app.get('/api/test', (req, res) => {
+  log('Test endpoint hit')
+  res.json({ message: 'Server is working!' })
+})
+
+// Get category analytics
+app.get('/api/incidents/analytics/category', async (req, res) => {
+  try {
+    log('Fetching category analytics...')
+    log('Supabase URL:', process.env.SUPABASE_URL)
+    log('Has Supabase Anon Key:', !!process.env.SUPABASE_ANON_KEY)
+    
+    const { data, error } = await supabase
+      .from('incidents')
+      .select('category, status')
+    
+    if (error) {
+      log(`Error fetching incidents: ${error.message}`)
+      log('Error details:', error)
+      return res.status(500).json({ 
+        error: 'Database error',
+        details: error.message
+      })
+    }
+
+    log('Successfully fetched incidents:', data)
+
+    // Initialize stats for each category
+    const categoryStats = {
+      Hardware: { total: 0, open: 0, inProgress: 0, closed: 0 },
+      Software: { total: 0, open: 0, inProgress: 0, closed: 0 },
+      Services: { total: 0, open: 0, inProgress: 0, closed: 0 }
+    }
+
+    // Calculate stats
+    data.forEach(incident => {
+      const category = incident.category || 'Software'
+      categoryStats[category].total++
+      
+      switch (incident.status) {
+        case 'Open':
+          categoryStats[category].open++
+          break
+        case 'In Progress':
+          categoryStats[category].inProgress++
+          break
+        case 'Closed':
+          categoryStats[category].closed++
+          break
+      }
+    })
+
+    // Format response
+    const response = Object.entries(categoryStats).map(([category, stats]) => ({
+      category,
+      ...stats
+    }))
+
+    log('Successfully fetched category analytics:', response)
+    return res.json(response)
+  } catch (error) {
+    log(`Error in category analytics: ${error.message}`)
+    log('Error stack:', error.stack)
+    return res.status(500).json({ 
+      error: 'Internal server error',
+      details: error.message
+    })
+  }
+})
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
