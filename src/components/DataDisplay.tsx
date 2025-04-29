@@ -53,6 +53,11 @@ export default function DataDisplay() {
         <p className="text-gray-600">Welcome to your incident management dashboard</p>
       </div>
 
+      {/* Added text box */}
+      <div className="mb-8 p-4 bg-blue-100 border border-blue-300 rounded-lg">
+        <p className="text-blue-800">Hi, from cline</p>
+      </div>
+
       <AnalyticsCards />
 
       <CategoryAnalytics />
@@ -76,4 +81,4 @@ export default function DataDisplay() {
       </div>
     </div>
   )
-} 
+}
