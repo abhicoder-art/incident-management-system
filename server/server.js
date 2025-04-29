@@ -965,6 +965,120 @@ app.get('/api/incidents/analytics/team-member', async (req, res) => {
   }
 })
 
+// Analytics endpoint
+app.get('/api/analytics/dashboard', async (req, res) => {
+  try {
+    // Get active incidents count and trend
+    const { data: activeIncidents, error: activeError } = await supabase
+      .from('incidents')
+      .select('created_at, status')
+      .in('status', ['Open']);
+
+    if (activeError) throw activeError;
+
+    const now = new Date();
+    const sevenDaysAgo = new Date(now - 7 * 24 * 60 * 60 * 1000);
+    const fourteenDaysAgo = new Date(now - 14 * 24 * 60 * 60 * 1000);
+
+    const currentWeekActive = activeIncidents.filter(inc => 
+      new Date(inc.created_at) >= sevenDaysAgo
+    ).length;
+
+    const previousWeekActive = activeIncidents.filter(inc => 
+      new Date(inc.created_at) >= fourteenDaysAgo && 
+      new Date(inc.created_at) < sevenDaysAgo
+    ).length;
+
+    // Get incident resolutions data
+    const { data: resolutions, error: resolutionsError } = await supabase
+      .from('incident_resolutions')
+      .select('resolved_at, resolution_time_minutes, resolution_type');
+
+    if (resolutionsError) throw resolutionsError;
+
+    // Calculate mean time to resolve
+    const currentWeekResolutions = resolutions.filter(res => 
+      new Date(res.resolved_at) >= sevenDaysAgo
+    );
+    const previousWeekResolutions = resolutions.filter(res => 
+      new Date(res.resolved_at) >= fourteenDaysAgo && 
+      new Date(res.resolved_at) < sevenDaysAgo
+    );
+
+    const currentWeekMeanTime = currentWeekResolutions.length > 0
+      ? Math.round(currentWeekResolutions.reduce((acc, curr) => acc + (curr.resolution_time_minutes || 0), 0) / currentWeekResolutions.length)
+      : 0;
+
+    const previousWeekMeanTime = previousWeekResolutions.length > 0
+      ? Math.round(previousWeekResolutions.reduce((acc, curr) => acc + (curr.resolution_time_minutes || 0), 0) / previousWeekResolutions.length)
+      : 0;
+
+    // Get service health
+    const { data: services, error: servicesError } = await supabase
+      .from('service_health')
+      .select('service_name, status');
+
+    if (servicesError) throw servicesError;
+
+    const operationalCount = services.filter(s => s.status === 'Operational').length;
+    const issues = services
+      .filter(s => s.status !== 'Operational')
+      .map(s => `${s.service_name} (${s.status})`)
+      .join(', ');
+
+    // Get AI resolutions
+    const currentWeekAI = resolutions.filter(res => 
+      new Date(res.resolved_at) >= sevenDaysAgo && 
+      res.resolution_type === 'AI'
+    ).length;
+
+    const previousWeekAI = resolutions.filter(res => 
+      new Date(res.resolved_at) >= fourteenDaysAgo && 
+      new Date(res.resolved_at) < sevenDaysAgo && 
+      res.resolution_type === 'AI'
+    ).length;
+
+    // Calculate change percentages
+    const activeChangePercentage = previousWeekActive === 0 ? 0 
+      : Math.round(((currentWeekActive - previousWeekActive) / previousWeekActive * 100) * 10) / 10;
+
+    const timeChangePercentage = previousWeekMeanTime === 0 ? 0
+      : Math.round(((currentWeekMeanTime - previousWeekMeanTime) / previousWeekMeanTime * 100) * 10) / 10;
+
+    const aiChangePercentage = previousWeekAI === 0 ? 0
+      : Math.round(((currentWeekAI - previousWeekAI) / previousWeekAI * 100) * 10) / 10;
+
+    // Format mean time
+    const hours = Math.floor(currentWeekMeanTime / 60);
+    const minutes = currentWeekMeanTime % 60;
+    const formattedTime = `${hours}h ${minutes}m`;
+
+    const analyticsData = {
+      activeIncidents: {
+        count: currentWeekActive,
+        changePercentage: activeChangePercentage
+      },
+      meanTimeToResolve: {
+        time: formattedTime,
+        changePercentage: timeChangePercentage
+      },
+      serviceHealth: {
+        count: `${operationalCount}/${services.length}`,
+        description: issues || 'All services operational'
+      },
+      aiResolutions: {
+        count: currentWeekAI,
+        changePercentage: aiChangePercentage
+      }
+    };
+
+    res.json(analyticsData);
+  } catch (err) {
+    console.error('Error fetching analytics data:', err);
+    res.status(500).json({ error: 'Internal server error', details: err.message });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
   console.log('Available endpoints:');

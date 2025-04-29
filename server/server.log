@@ -1607,3 +1607,1677 @@ Okay, so I've got this incident where the memory usage on three production web s
 [2025-04-28T11:13:00.698Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
 [2025-04-28T11:13:00.698Z] Checking for cached analysis...
 [2025-04-28T11:13:00.744Z] Using cached analysis for incident 7
+[2025-04-28T11:13:36.857Z] Incoming request: GET /api/incidents
+[2025-04-28T11:13:37.248Z] Incoming request: GET /api/incidents
+[2025-04-28T11:16:14.332Z] Incoming request: GET /api/comments
+[2025-04-28T11:16:14.732Z] Incoming request: GET /api/comments
+[2025-04-28T11:16:14.738Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T11:16:14.738Z] Fetching category analytics...
+[2025-04-28T11:16:14.738Z] Supabase URL:
+[2025-04-28T11:16:14.738Z] Has Supabase Anon Key:
+[2025-04-28T11:16:14.741Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T11:16:14.741Z] Fetching team member analytics...
+[2025-04-28T11:16:14.804Z] Successfully fetched incidents:
+[2025-04-28T11:16:14.805Z] Successfully fetched category analytics:
+[2025-04-28T11:16:14.806Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T11:16:14.806Z] Fetching category analytics...
+[2025-04-28T11:16:14.807Z] Supabase URL:
+[2025-04-28T11:16:14.807Z] Has Supabase Anon Key:
+[2025-04-28T11:16:14.850Z] Successfully fetched incidents:
+[2025-04-28T11:16:14.851Z] Successfully fetched category analytics:
+[2025-04-28T11:16:14.867Z] Successfully fetched team member analytics:
+[2025-04-28T11:16:14.868Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T11:16:14.868Z] Fetching team member analytics...
+[2025-04-28T11:16:14.947Z] Successfully fetched team member analytics:
+[2025-04-29T06:44:51.812Z] Incoming request: GET /api/comments
+[2025-04-29T06:44:52.391Z] Incoming request: GET /api/comments
+[2025-04-29T06:44:52.400Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T06:44:52.401Z] Fetching team member analytics...
+[2025-04-29T06:44:52.408Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T06:44:52.409Z] Fetching category analytics...
+[2025-04-29T06:44:52.409Z] Supabase URL:
+[2025-04-29T06:44:52.409Z] Has Supabase Anon Key:
+[2025-04-29T06:44:52.570Z] Successfully fetched incidents:
+[2025-04-29T06:44:52.570Z] Successfully fetched category analytics:
+[2025-04-29T06:44:52.573Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T06:44:52.573Z] Fetching category analytics...
+[2025-04-29T06:44:52.574Z] Supabase URL:
+[2025-04-29T06:44:52.574Z] Has Supabase Anon Key:
+[2025-04-29T06:44:52.651Z] Successfully fetched incidents:
+[2025-04-29T06:44:52.652Z] Successfully fetched category analytics:
+[2025-04-29T06:44:52.679Z] Successfully fetched team member analytics:
+[2025-04-29T06:44:52.682Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T06:44:52.682Z] Fetching team member analytics...
+[2025-04-29T06:44:52.789Z] Successfully fetched team member analytics:
+[2025-04-29T07:18:19.718Z] Incoming request: GET /api/comments
+[2025-04-29T07:18:20.167Z] Incoming request: GET /api/comments
+[2025-04-29T07:18:20.176Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:18:20.177Z] Fetching category analytics...
+[2025-04-29T07:18:20.177Z] Supabase URL:
+[2025-04-29T07:18:20.178Z] Has Supabase Anon Key:
+[2025-04-29T07:18:20.182Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:18:20.182Z] Fetching team member analytics...
+[2025-04-29T07:18:20.271Z] Successfully fetched incidents:
+[2025-04-29T07:18:20.272Z] Successfully fetched category analytics:
+[2025-04-29T07:18:20.275Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:18:20.275Z] Fetching category analytics...
+[2025-04-29T07:18:20.275Z] Supabase URL:
+[2025-04-29T07:18:20.276Z] Has Supabase Anon Key:
+[2025-04-29T07:18:20.331Z] Successfully fetched incidents:
+[2025-04-29T07:18:20.332Z] Successfully fetched category analytics:
+[2025-04-29T07:18:20.340Z] Successfully fetched team member analytics:
+[2025-04-29T07:18:20.343Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:18:20.344Z] Fetching team member analytics...
+[2025-04-29T07:18:20.457Z] Successfully fetched team member analytics:
+[2025-04-29T07:23:02.178Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:02.645Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:02.714Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:02.794Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:02.866Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:02.938Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:03.037Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:03.090Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:03.095Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:23:03.096Z] Fetching category analytics...
+[2025-04-29T07:23:03.096Z] Supabase URL:
+[2025-04-29T07:23:03.096Z] Has Supabase Anon Key:
+[2025-04-29T07:23:03.098Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:23:03.099Z] Fetching team member analytics...
+[2025-04-29T07:23:03.192Z] Successfully fetched incidents:
+[2025-04-29T07:23:03.192Z] Successfully fetched category analytics:
+[2025-04-29T07:23:03.194Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:23:03.194Z] Fetching category analytics...
+[2025-04-29T07:23:03.194Z] Supabase URL:
+[2025-04-29T07:23:03.194Z] Has Supabase Anon Key:
+[2025-04-29T07:23:03.241Z] Successfully fetched incidents:
+[2025-04-29T07:23:03.241Z] Successfully fetched category analytics:
+[2025-04-29T07:23:03.253Z] Successfully fetched team member analytics:
+[2025-04-29T07:23:03.255Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:23:03.255Z] Fetching team member analytics...
+[2025-04-29T07:23:03.355Z] Successfully fetched team member analytics:
+[2025-04-29T07:23:49.915Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:54.200Z] Incoming request: GET /api/comments
+[2025-04-29T07:23:54.209Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:23:54.209Z] Fetching category analytics...
+[2025-04-29T07:23:54.210Z] Supabase URL:
+[2025-04-29T07:23:54.210Z] Has Supabase Anon Key:
+[2025-04-29T07:23:54.215Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:23:54.215Z] Fetching team member analytics...
+[2025-04-29T07:23:55.898Z] Successfully fetched incidents:
+[2025-04-29T07:23:55.899Z] Successfully fetched category analytics:
+[2025-04-29T07:23:55.902Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:23:55.903Z] Fetching category analytics...
+[2025-04-29T07:23:55.903Z] Supabase URL:
+[2025-04-29T07:23:55.904Z] Has Supabase Anon Key:
+[2025-04-29T07:23:55.966Z] Successfully fetched incidents:
+[2025-04-29T07:23:55.966Z] Successfully fetched category analytics:
+[2025-04-29T07:23:55.989Z] Successfully fetched team member analytics:
+[2025-04-29T07:23:55.991Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:23:55.991Z] Fetching team member analytics...
+[2025-04-29T07:23:56.163Z] Successfully fetched team member analytics:
+[2025-04-29T07:24:00.097Z] Incoming request: GET /api/incidents
+[2025-04-29T07:24:00.327Z] Incoming request: GET /api/incidents
+[2025-04-29T07:24:03.834Z] Incoming request: GET /api/incidents/7
+[2025-04-29T07:24:03.837Z] Incoming request: GET /api/team-members
+[2025-04-29T07:24:03.899Z] Incoming request: GET /api/incidents/7
+[2025-04-29T07:24:03.992Z] Incoming request: GET /api/team-members
+[2025-04-29T07:24:03.995Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T07:24:03.996Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T07:24:03.997Z] Fetching incident from database...
+[2025-04-29T07:24:04.037Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T07:24:04.038Z] Checking for cached analysis...
+[2025-04-29T07:24:04.104Z] Using cached analysis for incident 7
+[2025-04-29T07:24:04.141Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T07:24:04.142Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T07:24:04.142Z] Fetching incident from database...
+[2025-04-29T07:24:04.495Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T07:24:04.495Z] Checking for cached analysis...
+[2025-04-29T07:24:04.557Z] Using cached analysis for incident 7
+[2025-04-29T07:24:12.759Z] Incoming request: GET /api/incidents
+[2025-04-29T07:24:15.143Z] Incoming request: GET /api/incidents
+[2025-04-29T07:24:16.136Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:24:16.136Z] Fetching category analytics...
+[2025-04-29T07:24:16.137Z] Supabase URL:
+[2025-04-29T07:24:16.137Z] Has Supabase Anon Key:
+[2025-04-29T07:24:16.139Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:24:16.139Z] Fetching team member analytics...
+[2025-04-29T07:24:16.191Z] Successfully fetched incidents:
+[2025-04-29T07:24:16.191Z] Successfully fetched category analytics:
+[2025-04-29T07:24:16.193Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:24:16.194Z] Fetching category analytics...
+[2025-04-29T07:24:16.194Z] Supabase URL:
+[2025-04-29T07:24:16.194Z] Has Supabase Anon Key:
+[2025-04-29T07:24:16.244Z] Successfully fetched incidents:
+[2025-04-29T07:24:16.245Z] Successfully fetched category analytics:
+[2025-04-29T07:24:16.285Z] Successfully fetched team member analytics:
+[2025-04-29T07:24:16.288Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:24:16.288Z] Fetching team member analytics...
+[2025-04-29T07:24:16.410Z] Successfully fetched team member analytics:
+[2025-04-29T07:24:24.633Z] Incoming request: GET /api/comments
+[2025-04-29T07:24:24.769Z] Incoming request: GET /api/comments
+[2025-04-29T07:24:24.775Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:24:24.775Z] Fetching category analytics...
+[2025-04-29T07:24:24.775Z] Supabase URL:
+[2025-04-29T07:24:24.776Z] Has Supabase Anon Key:
+[2025-04-29T07:24:24.780Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:24:24.780Z] Fetching team member analytics...
+[2025-04-29T07:24:24.871Z] Successfully fetched incidents:
+[2025-04-29T07:24:24.871Z] Successfully fetched category analytics:
+[2025-04-29T07:24:24.873Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:24:24.873Z] Fetching category analytics...
+[2025-04-29T07:24:24.874Z] Supabase URL:
+[2025-04-29T07:24:24.874Z] Has Supabase Anon Key:
+[2025-04-29T07:24:24.914Z] Successfully fetched team member analytics:
+[2025-04-29T07:24:24.917Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:24:24.917Z] Fetching team member analytics...
+[2025-04-29T07:24:24.930Z] Successfully fetched incidents:
+[2025-04-29T07:24:24.931Z] Successfully fetched category analytics:
+[2025-04-29T07:24:25.046Z] Successfully fetched team member analytics:
+[2025-04-29T07:24:32.385Z] Incoming request: GET /api/comments
+[2025-04-29T07:24:32.601Z] Incoming request: GET /api/comments
+[2025-04-29T07:24:32.605Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:24:32.605Z] Fetching category analytics...
+[2025-04-29T07:24:32.605Z] Supabase URL:
+[2025-04-29T07:24:32.605Z] Has Supabase Anon Key:
+[2025-04-29T07:24:32.607Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:24:32.607Z] Fetching team member analytics...
+[2025-04-29T07:24:32.709Z] Successfully fetched incidents:
+[2025-04-29T07:24:32.710Z] Successfully fetched category analytics:
+[2025-04-29T07:24:32.711Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:24:32.711Z] Fetching category analytics...
+[2025-04-29T07:24:32.711Z] Supabase URL:
+[2025-04-29T07:24:32.711Z] Has Supabase Anon Key:
+[2025-04-29T07:24:32.796Z] Successfully fetched incidents:
+[2025-04-29T07:24:32.797Z] Successfully fetched category analytics:
+[2025-04-29T07:24:32.813Z] Successfully fetched team member analytics:
+[2025-04-29T07:24:32.814Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:24:32.814Z] Fetching team member analytics...
+[2025-04-29T07:24:32.925Z] Successfully fetched team member analytics:
+[2025-04-29T07:24:38.944Z] Incoming request: GET /api/comments
+[2025-04-29T07:24:39.021Z] Incoming request: GET /api/comments
+[2025-04-29T07:24:39.024Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:24:39.024Z] Fetching category analytics...
+[2025-04-29T07:24:39.024Z] Supabase URL:
+[2025-04-29T07:24:39.024Z] Has Supabase Anon Key:
+[2025-04-29T07:24:39.025Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:24:39.026Z] Fetching team member analytics...
+[2025-04-29T07:24:39.107Z] Successfully fetched incidents:
+[2025-04-29T07:24:39.107Z] Successfully fetched category analytics:
+[2025-04-29T07:24:39.108Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:24:39.108Z] Fetching category analytics...
+[2025-04-29T07:24:39.108Z] Supabase URL:
+[2025-04-29T07:24:39.108Z] Has Supabase Anon Key:
+[2025-04-29T07:24:39.207Z] Successfully fetched incidents:
+[2025-04-29T07:24:39.208Z] Successfully fetched category analytics:
+[2025-04-29T07:24:39.292Z] Successfully fetched team member analytics:
+[2025-04-29T07:24:39.295Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:24:39.296Z] Fetching team member analytics...
+[2025-04-29T07:24:39.407Z] Successfully fetched team member analytics:
+[2025-04-29T07:24:57.332Z] Incoming request: GET /api/comments
+[2025-04-29T07:25:00.280Z] Incoming request: GET /api/comments
+[2025-04-29T07:25:00.287Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:25:00.287Z] Fetching category analytics...
+[2025-04-29T07:25:00.287Z] Supabase URL:
+[2025-04-29T07:25:00.288Z] Has Supabase Anon Key:
+[2025-04-29T07:25:00.294Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:25:00.294Z] Fetching team member analytics...
+[2025-04-29T07:25:00.473Z] Successfully fetched incidents:
+[2025-04-29T07:25:00.474Z] Successfully fetched category analytics:
+[2025-04-29T07:25:00.476Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:25:00.476Z] Fetching category analytics...
+[2025-04-29T07:25:00.477Z] Supabase URL:
+[2025-04-29T07:25:00.477Z] Has Supabase Anon Key:
+[2025-04-29T07:25:00.578Z] Successfully fetched incidents:
+[2025-04-29T07:25:00.578Z] Successfully fetched category analytics:
+[2025-04-29T07:25:00.820Z] Successfully fetched team member analytics:
+[2025-04-29T07:25:00.823Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:25:00.824Z] Fetching team member analytics...
+[2025-04-29T07:25:01.023Z] Successfully fetched team member analytics:
+[2025-04-29T07:25:09.744Z] Incoming request: GET /api/comments
+[2025-04-29T07:25:09.936Z] Incoming request: GET /api/comments
+[2025-04-29T07:25:09.942Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:25:09.942Z] Fetching category analytics...
+[2025-04-29T07:25:09.942Z] Supabase URL:
+[2025-04-29T07:25:09.942Z] Has Supabase Anon Key:
+[2025-04-29T07:25:09.947Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:25:09.947Z] Fetching team member analytics...
+[2025-04-29T07:25:10.048Z] Successfully fetched incidents:
+[2025-04-29T07:25:10.048Z] Successfully fetched category analytics:
+[2025-04-29T07:25:10.050Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:25:10.050Z] Fetching category analytics...
+[2025-04-29T07:25:10.050Z] Supabase URL:
+[2025-04-29T07:25:10.050Z] Has Supabase Anon Key:
+[2025-04-29T07:25:10.116Z] Successfully fetched incidents:
+[2025-04-29T07:25:10.117Z] Successfully fetched category analytics:
+[2025-04-29T07:25:10.194Z] Successfully fetched team member analytics:
+[2025-04-29T07:25:10.196Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:25:10.196Z] Fetching team member analytics...
+[2025-04-29T07:25:10.547Z] Successfully fetched team member analytics:
+[2025-04-29T07:27:16.810Z] Incoming request: GET /api/comments
+[2025-04-29T07:27:23.614Z] Incoming request: GET /api/incidents
+[2025-04-29T07:27:29.415Z] Incoming request: GET /api/comments
+[2025-04-29T07:27:32.433Z] Incoming request: GET /api/comments
+[2025-04-29T07:27:32.445Z] Incoming request: GET /api/incidents
+[2025-04-29T07:27:35.619Z] Incoming request: GET /api/comments
+[2025-04-29T07:27:35.622Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:27:35.622Z] Fetching category analytics...
+[2025-04-29T07:27:35.623Z] Supabase URL:
+[2025-04-29T07:27:35.623Z] Has Supabase Anon Key:
+[2025-04-29T07:27:35.624Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:27:35.625Z] Fetching team member analytics...
+[2025-04-29T07:27:43.756Z] Successfully fetched incidents:
+[2025-04-29T07:27:43.757Z] Successfully fetched category analytics:
+[2025-04-29T07:27:43.758Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:27:43.758Z] Fetching category analytics...
+[2025-04-29T07:27:43.758Z] Supabase URL:
+[2025-04-29T07:27:43.758Z] Has Supabase Anon Key:
+[2025-04-29T07:27:46.203Z] Successfully fetched team member analytics:
+[2025-04-29T07:27:46.205Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:27:46.205Z] Fetching team member analytics...
+[2025-04-29T07:27:48.382Z] Incoming request: GET /api/comments
+[2025-04-29T07:27:48.686Z] Successfully fetched incidents:
+[2025-04-29T07:27:48.687Z] Successfully fetched category analytics:
+[2025-04-29T07:27:49.977Z] Incoming request: GET /api/incidents
+[2025-04-29T07:27:53.669Z] Successfully fetched team member analytics:
+[2025-04-29T07:27:53.805Z] Incoming request: GET /api/incidents
+[2025-04-29T07:27:57.690Z] Incoming request: GET /api/comments
+[2025-04-29T07:27:59.977Z] Incoming request: GET /api/incidents
+[2025-04-29T07:28:01.942Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:05.711Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:05.715Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:28:05.715Z] Fetching category analytics...
+[2025-04-29T07:28:05.715Z] Supabase URL:
+[2025-04-29T07:28:05.715Z] Has Supabase Anon Key:
+[2025-04-29T07:28:05.717Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:28:05.717Z] Fetching team member analytics...
+[2025-04-29T07:28:06.426Z] Incoming request: GET /api/incidents
+[2025-04-29T07:28:06.808Z] Successfully fetched incidents:
+[2025-04-29T07:28:06.809Z] Successfully fetched category analytics:
+[2025-04-29T07:28:06.813Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:28:06.813Z] Fetching category analytics...
+[2025-04-29T07:28:06.814Z] Supabase URL:
+[2025-04-29T07:28:06.814Z] Has Supabase Anon Key:
+[2025-04-29T07:28:06.856Z] Successfully fetched team member analytics:
+[2025-04-29T07:28:06.860Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:28:06.860Z] Fetching team member analytics...
+[2025-04-29T07:28:06.868Z] Successfully fetched incidents:
+[2025-04-29T07:28:06.869Z] Successfully fetched category analytics:
+[2025-04-29T07:28:06.980Z] Successfully fetched team member analytics:
+[2025-04-29T07:28:36.603Z] Incoming request: GET /api/incidents
+[2025-04-29T07:28:47.252Z] Incoming request: GET /api/incidents
+[2025-04-29T07:28:52.942Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:56.208Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:56.308Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:56.388Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:56.476Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:56.552Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:56.652Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:56.804Z] Incoming request: GET /api/comments
+[2025-04-29T07:28:56.809Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:28:56.809Z] Fetching category analytics...
+[2025-04-29T07:28:56.810Z] Supabase URL:
+[2025-04-29T07:28:56.810Z] Has Supabase Anon Key:
+[2025-04-29T07:28:56.812Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:28:56.812Z] Fetching team member analytics...
+[2025-04-29T07:28:57.048Z] Successfully fetched incidents:
+[2025-04-29T07:28:57.048Z] Successfully fetched category analytics:
+[2025-04-29T07:28:57.051Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:28:57.051Z] Fetching category analytics...
+[2025-04-29T07:28:57.051Z] Supabase URL:
+[2025-04-29T07:28:57.051Z] Has Supabase Anon Key:
+[2025-04-29T07:28:57.170Z] Successfully fetched incidents:
+[2025-04-29T07:28:57.170Z] Successfully fetched category analytics:
+[2025-04-29T07:28:57.199Z] Successfully fetched team member analytics:
+[2025-04-29T07:28:57.200Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:28:57.201Z] Fetching team member analytics...
+[2025-04-29T07:28:57.437Z] Successfully fetched team member analytics:
+[2025-04-29T07:29:00.970Z] Incoming request: GET /api/comments
+[2025-04-29T07:29:01.569Z] Incoming request: GET /api/comments
+[2025-04-29T07:29:01.572Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:29:01.572Z] Fetching category analytics...
+[2025-04-29T07:29:01.572Z] Supabase URL:
+[2025-04-29T07:29:01.572Z] Has Supabase Anon Key:
+[2025-04-29T07:29:01.574Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:29:01.574Z] Fetching team member analytics...
+[2025-04-29T07:29:02.181Z] Successfully fetched incidents:
+[2025-04-29T07:29:02.182Z] Successfully fetched category analytics:
+[2025-04-29T07:29:02.185Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:29:02.185Z] Fetching category analytics...
+[2025-04-29T07:29:02.186Z] Supabase URL:
+[2025-04-29T07:29:02.186Z] Has Supabase Anon Key:
+[2025-04-29T07:29:02.433Z] Successfully fetched incidents:
+[2025-04-29T07:29:02.433Z] Successfully fetched category analytics:
+[2025-04-29T07:29:02.491Z] Successfully fetched team member analytics:
+[2025-04-29T07:29:02.495Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:29:02.495Z] Fetching team member analytics...
+[2025-04-29T07:29:03.066Z] Successfully fetched team member analytics:
+[2025-04-29T07:29:03.159Z] Incoming request: GET /api/incidents
+[2025-04-29T07:29:03.543Z] Incoming request: GET /api/incidents
+[2025-04-29T07:29:09.331Z] Incoming request: GET /api/incidents
+[2025-04-29T07:29:14.259Z] Incoming request: GET /api/incidents
+[2025-04-29T07:29:46.260Z] Incoming request: GET /api/incidents
+[2025-04-29T07:29:46.365Z] Incoming request: GET /api/incidents
+[2025-04-29T07:32:28.177Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:28.575Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:28.641Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:28.697Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:28.740Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:28.787Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:28.860Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:28.902Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:28.907Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:32:28.907Z] Fetching category analytics...
+[2025-04-29T07:32:28.907Z] Supabase URL:
+[2025-04-29T07:32:28.908Z] Has Supabase Anon Key:
+[2025-04-29T07:32:28.909Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:32:28.909Z] Fetching team member analytics...
+[2025-04-29T07:32:28.994Z] Successfully fetched incidents:
+[2025-04-29T07:32:28.994Z] Successfully fetched category analytics:
+[2025-04-29T07:32:28.995Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:32:28.995Z] Fetching category analytics...
+[2025-04-29T07:32:28.996Z] Supabase URL:
+[2025-04-29T07:32:28.996Z] Has Supabase Anon Key:
+[2025-04-29T07:32:29.029Z] Successfully fetched incidents:
+[2025-04-29T07:32:29.030Z] Successfully fetched category analytics:
+[2025-04-29T07:32:29.034Z] Successfully fetched team member analytics:
+[2025-04-29T07:32:29.035Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:32:29.035Z] Fetching team member analytics...
+[2025-04-29T07:32:29.115Z] Successfully fetched team member analytics:
+[2025-04-29T07:32:48.998Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:49.125Z] Incoming request: GET /api/comments
+[2025-04-29T07:32:49.129Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:32:49.129Z] Fetching category analytics...
+[2025-04-29T07:32:49.129Z] Supabase URL:
+[2025-04-29T07:32:49.129Z] Has Supabase Anon Key:
+[2025-04-29T07:32:49.131Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:32:49.131Z] Fetching team member analytics...
+[2025-04-29T07:32:49.224Z] Successfully fetched incidents:
+[2025-04-29T07:32:49.224Z] Successfully fetched category analytics:
+[2025-04-29T07:32:49.225Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:32:49.225Z] Fetching category analytics...
+[2025-04-29T07:32:49.226Z] Supabase URL:
+[2025-04-29T07:32:49.226Z] Has Supabase Anon Key:
+[2025-04-29T07:32:49.282Z] Successfully fetched team member analytics:
+[2025-04-29T07:32:49.284Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:32:49.284Z] Fetching team member analytics...
+[2025-04-29T07:32:49.297Z] Successfully fetched incidents:
+[2025-04-29T07:32:49.297Z] Successfully fetched category analytics:
+[2025-04-29T07:32:49.365Z] Successfully fetched team member analytics:
+[2025-04-29T07:33:12.788Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:12.891Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:12.894Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:33:12.894Z] Fetching category analytics...
+[2025-04-29T07:33:12.895Z] Supabase URL:
+[2025-04-29T07:33:12.895Z] Has Supabase Anon Key:
+[2025-04-29T07:33:12.897Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:33:12.897Z] Fetching team member analytics...
+[2025-04-29T07:33:13.246Z] Successfully fetched incidents:
+[2025-04-29T07:33:13.246Z] Successfully fetched category analytics:
+[2025-04-29T07:33:13.248Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:33:13.248Z] Fetching category analytics...
+[2025-04-29T07:33:13.248Z] Supabase URL:
+[2025-04-29T07:33:13.248Z] Has Supabase Anon Key:
+[2025-04-29T07:33:13.361Z] Successfully fetched incidents:
+[2025-04-29T07:33:13.361Z] Successfully fetched category analytics:
+[2025-04-29T07:33:13.387Z] Successfully fetched team member analytics:
+[2025-04-29T07:33:13.389Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:33:13.389Z] Fetching team member analytics...
+[2025-04-29T07:33:13.466Z] Successfully fetched team member analytics:
+[2025-04-29T07:33:18.736Z] Incoming request: GET /api/incidents
+[2025-04-29T07:33:18.821Z] Incoming request: GET /api/incidents
+[2025-04-29T07:33:26.917Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:27.037Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:27.146Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:27.321Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:27.420Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:27.493Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:27.568Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:27.627Z] Incoming request: GET /api/comments
+[2025-04-29T07:33:27.634Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:33:27.635Z] Fetching category analytics...
+[2025-04-29T07:33:27.635Z] Supabase URL:
+[2025-04-29T07:33:27.635Z] Has Supabase Anon Key:
+[2025-04-29T07:33:27.639Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:33:27.639Z] Fetching team member analytics...
+[2025-04-29T07:33:27.787Z] Successfully fetched incidents:
+[2025-04-29T07:33:27.787Z] Successfully fetched category analytics:
+[2025-04-29T07:33:27.788Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:33:27.788Z] Fetching category analytics...
+[2025-04-29T07:33:27.789Z] Supabase URL:
+[2025-04-29T07:33:27.789Z] Has Supabase Anon Key:
+[2025-04-29T07:33:27.837Z] Successfully fetched team member analytics:
+[2025-04-29T07:33:27.840Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:33:27.841Z] Fetching team member analytics...
+[2025-04-29T07:33:27.852Z] Successfully fetched incidents:
+[2025-04-29T07:33:27.853Z] Successfully fetched category analytics:
+[2025-04-29T07:33:28.135Z] Successfully fetched team member analytics:
+[2025-04-29T07:33:28.552Z] Incoming request: GET /api/incidents
+[2025-04-29T07:33:28.628Z] Incoming request: GET /api/incidents
+[2025-04-29T07:35:32.126Z] Incoming request: GET /api/comments
+[2025-04-29T07:35:32.703Z] Incoming request: GET /api/comments
+[2025-04-29T07:35:32.761Z] Incoming request: GET /api/comments
+[2025-04-29T07:35:32.805Z] Incoming request: GET /api/comments
+[2025-04-29T07:35:32.862Z] Incoming request: GET /api/comments
+[2025-04-29T07:35:32.918Z] Incoming request: GET /api/comments
+[2025-04-29T07:35:32.966Z] Incoming request: GET /api/comments
+[2025-04-29T07:35:33.013Z] Incoming request: GET /api/comments
+[2025-04-29T07:35:33.017Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:35:33.017Z] Fetching category analytics...
+[2025-04-29T07:35:33.017Z] Supabase URL:
+[2025-04-29T07:35:33.017Z] Has Supabase Anon Key:
+[2025-04-29T07:35:33.019Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:35:33.019Z] Fetching team member analytics...
+[2025-04-29T07:35:33.095Z] Successfully fetched incidents:
+[2025-04-29T07:35:33.095Z] Successfully fetched category analytics:
+[2025-04-29T07:35:33.097Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:35:33.097Z] Fetching category analytics...
+[2025-04-29T07:35:33.097Z] Supabase URL:
+[2025-04-29T07:35:33.098Z] Has Supabase Anon Key:
+[2025-04-29T07:35:33.137Z] Successfully fetched team member analytics:
+[2025-04-29T07:35:33.139Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:35:33.139Z] Fetching team member analytics...
+[2025-04-29T07:35:33.149Z] Successfully fetched incidents:
+[2025-04-29T07:35:33.149Z] Successfully fetched category analytics:
+[2025-04-29T07:35:33.248Z] Successfully fetched team member analytics:
+[2025-04-29T07:35:51.809Z] Incoming request: GET /api/incidents
+[2025-04-29T07:36:58.028Z] Incoming request: GET /api/comments
+[2025-04-29T07:36:58.131Z] Incoming request: GET /api/comments
+[2025-04-29T07:36:58.135Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:36:58.135Z] Fetching category analytics...
+[2025-04-29T07:36:58.135Z] Supabase URL:
+[2025-04-29T07:36:58.135Z] Has Supabase Anon Key:
+[2025-04-29T07:36:58.137Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:36:58.137Z] Fetching team member analytics...
+[2025-04-29T07:36:58.217Z] Successfully fetched incidents:
+[2025-04-29T07:36:58.217Z] Successfully fetched category analytics:
+[2025-04-29T07:36:58.218Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:36:58.218Z] Fetching category analytics...
+[2025-04-29T07:36:58.218Z] Supabase URL:
+[2025-04-29T07:36:58.219Z] Has Supabase Anon Key:
+[2025-04-29T07:36:58.358Z] Successfully fetched incidents:
+[2025-04-29T07:36:58.359Z] Successfully fetched category analytics:
+[2025-04-29T07:36:58.393Z] Successfully fetched team member analytics:
+[2025-04-29T07:36:58.395Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:36:58.395Z] Fetching team member analytics...
+[2025-04-29T07:36:58.521Z] Successfully fetched team member analytics:
+[2025-04-29T07:37:27.149Z] Incoming request: GET /api/comments
+[2025-04-29T07:37:27.523Z] Incoming request: GET /api/comments
+[2025-04-29T07:37:27.573Z] Incoming request: GET /api/comments
+[2025-04-29T07:37:27.629Z] Incoming request: GET /api/comments
+[2025-04-29T07:37:27.681Z] Incoming request: GET /api/comments
+[2025-04-29T07:37:27.720Z] Incoming request: GET /api/comments
+[2025-04-29T07:37:27.765Z] Incoming request: GET /api/comments
+[2025-04-29T07:37:27.820Z] Incoming request: GET /api/comments
+[2025-04-29T07:37:27.830Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:37:27.830Z] Fetching category analytics...
+[2025-04-29T07:37:27.830Z] Supabase URL:
+[2025-04-29T07:37:27.830Z] Has Supabase Anon Key:
+[2025-04-29T07:37:27.832Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:37:27.832Z] Fetching team member analytics...
+[2025-04-29T07:37:27.942Z] Successfully fetched incidents:
+[2025-04-29T07:37:27.943Z] Successfully fetched category analytics:
+[2025-04-29T07:37:27.944Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:37:27.945Z] Fetching category analytics...
+[2025-04-29T07:37:27.945Z] Supabase URL:
+[2025-04-29T07:37:27.945Z] Has Supabase Anon Key:
+[2025-04-29T07:37:27.964Z] Successfully fetched team member analytics:
+[2025-04-29T07:37:27.966Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:37:27.966Z] Fetching team member analytics...
+[2025-04-29T07:37:27.982Z] Successfully fetched incidents:
+[2025-04-29T07:37:27.982Z] Successfully fetched category analytics:
+[2025-04-29T07:37:28.049Z] Successfully fetched team member analytics:
+[2025-04-29T07:38:13.711Z] Incoming request: GET /api/comments
+[2025-04-29T07:38:13.802Z] Incoming request: GET /api/comments
+[2025-04-29T07:38:13.808Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:38:13.809Z] Fetching category analytics...
+[2025-04-29T07:38:13.809Z] Supabase URL:
+[2025-04-29T07:38:13.809Z] Has Supabase Anon Key:
+[2025-04-29T07:38:13.813Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:38:13.813Z] Fetching team member analytics...
+[2025-04-29T07:38:13.915Z] Successfully fetched incidents:
+[2025-04-29T07:38:13.916Z] Successfully fetched category analytics:
+[2025-04-29T07:38:13.918Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:38:13.919Z] Fetching category analytics...
+[2025-04-29T07:38:13.919Z] Supabase URL:
+[2025-04-29T07:38:13.919Z] Has Supabase Anon Key:
+[2025-04-29T07:38:13.944Z] Successfully fetched team member analytics:
+[2025-04-29T07:38:13.946Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:38:13.947Z] Fetching team member analytics...
+[2025-04-29T07:38:13.974Z] Successfully fetched incidents:
+[2025-04-29T07:38:13.974Z] Successfully fetched category analytics:
+[2025-04-29T07:38:14.052Z] Successfully fetched team member analytics:
+[2025-04-29T07:38:15.923Z] Incoming request: GET /api/incidents
+[2025-04-29T07:38:15.996Z] Incoming request: GET /api/incidents
+[2025-04-29T07:38:37.623Z] Incoming request: GET /api/incidents/7
+[2025-04-29T07:38:37.628Z] Incoming request: GET /api/team-members
+[2025-04-29T07:38:37.720Z] Incoming request: GET /api/incidents/7
+[2025-04-29T07:38:37.788Z] Incoming request: GET /api/team-members
+[2025-04-29T07:38:37.791Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T07:38:37.792Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T07:38:37.792Z] Fetching incident from database...
+[2025-04-29T07:38:37.836Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T07:38:37.837Z] Checking for cached analysis...
+[2025-04-29T07:38:37.901Z] Using cached analysis for incident 7
+[2025-04-29T07:38:37.905Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T07:38:37.905Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T07:38:37.906Z] Fetching incident from database...
+[2025-04-29T07:38:37.950Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T07:38:37.951Z] Checking for cached analysis...
+[2025-04-29T07:38:38.012Z] Using cached analysis for incident 7
+[2025-04-29T07:38:48.248Z] Incoming request: GET /api/incidents
+[2025-04-29T07:38:48.340Z] Incoming request: GET /api/incidents
+[2025-04-29T07:41:26.696Z] Incoming request: GET /api/incidents
+[2025-04-29T07:41:27.208Z] Incoming request: GET /api/incidents
+[2025-04-29T07:41:33.128Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:33.227Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:33.299Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:33.349Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:33.400Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:33.450Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:33.512Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:33.569Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:33.573Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:41:33.573Z] Fetching category analytics...
+[2025-04-29T07:41:33.573Z] Supabase URL:
+[2025-04-29T07:41:33.573Z] Has Supabase Anon Key:
+[2025-04-29T07:41:33.575Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:41:33.575Z] Fetching team member analytics...
+[2025-04-29T07:41:33.669Z] Successfully fetched incidents:
+[2025-04-29T07:41:33.670Z] Successfully fetched category analytics:
+[2025-04-29T07:41:33.671Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:41:33.671Z] Fetching category analytics...
+[2025-04-29T07:41:33.671Z] Supabase URL:
+[2025-04-29T07:41:33.672Z] Has Supabase Anon Key:
+[2025-04-29T07:41:33.730Z] Successfully fetched team member analytics:
+[2025-04-29T07:41:33.732Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:41:33.732Z] Fetching team member analytics...
+[2025-04-29T07:41:33.743Z] Successfully fetched incidents:
+[2025-04-29T07:41:33.744Z] Successfully fetched category analytics:
+[2025-04-29T07:41:33.871Z] Successfully fetched team member analytics:
+[2025-04-29T07:41:55.550Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:55.934Z] Incoming request: GET /api/comments
+[2025-04-29T07:41:55.938Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:41:55.938Z] Fetching category analytics...
+[2025-04-29T07:41:55.938Z] Supabase URL:
+[2025-04-29T07:41:55.938Z] Has Supabase Anon Key:
+[2025-04-29T07:41:55.940Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:41:55.940Z] Fetching team member analytics...
+[2025-04-29T07:41:56.198Z] Successfully fetched incidents:
+[2025-04-29T07:41:56.198Z] Successfully fetched category analytics:
+[2025-04-29T07:41:56.199Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:41:56.199Z] Fetching category analytics...
+[2025-04-29T07:41:56.199Z] Supabase URL:
+[2025-04-29T07:41:56.200Z] Has Supabase Anon Key:
+[2025-04-29T07:41:56.231Z] Successfully fetched team member analytics:
+[2025-04-29T07:41:56.233Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:41:56.233Z] Fetching team member analytics...
+[2025-04-29T07:41:56.274Z] Successfully fetched incidents:
+[2025-04-29T07:41:56.274Z] Successfully fetched category analytics:
+[2025-04-29T07:41:56.338Z] Successfully fetched team member analytics:
+[2025-04-29T07:41:57.758Z] Incoming request: GET /api/incidents
+[2025-04-29T07:41:57.817Z] Incoming request: GET /api/incidents
+[2025-04-29T07:42:55.756Z] Incoming request: GET /api/incidents
+[2025-04-29T07:42:55.857Z] Incoming request: GET /api/incidents
+[2025-04-29T07:43:34.846Z] Incoming request: GET /api/incidents
+[2025-04-29T07:43:35.253Z] Incoming request: GET /api/incidents
+[2025-04-29T07:44:25.144Z] Incoming request: GET /api/comments
+[2025-04-29T07:44:25.267Z] Incoming request: GET /api/comments
+[2025-04-29T07:44:25.374Z] Incoming request: GET /api/comments
+[2025-04-29T07:44:25.474Z] Incoming request: GET /api/comments
+[2025-04-29T07:44:25.610Z] Incoming request: GET /api/comments
+[2025-04-29T07:44:25.671Z] Incoming request: GET /api/comments
+[2025-04-29T07:44:25.732Z] Incoming request: GET /api/comments
+[2025-04-29T07:44:25.818Z] Incoming request: GET /api/comments
+[2025-04-29T07:44:25.826Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:44:25.826Z] Fetching category analytics...
+[2025-04-29T07:44:25.826Z] Supabase URL:
+[2025-04-29T07:44:25.827Z] Has Supabase Anon Key:
+[2025-04-29T07:44:25.829Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:44:25.829Z] Fetching team member analytics...
+[2025-04-29T07:44:25.938Z] Successfully fetched incidents:
+[2025-04-29T07:44:25.938Z] Successfully fetched category analytics:
+[2025-04-29T07:44:25.941Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:44:25.941Z] Fetching category analytics...
+[2025-04-29T07:44:25.941Z] Supabase URL:
+[2025-04-29T07:44:25.942Z] Has Supabase Anon Key:
+[2025-04-29T07:44:26.015Z] Successfully fetched incidents:
+[2025-04-29T07:44:26.016Z] Successfully fetched category analytics:
+[2025-04-29T07:44:26.017Z] Successfully fetched team member analytics:
+[2025-04-29T07:44:26.019Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:44:26.019Z] Fetching team member analytics...
+[2025-04-29T07:44:26.155Z] Successfully fetched team member analytics:
+[2025-04-29T07:45:21.791Z] Incoming request: GET /api/comments
+[2025-04-29T07:45:22.679Z] Incoming request: GET /api/comments
+[2025-04-29T07:45:22.686Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:45:22.687Z] Fetching category analytics...
+[2025-04-29T07:45:22.687Z] Supabase URL:
+[2025-04-29T07:45:22.687Z] Has Supabase Anon Key:
+[2025-04-29T07:45:22.691Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:45:22.692Z] Fetching team member analytics...
+[2025-04-29T07:45:22.776Z] Successfully fetched incidents:
+[2025-04-29T07:45:22.777Z] Successfully fetched category analytics:
+[2025-04-29T07:45:22.780Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:45:22.780Z] Fetching category analytics...
+[2025-04-29T07:45:22.780Z] Supabase URL:
+[2025-04-29T07:45:22.781Z] Has Supabase Anon Key:
+[2025-04-29T07:45:22.835Z] Successfully fetched team member analytics:
+[2025-04-29T07:45:22.837Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:45:22.837Z] Fetching team member analytics...
+[2025-04-29T07:45:22.838Z] Successfully fetched incidents:
+[2025-04-29T07:45:22.839Z] Successfully fetched category analytics:
+[2025-04-29T07:45:22.943Z] Successfully fetched team member analytics:
+[2025-04-29T07:45:24.483Z] Incoming request: GET /api/incidents
+[2025-04-29T07:45:24.538Z] Incoming request: GET /api/incidents
+[2025-04-29T07:45:34.523Z] Incoming request: GET /api/comments
+[2025-04-29T07:45:34.600Z] Incoming request: GET /api/comments
+[2025-04-29T07:45:34.603Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:45:34.603Z] Fetching category analytics...
+[2025-04-29T07:45:34.603Z] Supabase URL:
+[2025-04-29T07:45:34.603Z] Has Supabase Anon Key:
+[2025-04-29T07:45:34.604Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:45:34.604Z] Fetching team member analytics...
+[2025-04-29T07:45:34.693Z] Successfully fetched incidents:
+[2025-04-29T07:45:34.693Z] Successfully fetched category analytics:
+[2025-04-29T07:45:34.694Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:45:34.695Z] Fetching category analytics...
+[2025-04-29T07:45:34.695Z] Supabase URL:
+[2025-04-29T07:45:34.695Z] Has Supabase Anon Key:
+[2025-04-29T07:45:34.697Z] Successfully fetched team member analytics:
+[2025-04-29T07:45:34.698Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:45:34.698Z] Fetching team member analytics...
+[2025-04-29T07:45:34.757Z] Successfully fetched incidents:
+[2025-04-29T07:45:34.757Z] Successfully fetched category analytics:
+[2025-04-29T07:45:34.765Z] Successfully fetched team member analytics:
+[2025-04-29T07:48:18.147Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:18.585Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:18.667Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:18.716Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:18.774Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:18.821Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:18.887Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:18.938Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:18.952Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:48:18.952Z] Fetching category analytics...
+[2025-04-29T07:48:18.953Z] Supabase URL:
+[2025-04-29T07:48:18.953Z] Has Supabase Anon Key:
+[2025-04-29T07:48:18.958Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:48:18.959Z] Fetching team member analytics...
+[2025-04-29T07:48:19.029Z] Successfully fetched incidents:
+[2025-04-29T07:48:19.029Z] Successfully fetched category analytics:
+[2025-04-29T07:48:19.030Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:48:19.031Z] Fetching category analytics...
+[2025-04-29T07:48:19.031Z] Supabase URL:
+[2025-04-29T07:48:19.031Z] Has Supabase Anon Key:
+[2025-04-29T07:48:19.078Z] Successfully fetched team member analytics:
+[2025-04-29T07:48:19.080Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:48:19.080Z] Fetching team member analytics...
+[2025-04-29T07:48:19.091Z] Successfully fetched incidents:
+[2025-04-29T07:48:19.091Z] Successfully fetched category analytics:
+[2025-04-29T07:48:19.175Z] Successfully fetched team member analytics:
+[2025-04-29T07:48:42.122Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:42.200Z] Incoming request: GET /api/comments
+[2025-04-29T07:48:42.204Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:48:42.204Z] Fetching category analytics...
+[2025-04-29T07:48:42.205Z] Supabase URL:
+[2025-04-29T07:48:42.205Z] Has Supabase Anon Key:
+[2025-04-29T07:48:42.207Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:48:42.207Z] Fetching team member analytics...
+[2025-04-29T07:48:42.280Z] Successfully fetched incidents:
+[2025-04-29T07:48:42.280Z] Successfully fetched category analytics:
+[2025-04-29T07:48:42.281Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:48:42.281Z] Fetching category analytics...
+[2025-04-29T07:48:42.281Z] Supabase URL:
+[2025-04-29T07:48:42.282Z] Has Supabase Anon Key:
+[2025-04-29T07:48:42.319Z] Successfully fetched incidents:
+[2025-04-29T07:48:42.320Z] Successfully fetched category analytics:
+[2025-04-29T07:48:42.326Z] Successfully fetched team member analytics:
+[2025-04-29T07:48:42.327Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:48:42.327Z] Fetching team member analytics...
+[2025-04-29T07:48:42.398Z] Successfully fetched team member analytics:
+[2025-04-29T07:48:57.463Z] Incoming request: GET /api/incidents
+[2025-04-29T07:48:57.541Z] Incoming request: GET /api/incidents
+[2025-04-29T07:49:03.609Z] Incoming request: GET /api/comments
+[2025-04-29T07:49:03.698Z] Incoming request: GET /api/comments
+[2025-04-29T07:49:03.702Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:49:03.702Z] Fetching category analytics...
+[2025-04-29T07:49:03.703Z] Supabase URL:
+[2025-04-29T07:49:03.703Z] Has Supabase Anon Key:
+[2025-04-29T07:49:03.705Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:49:03.705Z] Fetching team member analytics...
+[2025-04-29T07:49:03.794Z] Successfully fetched incidents:
+[2025-04-29T07:49:03.794Z] Successfully fetched category analytics:
+[2025-04-29T07:49:03.795Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:49:03.795Z] Fetching category analytics...
+[2025-04-29T07:49:03.796Z] Supabase URL:
+[2025-04-29T07:49:03.796Z] Has Supabase Anon Key:
+[2025-04-29T07:49:03.851Z] Successfully fetched incidents:
+[2025-04-29T07:49:03.851Z] Successfully fetched category analytics:
+[2025-04-29T07:49:03.974Z] Successfully fetched team member analytics:
+[2025-04-29T07:49:03.977Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:49:03.978Z] Fetching team member analytics...
+[2025-04-29T07:49:04.086Z] Successfully fetched team member analytics:
+[2025-04-29T07:57:56.120Z] Incoming request: GET /api/comments
+[2025-04-29T07:57:56.554Z] Incoming request: GET /api/comments
+[2025-04-29T07:57:56.617Z] Incoming request: GET /api/comments
+[2025-04-29T07:57:56.664Z] Incoming request: GET /api/comments
+[2025-04-29T07:57:56.733Z] Incoming request: GET /api/comments
+[2025-04-29T07:57:56.780Z] Incoming request: GET /api/comments
+[2025-04-29T07:57:56.832Z] Incoming request: GET /api/comments
+[2025-04-29T07:57:56.870Z] Incoming request: GET /api/comments
+[2025-04-29T07:57:56.876Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:57:56.876Z] Fetching category analytics...
+[2025-04-29T07:57:56.876Z] Supabase URL:
+[2025-04-29T07:57:56.876Z] Has Supabase Anon Key:
+[2025-04-29T07:57:56.879Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:57:56.879Z] Fetching team member analytics...
+[2025-04-29T07:57:56.997Z] Successfully fetched incidents:
+[2025-04-29T07:57:56.997Z] Successfully fetched category analytics:
+[2025-04-29T07:57:56.999Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:57:56.999Z] Fetching category analytics...
+[2025-04-29T07:57:56.999Z] Supabase URL:
+[2025-04-29T07:57:56.999Z] Has Supabase Anon Key:
+[2025-04-29T07:57:57.005Z] Successfully fetched team member analytics:
+[2025-04-29T07:57:57.006Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:57:57.006Z] Fetching team member analytics...
+[2025-04-29T07:57:57.058Z] Successfully fetched incidents:
+[2025-04-29T07:57:57.058Z] Successfully fetched category analytics:
+[2025-04-29T07:57:57.080Z] Successfully fetched team member analytics:
+[2025-04-29T07:59:16.227Z] Incoming request: GET /api/comments
+[2025-04-29T07:59:16.340Z] Incoming request: GET /api/comments
+[2025-04-29T07:59:16.346Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:59:16.346Z] Fetching category analytics...
+[2025-04-29T07:59:16.346Z] Supabase URL:
+[2025-04-29T07:59:16.346Z] Has Supabase Anon Key:
+[2025-04-29T07:59:16.349Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:59:16.349Z] Fetching team member analytics...
+[2025-04-29T07:59:16.564Z] Successfully fetched incidents:
+[2025-04-29T07:59:16.565Z] Successfully fetched category analytics:
+[2025-04-29T07:59:16.565Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T07:59:16.566Z] Fetching category analytics...
+[2025-04-29T07:59:16.566Z] Supabase URL:
+[2025-04-29T07:59:16.566Z] Has Supabase Anon Key:
+[2025-04-29T07:59:16.629Z] Successfully fetched incidents:
+[2025-04-29T07:59:16.629Z] Successfully fetched category analytics:
+[2025-04-29T07:59:16.715Z] Successfully fetched team member analytics:
+[2025-04-29T07:59:16.716Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T07:59:16.716Z] Fetching team member analytics...
+[2025-04-29T07:59:16.895Z] Successfully fetched team member analytics:
+[2025-04-29T08:00:31.567Z] Incoming request: GET /api/comments
+[2025-04-29T08:00:32.109Z] Incoming request: GET /api/comments
+[2025-04-29T08:00:32.112Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:00:32.113Z] Fetching category analytics...
+[2025-04-29T08:00:32.113Z] Supabase URL:
+[2025-04-29T08:00:32.113Z] Has Supabase Anon Key:
+[2025-04-29T08:00:32.117Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:00:32.117Z] Fetching team member analytics...
+[2025-04-29T08:00:32.189Z] Successfully fetched incidents:
+[2025-04-29T08:00:32.189Z] Successfully fetched category analytics:
+[2025-04-29T08:00:32.191Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:00:32.191Z] Fetching category analytics...
+[2025-04-29T08:00:32.191Z] Supabase URL:
+[2025-04-29T08:00:32.191Z] Has Supabase Anon Key:
+[2025-04-29T08:00:32.224Z] Successfully fetched team member analytics:
+[2025-04-29T08:00:32.225Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:00:32.225Z] Fetching team member analytics...
+[2025-04-29T08:00:32.237Z] Successfully fetched incidents:
+[2025-04-29T08:00:32.238Z] Successfully fetched category analytics:
+[2025-04-29T08:00:32.320Z] Successfully fetched team member analytics:
+[2025-04-29T08:01:04.228Z] Incoming request: GET /api/comments
+[2025-04-29T08:01:09.039Z] Incoming request: GET /api/comments
+[2025-04-29T08:01:09.043Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:01:09.044Z] Fetching category analytics...
+[2025-04-29T08:01:09.044Z] Supabase URL:
+[2025-04-29T08:01:09.045Z] Has Supabase Anon Key:
+[2025-04-29T08:01:09.047Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:01:09.048Z] Fetching team member analytics...
+[2025-04-29T08:01:09.509Z] Successfully fetched incidents:
+[2025-04-29T08:01:09.510Z] Successfully fetched category analytics:
+[2025-04-29T08:01:09.511Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:01:09.511Z] Fetching category analytics...
+[2025-04-29T08:01:09.511Z] Supabase URL:
+[2025-04-29T08:01:09.511Z] Has Supabase Anon Key:
+[2025-04-29T08:01:09.807Z] Successfully fetched team member analytics:
+[2025-04-29T08:01:09.810Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:01:09.811Z] Fetching team member analytics...
+[2025-04-29T08:01:09.884Z] Successfully fetched incidents:
+[2025-04-29T08:01:09.885Z] Successfully fetched category analytics:
+[2025-04-29T08:01:09.976Z] Successfully fetched team member analytics:
+[2025-04-29T08:02:08.170Z] Incoming request: GET /api/comments
+[2025-04-29T08:02:08.313Z] Incoming request: GET /api/comments
+[2025-04-29T08:02:08.319Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:02:08.320Z] Fetching category analytics...
+[2025-04-29T08:02:08.320Z] Supabase URL:
+[2025-04-29T08:02:08.320Z] Has Supabase Anon Key:
+[2025-04-29T08:02:08.324Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:02:08.325Z] Fetching team member analytics...
+[2025-04-29T08:02:08.389Z] Successfully fetched incidents:
+[2025-04-29T08:02:08.390Z] Successfully fetched category analytics:
+[2025-04-29T08:02:08.392Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:02:08.392Z] Fetching category analytics...
+[2025-04-29T08:02:08.393Z] Supabase URL:
+[2025-04-29T08:02:08.393Z] Has Supabase Anon Key:
+[2025-04-29T08:02:08.447Z] Successfully fetched incidents:
+[2025-04-29T08:02:08.447Z] Successfully fetched category analytics:
+[2025-04-29T08:02:08.461Z] Successfully fetched team member analytics:
+[2025-04-29T08:02:08.463Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:02:08.463Z] Fetching team member analytics...
+[2025-04-29T08:02:08.572Z] Successfully fetched team member analytics:
+[2025-04-29T08:02:13.686Z] Incoming request: GET /api/incidents
+[2025-04-29T08:02:13.782Z] Incoming request: GET /api/incidents
+[2025-04-29T08:02:16.598Z] Incoming request: GET /api/comments
+[2025-04-29T08:02:16.959Z] Incoming request: GET /api/comments
+[2025-04-29T08:02:16.966Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:02:16.967Z] Fetching category analytics...
+[2025-04-29T08:02:16.967Z] Supabase URL:
+[2025-04-29T08:02:16.967Z] Has Supabase Anon Key:
+[2025-04-29T08:02:16.971Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:02:16.972Z] Fetching team member analytics...
+[2025-04-29T08:02:17.040Z] Successfully fetched incidents:
+[2025-04-29T08:02:17.041Z] Successfully fetched category analytics:
+[2025-04-29T08:02:17.042Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:02:17.042Z] Fetching category analytics...
+[2025-04-29T08:02:17.042Z] Supabase URL:
+[2025-04-29T08:02:17.042Z] Has Supabase Anon Key:
+[2025-04-29T08:02:17.076Z] Successfully fetched incidents:
+[2025-04-29T08:02:17.076Z] Successfully fetched category analytics:
+[2025-04-29T08:02:17.311Z] Successfully fetched team member analytics:
+[2025-04-29T08:02:17.313Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:02:17.313Z] Fetching team member analytics...
+[2025-04-29T08:02:17.393Z] Successfully fetched team member analytics:
+[2025-04-29T08:04:12.142Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:12.660Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:12.716Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:12.783Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:12.840Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:12.893Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:12.960Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:13.011Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:13.016Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:04:13.019Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:04:13.019Z] Fetching category analytics...
+[2025-04-29T08:04:13.019Z] Supabase URL:
+[2025-04-29T08:04:13.019Z] Has Supabase Anon Key:
+[2025-04-29T08:04:13.021Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:04:13.021Z] Fetching team member analytics...
+[2025-04-29T08:04:13.023Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:04:13.107Z] Successfully fetched incidents:
+[2025-04-29T08:04:13.107Z] Successfully fetched category analytics:
+[2025-04-29T08:04:13.108Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:04:13.108Z] Fetching category analytics...
+[2025-04-29T08:04:13.108Z] Supabase URL:
+[2025-04-29T08:04:13.108Z] Has Supabase Anon Key:
+[2025-04-29T08:04:13.162Z] Successfully fetched team member analytics:
+[2025-04-29T08:04:13.164Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:04:13.164Z] Fetching team member analytics...
+[2025-04-29T08:04:13.172Z] Successfully fetched incidents:
+[2025-04-29T08:04:13.172Z] Successfully fetched category analytics:
+[2025-04-29T08:04:13.273Z] Successfully fetched team member analytics:
+[2025-04-29T08:04:46.175Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:46.346Z] Incoming request: GET /api/comments
+[2025-04-29T08:04:46.350Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:04:46.353Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:04:46.354Z] Fetching category analytics...
+[2025-04-29T08:04:46.354Z] Supabase URL:
+[2025-04-29T08:04:46.354Z] Has Supabase Anon Key:
+[2025-04-29T08:04:46.356Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:04:46.357Z] Fetching team member analytics...
+[2025-04-29T08:04:46.429Z] Successfully fetched incidents:
+[2025-04-29T08:04:46.430Z] Successfully fetched category analytics:
+[2025-04-29T08:04:46.432Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:04:46.432Z] Fetching category analytics...
+[2025-04-29T08:04:46.433Z] Supabase URL:
+[2025-04-29T08:04:46.433Z] Has Supabase Anon Key:
+[2025-04-29T08:04:46.489Z] Successfully fetched incidents:
+[2025-04-29T08:04:46.490Z] Successfully fetched category analytics:
+[2025-04-29T08:04:46.498Z] Successfully fetched team member analytics:
+[2025-04-29T08:04:46.501Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:04:46.501Z] Fetching team member analytics...
+[2025-04-29T08:04:46.558Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:04:46.635Z] Successfully fetched team member analytics:
+[2025-04-29T08:05:10.820Z] Incoming request: GET /api/incidents
+[2025-04-29T08:05:10.945Z] Incoming request: GET /api/incidents
+[2025-04-29T08:05:15.256Z] Incoming request: GET /api/incidents/2
+[2025-04-29T08:05:15.264Z] Incoming request: GET /api/team-members
+[2025-04-29T08:05:15.401Z] Incoming request: GET /api/incidents/2
+[2025-04-29T08:05:15.448Z] Incoming request: GET /api/team-members
+[2025-04-29T08:05:15.453Z] Incoming request: POST /api/incidents/2/analyze
+[2025-04-29T08:05:15.457Z] === Starting Analysis for Incident 2 ===
+[2025-04-29T08:05:15.457Z] Fetching incident from database...
+[2025-04-29T08:05:15.552Z] Incoming request: POST /api/incidents/2/analyze
+[2025-04-29T08:05:15.553Z] === Starting Analysis for Incident 2 ===
+[2025-04-29T08:05:15.553Z] Fetching incident from database...
+[2025-04-29T08:05:15.608Z] Successfully fetched incident: {"id":2,"created_at":"2025-04-24T11:47:28.935489+00:00","updated_at":"2025-04-24T11:48:37.646+00:00","title":"Test Incident with new source","description":"Testing to check if client and source is visible and getting into database","status":"Open","priority":"High","assigned_to":5,"resolution":null,"source":null,"client":null,"category":"Software"}
+[2025-04-29T08:05:15.609Z] Checking for cached analysis...
+[2025-04-29T08:05:15.676Z] Incident title or description has changed. Will reanalyze.
+[2025-04-29T08:05:15.747Z] Preparing Together AI API request...
+[2025-04-29T08:05:15.748Z] Sending request to Together AI API...
+[2025-04-29T08:05:15.779Z] Successfully fetched incident: {"id":2,"created_at":"2025-04-24T11:47:28.935489+00:00","updated_at":"2025-04-24T11:48:37.646+00:00","title":"Test Incident with new source","description":"Testing to check if client and source is visible and getting into database","status":"Open","priority":"High","assigned_to":5,"resolution":null,"source":null,"client":null,"category":"Software"}
+[2025-04-29T08:05:15.779Z] Checking for cached analysis...
+[2025-04-29T08:05:15.858Z] Incident title or description has changed. Will reanalyze.
+[2025-04-29T08:05:15.919Z] Preparing Together AI API request...
+[2025-04-29T08:05:15.919Z] Sending request to Together AI API...
+[2025-04-29T08:05:17.472Z] Incoming request: PUT /api/incidents/2/status
+[2025-04-29T08:05:18.055Z] Incoming request: PUT /api/incidents/2/status
+[2025-04-29T08:05:20.791Z] Received response from Together AI API
+[2025-04-29T08:05:20.792Z] Extracted analysis - Cause: The new source might not be properly configured or integrated, leading to visibility issues and database entry problems., Solution: Check the configuration of both the client and source, ensure proper integration, verify network connectivity, test permissions, enable logging/debugging, and run a test with a small dataset to identify failures.
+[2025-04-29T08:05:20.792Z] Caching analysis in database...
+[2025-04-29T08:05:21.688Z] Received response from Together AI API
+[2025-04-29T08:05:21.689Z] Extracted analysis - Cause: <think>
+Okay, so I need to analyze this IT incident titled "Test Incident with new source." The description says it's a test to check if the client and source are visible and getting into the database., Solution: First, I'll break down the possible causes. The user mentioned that it's a test, so it's likely they're setting up a new data source or client connection. The main issue here is whether the data is being properly captured and stored in the database.
+[2025-04-29T08:05:21.690Z] Caching analysis in database...
+[2025-04-29T08:05:46.419Z] Incoming request: PUT /api/incidents/2/category
+[2025-04-29T08:05:46.420Z] Updating category for incident 2 to Services
+[2025-04-29T08:05:46.511Z] Successfully updated category for incident 2
+[2025-04-29T08:05:50.252Z] Incoming request: GET /api/incidents
+[2025-04-29T08:05:50.337Z] Incoming request: GET /api/incidents
+[2025-04-29T08:05:57.894Z] Incoming request: GET /api/incidents/2
+[2025-04-29T08:05:57.898Z] Incoming request: GET /api/team-members
+[2025-04-29T08:05:58.029Z] Incoming request: GET /api/team-members
+[2025-04-29T08:05:58.314Z] Incoming request: GET /api/incidents/2
+[2025-04-29T08:05:58.317Z] Incoming request: POST /api/incidents/2/analyze
+[2025-04-29T08:05:58.317Z] === Starting Analysis for Incident 2 ===
+[2025-04-29T08:05:58.318Z] Fetching incident from database...
+[2025-04-29T08:05:58.359Z] Incoming request: POST /api/incidents/2/analyze
+[2025-04-29T08:05:58.360Z] === Starting Analysis for Incident 2 ===
+[2025-04-29T08:05:58.360Z] Fetching incident from database...
+[2025-04-29T08:05:58.366Z] Successfully fetched incident: {"id":2,"created_at":"2025-04-24T11:47:28.935489+00:00","updated_at":"2025-04-29T08:05:46.42+00:00","title":"Test Incident with new source","description":"Testing to check if client and source is visible and getting into database","status":"Closed","priority":"High","assigned_to":5,"resolution":null,"source":null,"client":null,"category":"Services"}
+[2025-04-29T08:05:58.366Z] Checking for cached analysis...
+[2025-04-29T08:05:58.407Z] Using cached analysis for incident 2
+[2025-04-29T08:05:58.410Z] Successfully fetched incident: {"id":2,"created_at":"2025-04-24T11:47:28.935489+00:00","updated_at":"2025-04-29T08:05:46.42+00:00","title":"Test Incident with new source","description":"Testing to check if client and source is visible and getting into database","status":"Closed","priority":"High","assigned_to":5,"resolution":null,"source":null,"client":null,"category":"Services"}
+[2025-04-29T08:05:58.410Z] Checking for cached analysis...
+[2025-04-29T08:05:58.448Z] Using cached analysis for incident 2
+[2025-04-29T08:06:00.784Z] Incoming request: PUT /api/incidents/2/assign
+[2025-04-29T08:06:00.785Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-29T08:06:00.785Z] Params: {"id":"2"}
+[2025-04-29T08:06:00.786Z] Body: {"assigned_to":7}
+[2025-04-29T08:06:00.876Z] === Telegram Notification Debug ===
+[2025-04-29T08:06:00.877Z] Bot token exists: true
+[2025-04-29T08:06:00.878Z] Bot token length: 46
+[2025-04-29T08:06:00.878Z] Team member Telegram chat ID: 811347209
+[2025-04-29T08:06:00.879Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-29T08:06:00.879Z] Message to send: 🚨 New Incident Assignment
+
+Title: Test Incident with new source
+Priority: High
+Status: Closed
+
+You have been assigned to this incident.
+[2025-04-29T08:06:00.880Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-29T08:06:01.529Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 22,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745913960,
+    "text": "🚨 New Incident Assignment\n\nTitle: Test Incident with new source\nPriority: High\nStatus: Closed\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-29T08:06:01.530Z] Telegram notification sent successfully
+[2025-04-29T08:06:08.253Z] Incoming request: GET /api/incidents
+[2025-04-29T08:06:08.331Z] Incoming request: GET /api/incidents
+[2025-04-29T08:06:10.334Z] Incoming request: GET /api/comments
+[2025-04-29T08:06:10.630Z] Incoming request: GET /api/comments
+[2025-04-29T08:06:10.634Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:06:10.639Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:06:10.639Z] Fetching category analytics...
+[2025-04-29T08:06:10.639Z] Supabase URL:
+[2025-04-29T08:06:10.640Z] Has Supabase Anon Key:
+[2025-04-29T08:06:10.643Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:06:10.643Z] Fetching team member analytics...
+[2025-04-29T08:06:11.231Z] Successfully fetched incidents:
+[2025-04-29T08:06:11.232Z] Successfully fetched category analytics:
+[2025-04-29T08:06:11.235Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:06:11.236Z] Fetching category analytics...
+[2025-04-29T08:06:11.236Z] Supabase URL:
+[2025-04-29T08:06:11.236Z] Has Supabase Anon Key:
+[2025-04-29T08:06:11.320Z] Successfully fetched team member analytics:
+[2025-04-29T08:06:11.324Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:06:11.325Z] Fetching team member analytics...
+[2025-04-29T08:06:11.329Z] Successfully fetched incidents:
+[2025-04-29T08:06:11.330Z] Successfully fetched category analytics:
+[2025-04-29T08:06:11.378Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:06:11.515Z] Successfully fetched team member analytics:
+[2025-04-29T08:06:29.185Z] Incoming request: GET /api/incidents
+[2025-04-29T08:06:29.267Z] Incoming request: GET /api/incidents
+[2025-04-29T08:06:30.915Z] Incoming request: GET /api/team-members
+[2025-04-29T08:06:30.918Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:06:31.004Z] Incoming request: GET /api/team-members
+[2025-04-29T08:06:31.023Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:06:31.025Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:06:31.025Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:06:31.025Z] Fetching incident from database...
+[2025-04-29T08:06:31.145Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:06:31.146Z] Checking for cached analysis...
+[2025-04-29T08:06:31.205Z] Using cached analysis for incident 7
+[2025-04-29T08:06:31.350Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:06:31.350Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:06:31.350Z] Fetching incident from database...
+[2025-04-29T08:06:31.386Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:06:31.386Z] Checking for cached analysis...
+[2025-04-29T08:06:31.473Z] Using cached analysis for incident 7
+[2025-04-29T08:07:04.924Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:07:04.928Z] Incoming request: GET /api/team-members
+[2025-04-29T08:07:05.053Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:07:05.116Z] Incoming request: GET /api/team-members
+[2025-04-29T08:07:05.119Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:07:05.120Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:07:05.120Z] Fetching incident from database...
+[2025-04-29T08:07:05.212Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:07:05.212Z] Checking for cached analysis...
+[2025-04-29T08:07:05.237Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:07:05.237Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:07:05.237Z] Fetching incident from database...
+[2025-04-29T08:07:05.263Z] Using cached analysis for incident 7
+[2025-04-29T08:07:05.280Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:07:05.280Z] Checking for cached analysis...
+[2025-04-29T08:07:05.337Z] Using cached analysis for incident 7
+[2025-04-29T08:07:50.140Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:07:50.144Z] Incoming request: GET /api/team-members
+[2025-04-29T08:07:50.271Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:07:50.582Z] Incoming request: GET /api/team-members
+[2025-04-29T08:07:50.584Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:07:50.584Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:07:50.584Z] Fetching incident from database...
+[2025-04-29T08:07:50.644Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:07:50.644Z] Checking for cached analysis...
+[2025-04-29T08:07:50.695Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:07:50.696Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:07:50.696Z] Fetching incident from database...
+[2025-04-29T08:07:50.697Z] Using cached analysis for incident 7
+[2025-04-29T08:07:50.731Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:07:50.731Z] Checking for cached analysis...
+[2025-04-29T08:07:50.771Z] Using cached analysis for incident 7
+[2025-04-29T08:11:30.304Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:11:30.307Z] Incoming request: GET /api/team-members
+[2025-04-29T08:11:30.750Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:11:30.926Z] Incoming request: GET /api/team-members
+[2025-04-29T08:11:30.930Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:11:30.931Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:11:30.931Z] Fetching incident from database...
+[2025-04-29T08:11:30.975Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:11:30.975Z] Checking for cached analysis...
+[2025-04-29T08:11:31.021Z] Using cached analysis for incident 7
+[2025-04-29T08:11:31.023Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:11:31.024Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:11:31.024Z] Fetching incident from database...
+[2025-04-29T08:11:31.078Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:11:31.078Z] Checking for cached analysis...
+[2025-04-29T08:11:31.117Z] Using cached analysis for incident 7
+[2025-04-29T08:11:32.832Z] Incoming request: GET /api/comments
+[2025-04-29T08:11:32.895Z] Incoming request: GET /api/comments
+[2025-04-29T08:11:32.902Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:11:32.904Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:11:32.905Z] Fetching category analytics...
+[2025-04-29T08:11:32.905Z] Supabase URL:
+[2025-04-29T08:11:32.906Z] Has Supabase Anon Key:
+[2025-04-29T08:11:32.911Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:11:32.911Z] Fetching team member analytics...
+[2025-04-29T08:11:33.000Z] Successfully fetched incidents:
+[2025-04-29T08:11:33.000Z] Successfully fetched category analytics:
+[2025-04-29T08:11:33.004Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:11:33.004Z] Fetching category analytics...
+[2025-04-29T08:11:33.005Z] Supabase URL:
+[2025-04-29T08:11:33.005Z] Has Supabase Anon Key:
+[2025-04-29T08:11:33.081Z] Successfully fetched incidents:
+[2025-04-29T08:11:33.081Z] Successfully fetched category analytics:
+[2025-04-29T08:11:33.088Z] Successfully fetched team member analytics:
+[2025-04-29T08:11:33.091Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:11:33.092Z] Fetching team member analytics...
+[2025-04-29T08:11:33.095Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:11:33.179Z] Successfully fetched team member analytics:
+[2025-04-29T08:12:42.187Z] Incoming request: GET /api/comments
+[2025-04-29T08:12:42.286Z] Incoming request: GET /api/comments
+[2025-04-29T08:12:42.362Z] Incoming request: GET /api/comments
+[2025-04-29T08:12:42.423Z] Incoming request: GET /api/comments
+[2025-04-29T08:12:42.464Z] Incoming request: GET /api/comments
+[2025-04-29T08:12:42.515Z] Incoming request: GET /api/comments
+[2025-04-29T08:12:42.587Z] Incoming request: GET /api/comments
+[2025-04-29T08:12:42.631Z] Incoming request: GET /api/comments
+[2025-04-29T08:12:42.635Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:12:42.637Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:12:42.637Z] Fetching category analytics...
+[2025-04-29T08:12:42.637Z] Supabase URL:
+[2025-04-29T08:12:42.637Z] Has Supabase Anon Key:
+[2025-04-29T08:12:42.639Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:12:42.639Z] Fetching team member analytics...
+[2025-04-29T08:12:42.739Z] Successfully fetched incidents:
+[2025-04-29T08:12:42.740Z] Successfully fetched category analytics:
+[2025-04-29T08:12:42.742Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:12:42.742Z] Fetching category analytics...
+[2025-04-29T08:12:42.742Z] Supabase URL:
+[2025-04-29T08:12:42.742Z] Has Supabase Anon Key:
+[2025-04-29T08:12:42.827Z] Successfully fetched incidents:
+[2025-04-29T08:12:42.828Z] Successfully fetched category analytics:
+[2025-04-29T08:12:42.830Z] Successfully fetched team member analytics:
+[2025-04-29T08:12:42.831Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:12:42.832Z] Fetching team member analytics...
+[2025-04-29T08:12:42.860Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:12:42.911Z] Successfully fetched team member analytics:
+[2025-04-29T08:13:32.152Z] Incoming request: GET /api/comments
+[2025-04-29T08:13:32.562Z] Incoming request: GET /api/comments
+[2025-04-29T08:13:32.566Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:13:32.568Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:13:32.569Z] Fetching category analytics...
+[2025-04-29T08:13:32.569Z] Supabase URL:
+[2025-04-29T08:13:32.569Z] Has Supabase Anon Key:
+[2025-04-29T08:13:32.571Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:13:32.571Z] Fetching team member analytics...
+[2025-04-29T08:13:32.843Z] Successfully fetched incidents:
+[2025-04-29T08:13:32.843Z] Successfully fetched category analytics:
+[2025-04-29T08:13:32.845Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:13:32.846Z] Fetching category analytics...
+[2025-04-29T08:13:32.846Z] Supabase URL:
+[2025-04-29T08:13:32.846Z] Has Supabase Anon Key:
+[2025-04-29T08:13:32.967Z] Successfully fetched incidents:
+[2025-04-29T08:13:32.968Z] Successfully fetched category analytics:
+[2025-04-29T08:13:32.973Z] Successfully fetched team member analytics:
+[2025-04-29T08:13:32.974Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:13:32.974Z] Fetching team member analytics...
+[2025-04-29T08:13:33.054Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:13:33.156Z] Successfully fetched team member analytics:
+[2025-04-29T08:13:37.562Z] Incoming request: GET /api/incidents
+[2025-04-29T08:13:37.691Z] Incoming request: GET /api/incidents
+[2025-04-29T08:13:39.555Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:13:39.558Z] Incoming request: GET /api/team-members
+[2025-04-29T08:13:39.622Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:13:39.763Z] Incoming request: GET /api/team-members
+[2025-04-29T08:13:39.765Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:13:39.765Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:13:39.765Z] Fetching incident from database...
+[2025-04-29T08:13:39.817Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:13:39.818Z] Checking for cached analysis...
+[2025-04-29T08:13:39.869Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:13:39.870Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:13:39.870Z] Fetching incident from database...
+[2025-04-29T08:13:39.897Z] Using cached analysis for incident 7
+[2025-04-29T08:13:39.980Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:13:39.980Z] Checking for cached analysis...
+[2025-04-29T08:13:40.045Z] Using cached analysis for incident 7
+[2025-04-29T08:13:49.068Z] Incoming request: PUT /api/incidents/7/assign
+[2025-04-29T08:13:49.068Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-29T08:13:49.069Z] Params: {"id":"7"}
+[2025-04-29T08:13:49.069Z] Body: {"assigned_to":10}
+[2025-04-29T08:13:49.263Z] === Telegram Notification Debug ===
+[2025-04-29T08:13:49.263Z] Bot token exists: true
+[2025-04-29T08:13:49.264Z] Bot token length: 46
+[2025-04-29T08:13:49.265Z] Team member Telegram chat ID: 811347209
+[2025-04-29T08:13:49.265Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-29T08:13:49.265Z] Message to send: 🚨 New Incident Assignment
+
+Title: High Memory Usage on Web Servers
+Priority: High
+Status: Open
+
+You have been assigned to this incident.
+[2025-04-29T08:13:49.266Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-29T08:13:50.059Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 23,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745914429,
+    "text": "🚨 New Incident Assignment\n\nTitle: High Memory Usage on Web Servers\nPriority: High\nStatus: Open\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-29T08:13:50.061Z] Telegram notification sent successfully
+[2025-04-29T08:14:06.764Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:14:06.765Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:14:06.765Z] Fetching incident from database...
+[2025-04-29T08:14:06.890Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:14:06.891Z] Checking for cached analysis...
+[2025-04-29T08:14:06.945Z] Using cached analysis for incident 7
+[2025-04-29T08:17:36.641Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:17:36.646Z] Incoming request: GET /api/team-members
+[2025-04-29T08:17:37.079Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:17:37.263Z] Incoming request: GET /api/team-members
+[2025-04-29T08:17:37.265Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:17:37.265Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:17:37.265Z] Fetching incident from database...
+[2025-04-29T08:17:37.318Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:17:37.318Z] Checking for cached analysis...
+[2025-04-29T08:17:37.352Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:17:37.352Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:17:37.353Z] Fetching incident from database...
+[2025-04-29T08:17:37.377Z] Using cached analysis for incident 7
+[2025-04-29T08:17:37.394Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:17:37.394Z] Checking for cached analysis...
+[2025-04-29T08:17:37.434Z] Using cached analysis for incident 7
+[2025-04-29T08:18:05.720Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:18:05.725Z] Incoming request: GET /api/team-members
+[2025-04-29T08:18:05.854Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:18:05.888Z] Incoming request: GET /api/team-members
+[2025-04-29T08:18:05.891Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:18:05.891Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:18:05.891Z] Fetching incident from database...
+[2025-04-29T08:18:05.958Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:18:05.959Z] Checking for cached analysis...
+[2025-04-29T08:18:06.000Z] Using cached analysis for incident 7
+[2025-04-29T08:18:06.026Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:18:06.026Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:18:06.026Z] Fetching incident from database...
+[2025-04-29T08:18:06.070Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:18:06.070Z] Checking for cached analysis...
+[2025-04-29T08:18:06.110Z] Using cached analysis for incident 7
+[2025-04-29T08:18:21.661Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:18:21.664Z] Incoming request: GET /api/team-members
+[2025-04-29T08:18:26.541Z] Incoming request: GET /api/incidents
+[2025-04-29T08:18:30.001Z] Incoming request: GET /api/comments
+[2025-04-29T08:18:32.346Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:18:32.352Z] Incoming request: GET /api/team-members
+[2025-04-29T08:18:36.906Z] Incoming request: GET /api/incidents
+[2025-04-29T08:18:40.434Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:04.254Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:04.351Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:04.429Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:04.513Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:04.562Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:04.620Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:04.730Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:04.770Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:04.777Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:19:04.779Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:19:04.780Z] Fetching category analytics...
+[2025-04-29T08:19:04.780Z] Supabase URL:
+[2025-04-29T08:19:04.780Z] Has Supabase Anon Key:
+[2025-04-29T08:19:04.781Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:19:04.782Z] Fetching team member analytics...
+[2025-04-29T08:19:04.878Z] Successfully fetched incidents:
+[2025-04-29T08:19:04.878Z] Successfully fetched category analytics:
+[2025-04-29T08:19:04.880Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:19:04.880Z] Fetching category analytics...
+[2025-04-29T08:19:04.881Z] Supabase URL:
+[2025-04-29T08:19:04.881Z] Has Supabase Anon Key:
+[2025-04-29T08:19:04.916Z] Successfully fetched incidents:
+[2025-04-29T08:19:04.916Z] Successfully fetched category analytics:
+[2025-04-29T08:19:04.945Z] Successfully fetched team member analytics:
+[2025-04-29T08:19:04.946Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:19:04.947Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:19:04.947Z] Fetching team member analytics...
+[2025-04-29T08:19:05.042Z] Successfully fetched team member analytics:
+[2025-04-29T08:19:14.079Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:14.167Z] Incoming request: GET /api/comments
+[2025-04-29T08:19:14.171Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:19:14.174Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:19:14.174Z] Fetching category analytics...
+[2025-04-29T08:19:14.174Z] Supabase URL:
+[2025-04-29T08:19:14.174Z] Has Supabase Anon Key:
+[2025-04-29T08:19:14.176Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:19:14.176Z] Fetching team member analytics...
+[2025-04-29T08:19:14.244Z] Successfully fetched incidents:
+[2025-04-29T08:19:14.244Z] Successfully fetched category analytics:
+[2025-04-29T08:19:14.245Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:19:14.245Z] Fetching category analytics...
+[2025-04-29T08:19:14.245Z] Supabase URL:
+[2025-04-29T08:19:14.245Z] Has Supabase Anon Key:
+[2025-04-29T08:19:14.294Z] Successfully fetched incidents:
+[2025-04-29T08:19:14.295Z] Successfully fetched category analytics:
+[2025-04-29T08:19:14.308Z] Successfully fetched team member analytics:
+[2025-04-29T08:19:14.310Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:19:14.310Z] Fetching team member analytics...
+[2025-04-29T08:19:14.368Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:19:14.409Z] Successfully fetched team member analytics:
+[2025-04-29T08:20:30.154Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:30.645Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:30.705Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:30.741Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:30.809Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:30.862Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:30.894Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:30.941Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:30.945Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:20:30.947Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:20:30.947Z] Fetching category analytics...
+[2025-04-29T08:20:30.947Z] Supabase URL:
+[2025-04-29T08:20:30.947Z] Has Supabase Anon Key:
+[2025-04-29T08:20:30.948Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:20:30.948Z] Fetching team member analytics...
+[2025-04-29T08:20:31.021Z] Successfully fetched incidents:
+[2025-04-29T08:20:31.022Z] Successfully fetched category analytics:
+[2025-04-29T08:20:31.023Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:20:31.024Z] Fetching category analytics...
+[2025-04-29T08:20:31.024Z] Supabase URL:
+[2025-04-29T08:20:31.024Z] Has Supabase Anon Key:
+[2025-04-29T08:20:31.077Z] Successfully fetched team member analytics:
+[2025-04-29T08:20:31.078Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:20:31.078Z] Fetching team member analytics...
+[2025-04-29T08:20:31.081Z] Successfully fetched incidents:
+[2025-04-29T08:20:31.081Z] Successfully fetched category analytics:
+[2025-04-29T08:20:31.126Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:20:31.144Z] Successfully fetched team member analytics:
+[2025-04-29T08:20:42.943Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:43.055Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:43.061Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:20:43.064Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:20:43.064Z] Fetching category analytics...
+[2025-04-29T08:20:43.064Z] Supabase URL:
+[2025-04-29T08:20:43.064Z] Has Supabase Anon Key:
+[2025-04-29T08:20:43.066Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:20:43.067Z] Fetching team member analytics...
+[2025-04-29T08:20:43.144Z] Successfully fetched incidents:
+[2025-04-29T08:20:43.144Z] Successfully fetched category analytics:
+[2025-04-29T08:20:43.145Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:20:43.145Z] Fetching category analytics...
+[2025-04-29T08:20:43.145Z] Supabase URL:
+[2025-04-29T08:20:43.145Z] Has Supabase Anon Key:
+[2025-04-29T08:20:43.190Z] Successfully fetched team member analytics:
+[2025-04-29T08:20:43.193Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:20:43.193Z] Fetching team member analytics...
+[2025-04-29T08:20:43.215Z] Successfully fetched incidents:
+[2025-04-29T08:20:43.215Z] Successfully fetched category analytics:
+[2025-04-29T08:20:43.252Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:20:43.325Z] Successfully fetched team member analytics:
+[2025-04-29T08:20:48.428Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:48.524Z] Incoming request: GET /api/comments
+[2025-04-29T08:20:48.530Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:20:48.534Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:20:48.534Z] Fetching category analytics...
+[2025-04-29T08:20:48.535Z] Supabase URL:
+[2025-04-29T08:20:48.535Z] Has Supabase Anon Key:
+[2025-04-29T08:20:48.540Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:20:48.540Z] Fetching team member analytics...
+[2025-04-29T08:20:48.634Z] Successfully fetched incidents:
+[2025-04-29T08:20:48.634Z] Successfully fetched category analytics:
+[2025-04-29T08:20:48.636Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:20:48.636Z] Fetching category analytics...
+[2025-04-29T08:20:48.636Z] Supabase URL:
+[2025-04-29T08:20:48.636Z] Has Supabase Anon Key:
+[2025-04-29T08:20:48.679Z] Successfully fetched incidents:
+[2025-04-29T08:20:48.679Z] Successfully fetched category analytics:
+[2025-04-29T08:20:48.716Z] Successfully fetched team member analytics:
+[2025-04-29T08:20:48.718Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:20:48.718Z] Fetching team member analytics...
+[2025-04-29T08:20:48.722Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:20:48.786Z] Successfully fetched team member analytics:
+[2025-04-29T08:20:50.067Z] Incoming request: GET /api/incidents
+[2025-04-29T08:20:50.129Z] Incoming request: GET /api/incidents
+[2025-04-29T08:20:52.124Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:20:52.126Z] Incoming request: GET /api/team-members
+[2025-04-29T08:20:52.165Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:20:52.241Z] Incoming request: GET /api/team-members
+[2025-04-29T08:20:52.244Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:20:52.244Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:20:52.244Z] Fetching incident from database...
+[2025-04-29T08:20:52.285Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:20:52.285Z] Checking for cached analysis...
+[2025-04-29T08:20:52.330Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:20:52.330Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:20:52.330Z] Fetching incident from database...
+[2025-04-29T08:20:52.331Z] Using cached analysis for incident 7
+[2025-04-29T08:20:52.370Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:20:52.370Z] Checking for cached analysis...
+[2025-04-29T08:20:52.412Z] Using cached analysis for incident 7
+[2025-04-29T08:21:25.985Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:21:25.990Z] Incoming request: GET /api/team-members
+[2025-04-29T08:21:26.124Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:21:26.163Z] Incoming request: GET /api/team-members
+[2025-04-29T08:21:26.166Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:21:26.167Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:21:26.167Z] Fetching incident from database...
+[2025-04-29T08:21:26.284Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:21:26.285Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:21:26.285Z] Fetching incident from database...
+[2025-04-29T08:21:26.299Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:21:26.300Z] Checking for cached analysis...
+[2025-04-29T08:21:26.343Z] Using cached analysis for incident 7
+[2025-04-29T08:21:26.357Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:21:26.357Z] Checking for cached analysis...
+[2025-04-29T08:21:26.426Z] Using cached analysis for incident 7
+[2025-04-29T08:22:02.369Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:22:02.372Z] Incoming request: GET /api/team-members
+[2025-04-29T08:22:02.512Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:22:02.579Z] Incoming request: GET /api/team-members
+[2025-04-29T08:22:02.583Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:22:02.584Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:22:02.584Z] Fetching incident from database...
+[2025-04-29T08:22:02.648Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:22:02.648Z] Checking for cached analysis...
+[2025-04-29T08:22:02.694Z] Using cached analysis for incident 7
+[2025-04-29T08:22:02.708Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:22:02.708Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:22:02.708Z] Fetching incident from database...
+[2025-04-29T08:22:02.790Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:22:02.790Z] Checking for cached analysis...
+[2025-04-29T08:22:02.848Z] Using cached analysis for incident 7
+[2025-04-29T08:22:06.606Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:22:06.607Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:22:06.607Z] Fetching incident from database...
+[2025-04-29T08:22:06.698Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:22:06.698Z] Checking for cached analysis...
+[2025-04-29T08:22:06.757Z] Using cached analysis for incident 7
+[2025-04-29T08:22:42.143Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:42.543Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:42.618Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:42.676Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:42.714Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:42.780Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:42.814Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:42.863Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:42.875Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:22:42.880Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:22:42.881Z] Fetching category analytics...
+[2025-04-29T08:22:42.881Z] Supabase URL:
+[2025-04-29T08:22:42.881Z] Has Supabase Anon Key:
+[2025-04-29T08:22:42.885Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:22:42.886Z] Fetching team member analytics...
+[2025-04-29T08:22:42.971Z] Successfully fetched incidents:
+[2025-04-29T08:22:42.971Z] Successfully fetched category analytics:
+[2025-04-29T08:22:42.972Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:22:42.972Z] Fetching category analytics...
+[2025-04-29T08:22:42.972Z] Supabase URL:
+[2025-04-29T08:22:42.973Z] Has Supabase Anon Key:
+[2025-04-29T08:22:43.011Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:22:43.013Z] Successfully fetched team member analytics:
+[2025-04-29T08:22:43.015Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:22:43.015Z] Fetching team member analytics...
+[2025-04-29T08:22:43.024Z] Successfully fetched incidents:
+[2025-04-29T08:22:43.024Z] Successfully fetched category analytics:
+[2025-04-29T08:22:43.095Z] Successfully fetched team member analytics:
+[2025-04-29T08:22:50.972Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:51.096Z] Incoming request: GET /api/comments
+[2025-04-29T08:22:51.101Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:22:51.104Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:22:51.104Z] Fetching category analytics...
+[2025-04-29T08:22:51.104Z] Supabase URL:
+[2025-04-29T08:22:51.105Z] Has Supabase Anon Key:
+[2025-04-29T08:22:51.108Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:22:51.108Z] Fetching team member analytics...
+[2025-04-29T08:22:51.233Z] Successfully fetched incidents:
+[2025-04-29T08:22:51.234Z] Successfully fetched category analytics:
+[2025-04-29T08:22:51.235Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:22:51.235Z] Fetching category analytics...
+[2025-04-29T08:22:51.235Z] Supabase URL:
+[2025-04-29T08:22:51.235Z] Has Supabase Anon Key:
+[2025-04-29T08:22:51.355Z] Successfully fetched incidents:
+[2025-04-29T08:22:51.355Z] Successfully fetched category analytics:
+[2025-04-29T08:22:51.448Z] Successfully fetched team member analytics:
+[2025-04-29T08:22:51.450Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:22:51.450Z] Fetching team member analytics...
+[2025-04-29T08:22:51.596Z] Successfully fetched team member analytics:
+[2025-04-29T08:22:51.629Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:22:53.218Z] Incoming request: GET /api/incidents
+[2025-04-29T08:22:53.446Z] Incoming request: GET /api/incidents
+[2025-04-29T08:22:55.236Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:22:55.239Z] Incoming request: GET /api/team-members
+[2025-04-29T08:22:55.285Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:22:55.341Z] Incoming request: GET /api/team-members
+[2025-04-29T08:22:55.343Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:22:55.343Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:22:55.343Z] Fetching incident from database...
+[2025-04-29T08:22:55.384Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:22:55.384Z] Checking for cached analysis...
+[2025-04-29T08:22:55.428Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:22:55.428Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:22:55.428Z] Fetching incident from database...
+[2025-04-29T08:22:55.469Z] Using cached analysis for incident 7
+[2025-04-29T08:22:55.470Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:22:55.470Z] Checking for cached analysis...
+[2025-04-29T08:22:55.510Z] Using cached analysis for incident 7
+[2025-04-29T08:23:10.965Z] Incoming request: GET /api/incidents
+[2025-04-29T08:23:11.168Z] Incoming request: GET /api/incidents
+[2025-04-29T08:23:19.997Z] Incoming request: GET /api/comments
+[2025-04-29T08:23:20.796Z] Incoming request: GET /api/comments
+[2025-04-29T08:23:20.804Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:23:20.811Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:23:20.812Z] Fetching category analytics...
+[2025-04-29T08:23:20.812Z] Supabase URL:
+[2025-04-29T08:23:20.812Z] Has Supabase Anon Key:
+[2025-04-29T08:23:20.816Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:23:20.817Z] Fetching team member analytics...
+[2025-04-29T08:23:20.938Z] Successfully fetched incidents:
+[2025-04-29T08:23:20.938Z] Successfully fetched category analytics:
+[2025-04-29T08:23:20.941Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:23:20.942Z] Fetching category analytics...
+[2025-04-29T08:23:20.942Z] Supabase URL:
+[2025-04-29T08:23:20.942Z] Has Supabase Anon Key:
+[2025-04-29T08:23:20.945Z] Successfully fetched team member analytics:
+[2025-04-29T08:23:20.948Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:23:20.948Z] Fetching team member analytics...
+[2025-04-29T08:23:20.988Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:23:20.991Z] Successfully fetched incidents:
+[2025-04-29T08:23:20.992Z] Successfully fetched category analytics:
+[2025-04-29T08:23:21.042Z] Successfully fetched team member analytics:
+[2025-04-29T08:28:21.023Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:30:43.297Z] Incoming request: GET /api/comments
+[2025-04-29T08:30:46.979Z] Incoming request: GET /api/comments
+[2025-04-29T08:30:46.982Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:30:46.984Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:30:46.984Z] Fetching category analytics...
+[2025-04-29T08:30:46.984Z] Supabase URL:
+[2025-04-29T08:30:46.984Z] Has Supabase Anon Key:
+[2025-04-29T08:30:46.985Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:30:46.985Z] Fetching team member analytics...
+[2025-04-29T08:30:47.074Z] Successfully fetched incidents:
+[2025-04-29T08:30:47.075Z] Successfully fetched category analytics:
+[2025-04-29T08:30:47.077Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:30:47.077Z] Fetching category analytics...
+[2025-04-29T08:30:47.077Z] Supabase URL:
+[2025-04-29T08:30:47.078Z] Has Supabase Anon Key:
+[2025-04-29T08:30:47.130Z] Successfully fetched incidents:
+[2025-04-29T08:30:47.130Z] Successfully fetched category analytics:
+[2025-04-29T08:30:47.145Z] Successfully fetched team member analytics:
+[2025-04-29T08:30:47.147Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:30:47.147Z] Fetching team member analytics...
+[2025-04-29T08:30:47.155Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:30:47.265Z] Successfully fetched team member analytics:
+[2025-04-29T08:31:43.182Z] Incoming request: GET /api/comments
+[2025-04-29T08:31:46.422Z] Incoming request: GET /api/comments
+[2025-04-29T08:31:47.785Z] Incoming request: GET /api/comments
+[2025-04-29T08:31:49.339Z] Incoming request: GET /api/comments
+[2025-04-29T08:31:51.455Z] Incoming request: GET /api/comments
+[2025-04-29T08:31:52.840Z] Incoming request: GET /api/comments
+[2025-04-29T08:31:53.798Z] Incoming request: GET /api/comments
+[2025-04-29T08:31:54.543Z] Incoming request: GET /api/comments
+[2025-04-29T08:31:54.548Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:31:54.550Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:31:54.550Z] Fetching category analytics...
+[2025-04-29T08:31:54.550Z] Supabase URL:
+[2025-04-29T08:31:54.550Z] Has Supabase Anon Key:
+[2025-04-29T08:31:54.552Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:31:54.552Z] Fetching team member analytics...
+[2025-04-29T08:31:57.312Z] Successfully fetched incidents:
+[2025-04-29T08:31:57.312Z] Successfully fetched category analytics:
+[2025-04-29T08:31:57.314Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:31:57.314Z] Fetching category analytics...
+[2025-04-29T08:31:57.314Z] Supabase URL:
+[2025-04-29T08:31:57.314Z] Has Supabase Anon Key:
+[2025-04-29T08:31:57.476Z] Successfully fetched incidents:
+[2025-04-29T08:31:57.477Z] Successfully fetched category analytics:
+[2025-04-29T08:31:57.478Z] Successfully fetched team member analytics:
+[2025-04-29T08:31:57.479Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:31:57.479Z] Fetching team member analytics...
+[2025-04-29T08:31:57.527Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:31:57.592Z] Successfully fetched team member analytics:
+[2025-04-29T08:36:55.027Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:41:55.024Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:46:55.028Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:48:16.274Z] Incoming request: GET /api/comments
+[2025-04-29T08:48:16.368Z] Incoming request: GET /api/comments
+[2025-04-29T08:48:16.373Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:48:16.378Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:48:16.378Z] Fetching category analytics...
+[2025-04-29T08:48:16.378Z] Supabase URL:
+[2025-04-29T08:48:16.379Z] Has Supabase Anon Key:
+[2025-04-29T08:48:16.382Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:48:16.382Z] Fetching team member analytics...
+[2025-04-29T08:48:16.472Z] Successfully fetched incidents:
+[2025-04-29T08:48:16.472Z] Successfully fetched category analytics:
+[2025-04-29T08:48:16.475Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:48:16.475Z] Fetching category analytics...
+[2025-04-29T08:48:16.475Z] Supabase URL:
+[2025-04-29T08:48:16.476Z] Has Supabase Anon Key:
+[2025-04-29T08:48:16.520Z] Successfully fetched team member analytics:
+[2025-04-29T08:48:16.523Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:48:16.523Z] Fetching team member analytics...
+[2025-04-29T08:48:16.543Z] Successfully fetched incidents:
+[2025-04-29T08:48:16.543Z] Successfully fetched category analytics:
+[2025-04-29T08:48:16.610Z] Successfully fetched team member analytics:
+[2025-04-29T08:48:16.616Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:48:19.495Z] Incoming request: GET /api/incidents
+[2025-04-29T08:48:19.549Z] Incoming request: GET /api/incidents
+[2025-04-29T08:48:22.257Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:48:22.258Z] Incoming request: GET /api/team-members
+[2025-04-29T08:48:22.312Z] Incoming request: GET /api/incidents/7
+[2025-04-29T08:48:22.432Z] Incoming request: GET /api/team-members
+[2025-04-29T08:48:22.435Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:48:22.436Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:48:22.437Z] Fetching incident from database...
+[2025-04-29T08:48:22.492Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:48:22.493Z] Checking for cached analysis...
+[2025-04-29T08:48:22.537Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-29T08:48:22.538Z] === Starting Analysis for Incident 7 ===
+[2025-04-29T08:48:22.538Z] Fetching incident from database...
+[2025-04-29T08:48:22.545Z] Using cached analysis for incident 7
+[2025-04-29T08:48:22.592Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-29T08:13:50.061+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-29T08:48:22.593Z] Checking for cached analysis...
+[2025-04-29T08:48:22.632Z] Using cached analysis for incident 7
+[2025-04-29T08:48:27.251Z] Incoming request: GET /api/incidents
+[2025-04-29T08:48:27.429Z] Incoming request: GET /api/incidents
+[2025-04-29T08:48:28.441Z] Incoming request: GET /api/comments
+[2025-04-29T08:48:28.520Z] Incoming request: GET /api/comments
+[2025-04-29T08:48:28.525Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:48:28.528Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:48:28.529Z] Fetching category analytics...
+[2025-04-29T08:48:28.529Z] Supabase URL:
+[2025-04-29T08:48:28.529Z] Has Supabase Anon Key:
+[2025-04-29T08:48:28.532Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:48:28.532Z] Fetching team member analytics...
+[2025-04-29T08:48:28.618Z] Successfully fetched incidents:
+[2025-04-29T08:48:28.619Z] Successfully fetched category analytics:
+[2025-04-29T08:48:28.621Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-29T08:48:28.621Z] Fetching category analytics...
+[2025-04-29T08:48:28.622Z] Supabase URL:
+[2025-04-29T08:48:28.622Z] Has Supabase Anon Key:
+[2025-04-29T08:48:28.666Z] Successfully fetched incidents:
+[2025-04-29T08:48:28.666Z] Successfully fetched category analytics:
+[2025-04-29T08:48:28.688Z] Successfully fetched team member analytics:
+[2025-04-29T08:48:28.690Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-29T08:48:28.691Z] Fetching team member analytics...
+[2025-04-29T08:48:28.711Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T08:48:28.774Z] Successfully fetched team member analytics:
+[2025-04-29T10:50:47.219Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T10:53:26.147Z] Incoming request: GET /api/analytics/dashboard
+[2025-04-29T10:58:26.152Z] Incoming request: GET /api/analytics/dashboard
