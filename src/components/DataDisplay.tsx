@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import CategoryAnalytics from './CategoryAnalytics'
+import AnalyticsCards from './AnalyticsCards'
 
 interface ApiData {
   id: number
@@ -51,6 +52,8 @@ export default function DataDisplay() {
         <h1 className="text-3xl font-bold text-gray-800 mb-4">Dashboard</h1>
         <p className="text-gray-600">Welcome to your incident management dashboard</p>
       </div>
+
+      <AnalyticsCards />
 
       <CategoryAnalytics />
 

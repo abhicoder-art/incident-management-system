@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import { supabase } from './lib/supabase'
 import Auth from './components/Auth'
 import DataDisplay from './components/DataDisplay'
 import IncidentList from './components/IncidentList'
 import IncidentDetail from './components/IncidentDetail'
+import Layout from './components/Layout'
+import CategoryAnalytics from './components/CategoryAnalytics'
 
 function App() {
   const [session, setSession] = useState<any>(null)
@@ -25,69 +27,68 @@ function App() {
     return () => subscription.unsubscribe()
   }, [])
 
+  const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
+    if (!session) {
+      return <Navigate to="/auth" replace />
+    }
+    return <Layout>{children}</Layout>
+  }
+
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
-        {session && (
-          <nav className="bg-white shadow-sm">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex justify-between h-16">
-                <div className="flex items-center space-x-4">
-                  <Link to="/" className="flex items-center text-gray-600 hover:text-indigo-600" aria-label="Home">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 mr-2">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-7 9 7M4.5 10.5V19a1.5 1.5 0 001.5 1.5h3.75m6 0H18a1.5 1.5 0 001.5-1.5v-8.5M9.75 21V15h4.5v6" />
-                    </svg>
-                  </Link>
-                  <Link to="/" className="text-xl font-semibold">
-                    My App
-                  </Link>
-                  <Link to="/incidents" className="text-gray-600 hover:text-gray-900">
-                    Incidents
-                  </Link>
-                </div>
-                <div className="flex items-center">
-                  <button
-                    onClick={() => supabase.auth.signOut()}
-                    className="ml-4 px-4 py-2 text-sm text-red-600 hover:text-red-800"
-                  >
-                    Sign Out
-                  </button>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <DataDisplay />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/auth"
+          element={
+            session ? <Navigate to="/" replace /> : <Auth />
+          }
+        />
+        <Route
+          path="/incidents"
+          element={
+            <ProtectedRoute>
+              <IncidentList />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/incidents/:id"
+          element={
+            <ProtectedRoute>
+              <IncidentDetail />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/analytics"
+          element={
+            <ProtectedRoute>
+              <CategoryAnalytics />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/settings"
+          element={
+            <ProtectedRoute>
+              <div className="p-8">
+                <h1 className="text-2xl font-semibold mb-6">Settings</h1>
+                <div className="bg-white rounded-lg shadow p-6">
+                  <p className="text-gray-600">Settings page coming soon...</p>
                 </div>
               </div>
-            </div>
-          </nav>
-        )}
-        <Routes>
-          <Route
-            path="/"
-            element={
-              session ? (
-                <DataDisplay />
-              ) : (
-                <Navigate to="/auth" replace />
-              )
-            }
-          />
-          <Route
-            path="/auth"
-            element={
-              session ? <Navigate to="/" replace /> : <Auth />
-            }
-          />
-          <Route
-            path="/incidents"
-            element={
-              session ? <IncidentList /> : <Navigate to="/auth" replace />
-            }
-          />
-          <Route
-            path="/incidents/:id"
-            element={
-              session ? <IncidentDetail /> : <Navigate to="/auth" replace />
-            }
-          />
-        </Routes>
-      </div>
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
     </Router>
   )
 }
