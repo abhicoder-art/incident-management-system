@@ -1,0 +1,1609 @@
+[2025-04-23T12:41:04.652Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-23T12:41:04.653Z] Params: {"id":"9"}
+[2025-04-23T12:41:04.653Z] Body: {"assigned_to":6}
+[2025-04-23T12:41:04.814Z] === Telegram Notification Debug ===
+[2025-04-23T12:41:04.815Z] Bot token exists: false
+[2025-04-23T12:41:04.815Z] Bot token length: 0
+[2025-04-23T12:41:04.815Z] Team member Telegram chat ID: 811347209
+[2025-04-23T12:41:04.815Z] Error: Telegram bot token is not configured
+[2025-04-23T12:44:52.209Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-23T12:44:52.209Z] Params: {"id":"9"}
+[2025-04-23T12:44:52.209Z] Body: {"assigned_to":5}
+[2025-04-23T12:44:52.633Z] === Telegram Notification Debug ===
+[2025-04-23T12:44:52.633Z] Bot token exists: false
+[2025-04-23T12:44:52.633Z] Bot token length: 0
+[2025-04-23T12:44:52.633Z] Team member Telegram chat ID: 811347209
+[2025-04-23T12:44:52.634Z] Error: Telegram bot token is not configured
+[2025-04-23T12:49:58.918Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-23T12:49:58.918Z] Params: {"id":"11"}
+[2025-04-23T12:49:58.918Z] Body: {"assigned_to":1}
+[2025-04-23T12:49:59.414Z] === Telegram Notification Debug ===
+[2025-04-23T12:49:59.414Z] Bot token exists: true
+[2025-04-23T12:49:59.414Z] Bot token length: 46
+[2025-04-23T12:49:59.414Z] Team member Telegram chat ID: 811347209
+[2025-04-23T12:49:59.414Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-23T12:49:59.414Z] Message to send: 🚨 New Incident Assignment
+
+Title: Database Performance Issue
+Priority: Low
+Status: Open
+
+You have been assigned to this incident.
+[2025-04-23T12:49:59.414Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-23T12:50:00.110Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 12,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745412600,
+    "text": "🚨 New Incident Assignment\n\nTitle: Database Performance Issue\nPriority: Low\nStatus: Open\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-23T12:50:00.110Z] Telegram notification sent successfully
+[2025-04-24T06:30:52.980Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-24T06:30:52.980Z] Params: {"id":"1"}
+[2025-04-24T06:30:52.981Z] Body: {"assigned_to":2}
+[2025-04-24T06:30:53.124Z] === Telegram Notification Debug ===
+[2025-04-24T06:30:53.125Z] Bot token exists: true
+[2025-04-24T06:30:53.125Z] Bot token length: 46
+[2025-04-24T06:30:53.125Z] Team member Telegram chat ID: 811347209
+[2025-04-24T06:30:53.125Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-24T06:30:53.125Z] Message to send: 🚨 New Incident Assignment
+
+Title: Test Incident with Source
+Priority: High
+Status: Open
+
+You have been assigned to this incident.
+[2025-04-24T06:30:53.125Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-24T06:30:53.833Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 13,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745476255,
+    "text": "🚨 New Incident Assignment\n\nTitle: Test Incident with Source\nPriority: High\nStatus: Open\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-24T06:30:53.834Z] Telegram notification sent successfully
+[2025-04-24T11:48:36.307Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-24T11:48:36.307Z] Params: {"id":"2"}
+[2025-04-24T11:48:36.307Z] Body: {"assigned_to":5}
+[2025-04-24T11:48:36.727Z] === Telegram Notification Debug ===
+[2025-04-24T11:48:36.728Z] Bot token exists: true
+[2025-04-24T11:48:36.728Z] Bot token length: 46
+[2025-04-24T11:48:36.728Z] Team member Telegram chat ID: 811347209
+[2025-04-24T11:48:36.729Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-24T11:48:36.729Z] Message to send: 🚨 New Incident Assignment
+
+Title: Test Incident with new source
+Priority: High
+Status: Open
+
+You have been assigned to this incident.
+[2025-04-24T11:48:36.730Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-24T11:48:37.644Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 14,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745495318,
+    "text": "🚨 New Incident Assignment\n\nTitle: Test Incident with new source\nPriority: High\nStatus: Open\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-24T11:48:37.645Z] Telegram notification sent successfully
+[2025-04-24T11:53:17.035Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-24T11:53:17.035Z] Params: {"id":"3"}
+[2025-04-24T11:53:17.035Z] Body: {"assigned_to":5}
+[2025-04-24T11:53:17.363Z] === Telegram Notification Debug ===
+[2025-04-24T11:53:17.364Z] Bot token exists: true
+[2025-04-24T11:53:17.364Z] Bot token length: 46
+[2025-04-24T11:53:17.364Z] Team member Telegram chat ID: 811347209
+[2025-04-24T11:53:17.364Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-24T11:53:17.364Z] Message to send: 🚨 New Incident Assignment
+
+Title: Test Incident 3
+Priority: Medium
+Status: Open
+
+You have been assigned to this incident.
+[2025-04-24T11:53:17.364Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-24T11:53:18.344Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 15,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745495599,
+    "text": "🚨 New Incident Assignment\n\nTitle: Test Incident 3\nPriority: Medium\nStatus: Open\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-24T11:53:18.345Z] Telegram notification sent successfully
+[2025-04-24T11:57:04.651Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-24T11:57:04.651Z] Params: {"id":"4"}
+[2025-04-24T11:57:04.651Z] Body: {"assigned_to":3}
+[2025-04-24T11:57:05.031Z] === Telegram Notification Debug ===
+[2025-04-24T11:57:05.032Z] Bot token exists: true
+[2025-04-24T11:57:05.032Z] Bot token length: 46
+[2025-04-24T11:57:05.033Z] Team member Telegram chat ID: 811347209
+[2025-04-24T11:57:05.033Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-24T11:57:05.033Z] Message to send: 🚨 New Incident Assignment
+
+Title: API Latency Spike
+Priority: High
+Status: Open
+
+You have been assigned to this incident.
+[2025-04-24T11:57:05.034Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-24T11:57:06.598Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 16,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745495827,
+    "text": "🚨 New Incident Assignment\n\nTitle: API Latency Spike\nPriority: High\nStatus: Open\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-24T11:57:06.599Z] Telegram notification sent successfully
+[2025-04-24T13:29:07.501Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-24T13:29:07.501Z] Params: {"id":"4"}
+[2025-04-24T13:29:07.501Z] Body: {"assigned_to":10}
+[2025-04-24T13:29:07.865Z] === Telegram Notification Debug ===
+[2025-04-24T13:29:07.865Z] Bot token exists: true
+[2025-04-24T13:29:07.866Z] Bot token length: 46
+[2025-04-24T13:29:07.866Z] Team member Telegram chat ID: 811347209
+[2025-04-24T13:29:07.866Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-24T13:29:07.867Z] Message to send: 🚨 New Incident Assignment
+
+Title: API Latency Spike
+Priority: High
+Status: Open
+
+You have been assigned to this incident.
+[2025-04-24T13:29:07.867Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-24T13:29:08.813Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 17,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745501350,
+    "text": "🚨 New Incident Assignment\n\nTitle: API Latency Spike\nPriority: High\nStatus: Open\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-24T13:29:08.814Z] Telegram notification sent successfully
+[2025-04-24T13:38:33.584Z] Analyzing incident 4
+[2025-04-24T13:38:33.978Z] Calling OpenAI API for incident 4
+[2025-04-24T13:38:34.008Z] Analyzing incident 4
+[2025-04-24T13:38:34.477Z] Calling OpenAI API for incident 4
+[2025-04-24T13:38:35.018Z] Error analyzing incident: Request failed with status code 401
+[2025-04-24T13:38:35.487Z] Error analyzing incident: Request failed with status code 401
+[2025-04-24T13:44:34.160Z] Analyzing incident 5
+[2025-04-24T13:44:34.161Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:44:34.487Z] Analyzing incident 5
+[2025-04-24T13:44:34.487Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:47:07.393Z] Analyzing incident 5
+[2025-04-24T13:47:07.393Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:47:07.593Z] Analyzing incident 5
+[2025-04-24T13:47:07.594Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:49:27.534Z] Analyzing incident 5
+[2025-04-24T13:49:27.534Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:49:27.707Z] Analyzing incident 5
+[2025-04-24T13:49:27.708Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:49:46.643Z] Analyzing incident 5
+[2025-04-24T13:49:46.643Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:49:46.801Z] Analyzing incident 5
+[2025-04-24T13:49:46.801Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:49:50.217Z] Analyzing incident 4
+[2025-04-24T13:49:50.218Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:49:50.479Z] Analyzing incident 4
+[2025-04-24T13:49:50.479Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:59:08.882Z] Analyzing incident 4
+[2025-04-24T13:59:08.882Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:59:09.056Z] Analyzing incident 4
+[2025-04-24T13:59:09.056Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:59:23.745Z] Analyzing incident 5
+[2025-04-24T13:59:23.745Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T13:59:23.895Z] Analyzing incident 5
+[2025-04-24T13:59:23.896Z] Error: OPENAI_API_KEY is not configured
+[2025-04-24T14:05:55.047Z] === Starting Analysis for Incident 5 ===
+[2025-04-24T14:05:55.047Z] Checking OpenAI API key...
+[2025-04-24T14:05:55.047Z] OpenAI API key is configured
+[2025-04-24T14:05:55.047Z] Fetching incident from database...
+[2025-04-24T14:05:55.212Z] Successfully fetched incident: {"id":5,"created_at":"2025-04-24T13:30:54.699431+00:00","updated_at":"2025-04-24T13:30:54.699431+00:00","title":"Database Connection Failure","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-24T14:05:55.213Z] Checking for cached analysis...
+[2025-04-24T14:05:55.238Z] === Starting Analysis for Incident 5 ===
+[2025-04-24T14:05:55.239Z] Checking OpenAI API key...
+[2025-04-24T14:05:55.239Z] OpenAI API key is configured
+[2025-04-24T14:05:55.239Z] Fetching incident from database...
+[2025-04-24T14:05:55.303Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-24T14:05:55.304Z] Preparing OpenAI API request...
+[2025-04-24T14:05:55.304Z] Sending request to OpenAI API...
+[2025-04-24T14:05:55.327Z] Successfully fetched incident: {"id":5,"created_at":"2025-04-24T13:30:54.699431+00:00","updated_at":"2025-04-24T13:30:54.699431+00:00","title":"Database Connection Failure","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-24T14:05:55.327Z] Checking for cached analysis...
+[2025-04-24T14:05:55.399Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-24T14:05:55.399Z] Preparing OpenAI API request...
+[2025-04-24T14:05:55.399Z] Sending request to OpenAI API...
+[2025-04-24T14:05:56.404Z] === Error Analyzing Incident ===
+[2025-04-24T14:05:56.405Z] Error message: Request failed with status code 429
+[2025-04-24T14:05:56.405Z] OpenAI API error response: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-24T14:05:56.406Z] OpenAI API error status: 429
+[2025-04-24T14:05:56.406Z] OpenAI API error headers: {"date":"Thu, 24 Apr 2025 14:05:57 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_0345d3936aefdad5b737754459ba58bf","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=Q8XN3i0gaVgClrNqhCc3DjovkaTe5BDqqQji_7BOifw-1745503557-1.0.1.1-SdaIWkrTY59qLFzUyFJ_UGtSyTO4JkcA9fqtM6hADeVnIGSfBSAbhLVbSP8Xo9LNutEEkXJvQ.mg4Cu6gnEfDN8vt35gJkUavyiror9xQs8; path=/; expires=Thu, 24-Apr-25 14:35:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=2H4PgrWJpuDIxVyuPm12k73hn1o8rUT51xCreKwRDzc-1745503557862-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"9356288f2a682e52-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-24T14:05:56.410Z] === Error Analyzing Incident ===
+[2025-04-24T14:05:56.411Z] Error message: Request failed with status code 429
+[2025-04-24T14:05:56.411Z] OpenAI API error response: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-24T14:05:56.412Z] OpenAI API error status: 429
+[2025-04-24T14:05:56.412Z] OpenAI API error headers: {"date":"Thu, 24 Apr 2025 14:05:57 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_93a3dce2b2c45eb9744635eff3e8bb57","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=DiNEpAU0peEssQzYvdZ7MrvVDEk5_caMFP_g3EOMjOU-1745503557-1.0.1.1-3QFYsG.IzGkzaeKBvsB3beYLbCNtdDBLnEBANLzKV6tTIsz4A2Lwz.ez7gc6jatBm1L33k4jwxf.I80kMH2QA2vSkHRUrQN4myO5DrjUS0U; path=/; expires=Thu, 24-Apr-25 14:35:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=fR7TW2exjNJAvrTNfUWmCuDqzBFYuQBZ72Sdk7_yKDk-1745503557871-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"9356288f6a243c34-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-24T14:10:50.041Z] === Starting Analysis for Incident 5 ===
+[2025-04-24T14:10:50.041Z] Fetching incident from database...
+[2025-04-24T14:10:50.142Z] Successfully fetched incident: {"id":5,"created_at":"2025-04-24T13:30:54.699431+00:00","updated_at":"2025-04-24T13:30:54.699431+00:00","title":"Database Connection Failure","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-24T14:10:50.143Z] Checking for cached analysis...
+[2025-04-24T14:10:50.234Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-24T14:10:50.234Z] Preparing OpenAI API request...
+[2025-04-24T14:10:50.234Z] Sending request to OpenAI API...
+[2025-04-24T14:10:50.421Z] === Starting Analysis for Incident 5 ===
+[2025-04-24T14:10:50.421Z] Fetching incident from database...
+[2025-04-24T14:10:50.497Z] Successfully fetched incident: {"id":5,"created_at":"2025-04-24T13:30:54.699431+00:00","updated_at":"2025-04-24T13:30:54.699431+00:00","title":"Database Connection Failure","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-24T14:10:50.498Z] Checking for cached analysis...
+[2025-04-24T14:10:50.581Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-24T14:10:50.581Z] Preparing OpenAI API request...
+[2025-04-24T14:10:50.581Z] Sending request to OpenAI API...
+[2025-04-24T14:10:50.821Z] === OpenAI API Error ===
+[2025-04-24T14:10:50.822Z] Error message: Request failed with status code 429
+[2025-04-24T14:10:50.822Z] Status: 429
+[2025-04-24T14:10:50.822Z] Status Text: Too Many Requests
+[2025-04-24T14:10:50.822Z] Headers: {"date":"Thu, 24 Apr 2025 14:10:52 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_3fa6a365d35f49b99af4673ade59ecce","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=zKEz52nNA29IiDtaxjw3NR9IZF41DFYmwI7E.Mj9ftc-1745503852-1.0.1.1-8_o6NHUmiUZmax808y7yBtX6wOmCRYKusVmjzn9QsGzhWSOVoiFWbz9n.A1la_kaMukpMnvmVMgGzuW16YqlP7MDc5RXrUJ2pcbPrS9BKI0; path=/; expires=Thu, 24-Apr-25 14:40:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=rX2ObUVJPItoFKoHYwYcIorDRE2PaPPl_rzsBBvcX10-1745503852287-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"93562fc31dfd80be-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-24T14:10:50.823Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-24T14:10:50.999Z] === OpenAI API Error ===
+[2025-04-24T14:10:51.000Z] Error message: Request failed with status code 429
+[2025-04-24T14:10:51.000Z] Status: 429
+[2025-04-24T14:10:51.001Z] Status Text: Too Many Requests
+[2025-04-24T14:10:51.001Z] Headers: {"date":"Thu, 24 Apr 2025 14:10:52 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_79953d17af3698c25e92fc2a27276c07","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=Qg_eZzQuGEsAh80BqfFJxzrLu2uTZ5JSnYJBlIY6M30-1745503852-1.0.1.1-tIuEcgAcNMzIpArdo7HgOjkbFhWG3rtDbZq1dLCymVRLmCjQwGsVuE4QoC9yIXroSnwXkFXbjeI_kRjkbq2gvy.5SgLSlVi9gUVOwLNVnxQ; path=/; expires=Thu, 24-Apr-25 14:40:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=m.uGYvRyqxs4xZxtEIYlxgp4yJ1FB0ZcAR8J8EurcKA-1745503852472-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"93562fc458998aff-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-24T14:10:51.002Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-25T06:16:27.824Z] === Starting Analysis for Incident 6 ===
+[2025-04-25T06:16:27.824Z] Fetching incident from database...
+[2025-04-25T06:16:27.878Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:16:19.937713+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-25T06:16:27.878Z] Checking for cached analysis...
+[2025-04-25T06:16:27.957Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-25T06:16:27.957Z] Preparing OpenAI API request...
+[2025-04-25T06:16:27.958Z] Sending request to OpenAI API...
+[2025-04-25T06:16:28.031Z] === Starting Analysis for Incident 6 ===
+[2025-04-25T06:16:28.032Z] Fetching incident from database...
+[2025-04-25T06:16:28.087Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:16:19.937713+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-25T06:16:28.087Z] Checking for cached analysis...
+[2025-04-25T06:16:28.138Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-25T06:16:28.138Z] Preparing OpenAI API request...
+[2025-04-25T06:16:28.139Z] Sending request to OpenAI API...
+[2025-04-25T06:16:28.919Z] === OpenAI API Error ===
+[2025-04-25T06:16:28.919Z] Error message: Request failed with status code 429
+[2025-04-25T06:16:28.919Z] Status: 429
+[2025-04-25T06:16:28.919Z] Status Text: Too Many Requests
+[2025-04-25T06:16:28.919Z] Headers: {"date":"Fri, 25 Apr 2025 06:16:30 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_bd96d6df5b1e090c64b5bb7659bad34c","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=C0lQRhawnyQMaQ7ceGQmK0SyXglhYm5zA_8XMFN4IR0-1745561790-1.0.1.1-GvumWBlmCAK39PkYXFAGb3aF6erfE7EgFJcZeoH.iN1iTxzL_iA4MsC1hICAZWGUbvIOZbhO3z35X8Pa3MX.CD1eAJxdKXDaBDd7HJtrDDo; path=/; expires=Fri, 25-Apr-25 06:46:30 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=eEYiKK6GgjAaARi90aKeV4UrdBVSvDRPsDFonEleuL4-1745561790339-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"935bb63fe85547c1-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-25T06:16:28.919Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-25T06:16:29.052Z] === OpenAI API Error ===
+[2025-04-25T06:16:29.052Z] Error message: Request failed with status code 429
+[2025-04-25T06:16:29.052Z] Status: 429
+[2025-04-25T06:16:29.052Z] Status Text: Too Many Requests
+[2025-04-25T06:16:29.052Z] Headers: {"date":"Fri, 25 Apr 2025 06:16:30 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_1cc186ac57eb570e5d3974ed00632ce2","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=p0ZZAKDBy0sAhYWcbmJYPMSLPWTV3OWzO7btStfTt.8-1745561790-1.0.1.1-cwdv0OAAaprKBr_81Pla7dnjro7ejWTQj6uhU96vdnvbARVtrrpeNOoRPW81PYzpD2trY422ZR8dAqJZIS3B6EN0IGNu0iO4XQIAgTlxdDg; path=/; expires=Fri, 25-Apr-25 06:46:30 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=D30vuqgumd1NLEcncRWoIYdwn9XW0CBp6ynkDczHWoA-1745561790473-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"935bb640f86285c6-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-25T06:16:29.053Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-25T06:16:58.628Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-25T06:16:58.628Z] Params: {"id":"6"}
+[2025-04-25T06:16:58.628Z] Body: {"assigned_to":1}
+[2025-04-25T06:16:58.820Z] === Telegram Notification Debug ===
+[2025-04-25T06:16:58.821Z] Bot token exists: true
+[2025-04-25T06:16:58.821Z] Bot token length: 46
+[2025-04-25T06:16:58.821Z] Team member Telegram chat ID: 811347209
+[2025-04-25T06:16:58.821Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-25T06:16:58.821Z] Message to send: 🚨 New Incident Assignment
+
+Title: Database Connection Failure 25-04
+Priority: Critical
+Status: Open
+
+You have been assigned to this incident.
+[2025-04-25T06:16:58.821Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-25T06:16:59.659Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 18,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745561820,
+    "text": "🚨 New Incident Assignment\n\nTitle: Database Connection Failure 25-04\nPriority: Critical\nStatus: Open\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-25T06:16:59.660Z] Telegram notification sent successfully
+[2025-04-25T08:26:51.808Z] === Starting Analysis for Incident 6 ===
+[2025-04-25T08:26:51.809Z] Fetching incident from database...
+[2025-04-25T08:26:51.862Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-25T08:26:51.863Z] Checking for cached analysis...
+[2025-04-25T08:26:51.913Z] === Starting Analysis for Incident 6 ===
+[2025-04-25T08:26:51.913Z] Fetching incident from database...
+[2025-04-25T08:26:51.923Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-25T08:26:51.923Z] Preparing OpenAI API request...
+[2025-04-25T08:26:51.923Z] Sending request to OpenAI API...
+[2025-04-25T08:26:51.993Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-25T08:26:51.994Z] Checking for cached analysis...
+[2025-04-25T08:26:52.054Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-25T08:26:52.054Z] Preparing OpenAI API request...
+[2025-04-25T08:26:52.054Z] Sending request to OpenAI API...
+[2025-04-25T08:26:52.918Z] === OpenAI API Error ===
+[2025-04-25T08:26:52.918Z] Error message: Request failed with status code 429
+[2025-04-25T08:26:52.919Z] Status: 429
+[2025-04-25T08:26:52.919Z] Status Text: Too Many Requests
+[2025-04-25T08:26:52.920Z] Headers: {"date":"Fri, 25 Apr 2025 08:26:54 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_2f4d17b7cbc8ba282a14aabb76811833","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=sM6ToY05LSjJuaLwps1mz86zR.w8MNFXzTm2bU_aqGs-1745569614-1.0.1.1-yrTbqp1zdEqQ4yrzH0CFc9USa67NA.ZUm9SxK0JjalxufVjFRLEPbz7N_6HOjFucdvk2mgWmOU7LT6QMiLyQYfgTojh_NTPtK58gGvZ1pxk; path=/; expires=Fri, 25-Apr-25 08:56:54 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=8h5.Vk_r.JnVBP37P.i6m8dgL7pw5vdCDN7RD88uROc-1745569614596-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"935c75459c6e3fa9-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-25T08:26:52.920Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-25T08:26:52.960Z] === OpenAI API Error ===
+[2025-04-25T08:26:52.961Z] Error message: Request failed with status code 429
+[2025-04-25T08:26:52.961Z] Status: 429
+[2025-04-25T08:26:52.961Z] Status Text: Too Many Requests
+[2025-04-25T08:26:52.962Z] Headers: {"date":"Fri, 25 Apr 2025 08:26:54 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_4852848edef0d8abaf40695ff3dd43e4","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=4u_L6ly2BnrZyEO6BYUtNIJfeddm3VWEX_hUfwKRljo-1745569614-1.0.1.1-5Jt3iJTyWyTlTuzAoJYyCHiMcUyRHihEtDWRRryJpTHxZStnO56QHORHi20JtPm1JiACwH_dDCXhTfWibrpsHrQV9jRQa4BxeU7s1F2..lo; path=/; expires=Fri, 25-Apr-25 08:56:54 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=KouOIP_j5C0w25fUA3gg4y469BeIic7a3cBLpvuMwL0-1745569614638-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"935c75462e8b29f2-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-25T08:26:52.962Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-28T04:44:51.093Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T04:44:51.094Z] Fetching incident from database...
+[2025-04-28T04:44:51.158Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T04:44:51.158Z] Checking for cached analysis...
+[2025-04-28T04:44:51.199Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T04:44:51.199Z] Fetching incident from database...
+[2025-04-28T04:44:51.233Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T04:44:51.234Z] Preparing OpenAI API request...
+[2025-04-28T04:44:51.234Z] Sending request to OpenAI API...
+[2025-04-28T04:44:51.275Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T04:44:51.275Z] Checking for cached analysis...
+[2025-04-28T04:44:51.350Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T04:44:51.350Z] Preparing OpenAI API request...
+[2025-04-28T04:44:51.350Z] Sending request to OpenAI API...
+[2025-04-28T04:44:52.434Z] === OpenAI API Error ===
+[2025-04-28T04:44:52.435Z] Error message: Request failed with status code 429
+[2025-04-28T04:44:52.435Z] Status: 429
+[2025-04-28T04:44:52.435Z] Status Text: Too Many Requests
+[2025-04-28T04:44:52.435Z] Headers: {"date":"Mon, 28 Apr 2025 04:44:52 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_01f0ed9ca21746e7c570cb0f45d3f77f","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=.0Ug8MbO_VOTS35GrTDJRQ3i2a_r1yN5KLDpubFSCIk-1745815492-1.0.1.1-_qIyu_L4Fg64bxVmRBM7lgSw322VfRl_xHLI8xtKdcGMIcDq8omoXrm0ym0nlegjZ05k1UvEhnmuOhnXqJEVl_LBzAEOcKulz3HJJHfKcMk; path=/; expires=Mon, 28-Apr-25 05:14:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=rzpNZ6UEhXsgorMoLjZTjVlqq3iYxXhgbvdnm2fus70-1745815492452-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"9373e8255cf047ce-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-28T04:44:52.435Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-28T04:44:52.483Z] === OpenAI API Error ===
+[2025-04-28T04:44:52.484Z] Error message: Request failed with status code 429
+[2025-04-28T04:44:52.484Z] Status: 429
+[2025-04-28T04:44:52.484Z] Status Text: Too Many Requests
+[2025-04-28T04:44:52.484Z] Headers: {"date":"Mon, 28 Apr 2025 04:44:52 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_6a9ac550c2bf188f7992b4a5340289e7","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=tCBOaXnc1cRO5oUyUrwiplLcFH5nYTDstHB_PfY11dI-1745815492-1.0.1.1-H76Sa5tYv0XBNNFnK57M_a3OIoWA3wRD5geIzFKjW9.vNcPyE7zHzFvufWs.LQmhZFWVUOaA.C1posn96Sls7y.wdvFjWs0GUzNQF9wEkY0; path=/; expires=Mon, 28-Apr-25 05:14:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=UORjXB2B97hrpJH.sA6lsUySw79jxecRRggSbcKgHZI-1745815492502-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"9373e824ca2a2e1d-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-28T04:44:52.484Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-28T04:50:45.714Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T04:50:45.714Z] Fetching incident from database...
+[2025-04-28T04:50:45.789Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T04:50:45.790Z] Checking for cached analysis...
+[2025-04-28T04:50:45.835Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T04:50:45.835Z] Fetching incident from database...
+[2025-04-28T04:50:45.841Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T04:50:45.841Z] Preparing OpenAI API request...
+[2025-04-28T04:50:45.842Z] Sending request to OpenAI API...
+[2025-04-28T04:50:45.892Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T04:50:45.893Z] Checking for cached analysis...
+[2025-04-28T04:50:45.938Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T04:50:45.938Z] Preparing OpenAI API request...
+[2025-04-28T04:50:45.939Z] Sending request to OpenAI API...
+[2025-04-28T04:50:46.169Z] === OpenAI API Error ===
+[2025-04-28T04:50:46.169Z] Error message: Request failed with status code 429
+[2025-04-28T04:50:46.170Z] Status: 429
+[2025-04-28T04:50:46.170Z] Status Text: Too Many Requests
+[2025-04-28T04:50:46.171Z] Headers: {"date":"Mon, 28 Apr 2025 04:50:46 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_82f0003e7f008c56629287926bd19b58","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=t1UlBYm97_yRaiRzPTAtHAMy6DDsIfbHdYtvv2UsIAc-1745815846-1.0.1.1-Np67cF.IlSzuP4r3Y02O_zsBjymQB.wW1lqlRA5ZCzuO6Qcbm_H9Mj54DhazZ_sqLI10hOaH.j637Y5tRKXdrop74tpFIHAKoPSzH4Ty6Yw; path=/; expires=Mon, 28-Apr-25 05:20:46 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=KII2Y4PkvFagRqkssVqvTnukFBAsUSk2X6Pvo2d0tyo-1745815846193-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"9373f0ccfc4e3a28-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-28T04:50:46.171Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-28T04:50:46.248Z] === OpenAI API Error ===
+[2025-04-28T04:50:46.249Z] Error message: Request failed with status code 429
+[2025-04-28T04:50:46.249Z] Status: 429
+[2025-04-28T04:50:46.250Z] Status Text: Too Many Requests
+[2025-04-28T04:50:46.250Z] Headers: {"date":"Mon, 28 Apr 2025 04:50:46 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_48824619c84b6a6db162bb7b5b2213f9","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=kYUKQEwTHv9FMFlB5BpaIPnEHtc0kYxSf7127o_COaE-1745815846-1.0.1.1-DG2TfePcm7vvLXwq8V4DAOCl3ubCcxWPX0qXqSYeWyOVKW.JIHAt6OIXvRvZQYi.EQAqF8xdqcv1fU4V3ERh2LccTE96q.NCi880jOjfbjY; path=/; expires=Mon, 28-Apr-25 05:20:46 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=fioSMjLFwv7qy0ExlSEcZ.qbVE38BtnVIe3N7i.ubPk-1745815846272-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"9373f0cd8f403a4e-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-28T04:50:46.251Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-28T04:51:16.808Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T04:51:16.808Z] Fetching incident from database...
+[2025-04-28T04:51:16.876Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T04:51:16.877Z] Checking for cached analysis...
+[2025-04-28T04:51:16.937Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T04:51:16.937Z] Preparing OpenAI API request...
+[2025-04-28T04:51:16.937Z] Sending request to OpenAI API...
+[2025-04-28T04:51:16.945Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T04:51:16.946Z] Fetching incident from database...
+[2025-04-28T04:51:16.997Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T04:51:16.997Z] Checking for cached analysis...
+[2025-04-28T04:51:17.046Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T04:51:17.047Z] Preparing OpenAI API request...
+[2025-04-28T04:51:17.047Z] Sending request to OpenAI API...
+[2025-04-28T04:51:17.764Z] === OpenAI API Error ===
+[2025-04-28T04:51:17.764Z] Error message: Request failed with status code 429
+[2025-04-28T04:51:17.764Z] Status: 429
+[2025-04-28T04:51:17.765Z] Status Text: Too Many Requests
+[2025-04-28T04:51:17.765Z] Headers: {"date":"Mon, 28 Apr 2025 04:51:17 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_3c183c407b2e2ba6a995f2ebcbedc9ff","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=_dIpHa.5Ud8yQK5EcqlBJxPQx_somSo.agO0U4cVBHo-1745815877-1.0.1.1-AbFLOhdLUXOU1eL2loW0mNzIUnxTscLLUd4Dv4MY5TnOgI07sflJnD62frLjBEox9LVr.Ch45oVhk5zSHKA1SOWzvGyFHSr2b9XsCy715eo; path=/; expires=Mon, 28-Apr-25 05:21:17 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=5kqvxvuIahX2M53ki7smhvscccJ9XyQ8KQzvsgm4P7M-1745815877788-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"9373f18fea133fed-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-28T04:51:17.766Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-28T04:51:19.544Z] === OpenAI API Error ===
+[2025-04-28T04:51:19.545Z] Error message: Request failed with status code 429
+[2025-04-28T04:51:19.545Z] Status: 429
+[2025-04-28T04:51:19.546Z] Status Text: Too Many Requests
+[2025-04-28T04:51:19.546Z] Headers: {"date":"Mon, 28 Apr 2025 04:51:19 GMT","content-type":"application/json; charset=utf-8","content-length":"337","connection":"keep-alive","vary":"Origin","x-request-id":"req_0158276db8390f614b217bcab7cad934","strict-transport-security":"max-age=31536000; includeSubDomains; preload","cf-cache-status":"DYNAMIC","set-cookie":["__cf_bm=NMpeCkpA3h9Cj0KycnOKjEjyZl3r1qoXS1TH21udRmY-1745815879-1.0.1.1-hwSPUqLUg0cISC8rZIUhdbxxLC1_IS77jm26Cc.7YdWsxa_YAOaQY5kTm.KROTAr9pVMGtsp2zx0NosyQwApxSrj7651vcuKLEw5j4Q49ws; path=/; expires=Mon, 28-Apr-25 05:21:19 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None","_cfuvid=ksLxyMfAgAt9prMylYjZxgdpRCNhN7pdS6.IwnrnIxU-1745815879569-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None"],"x-content-type-options":"nosniff","server":"cloudflare","cf-ray":"9373f18f5a9740d5-BOM","alt-svc":"h3=\":443\"; ma=86400"}
+[2025-04-28T04:51:19.547Z] Data: {"error":{"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.","type":"insufficient_quota","param":null,"code":"insufficient_quota"}}
+[2025-04-28T05:08:33.305Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T05:08:33.306Z] Fetching incident from database...
+[2025-04-28T05:08:33.351Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T05:08:33.352Z] Checking for cached analysis...
+[2025-04-28T05:08:33.392Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T05:08:33.393Z] Preparing Together AI API request...
+[2025-04-28T05:08:33.393Z] Sending request to Together AI API...
+[2025-04-28T05:08:33.426Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T05:08:33.427Z] Fetching incident from database...
+[2025-04-28T05:08:33.476Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T05:08:33.476Z] Checking for cached analysis...
+[2025-04-28T05:08:33.521Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T05:08:33.522Z] Preparing Together AI API request...
+[2025-04-28T05:08:33.522Z] Sending request to Together AI API...
+[2025-04-28T05:08:40.408Z] Received response from Together AI API
+[2025-04-28T05:08:40.409Z] Extracted analysis - Cause: Unable to determine cause, Solution: No solution suggested
+[2025-04-28T05:08:40.409Z] Caching analysis in database...
+[2025-04-28T05:08:42.407Z] Received response from Together AI API
+[2025-04-28T05:08:42.408Z] Extracted analysis - Cause: Unable to determine cause, Solution: No solution suggested
+[2025-04-28T05:08:42.408Z] Caching analysis in database...
+[2025-04-28T05:10:01.137Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T05:10:01.138Z] Fetching incident from database...
+[2025-04-28T05:10:01.235Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T05:10:01.235Z] Checking for cached analysis...
+[2025-04-28T05:10:01.338Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T05:10:01.338Z] Preparing Together AI API request...
+[2025-04-28T05:10:01.339Z] Sending request to Together AI API...
+[2025-04-28T05:10:01.344Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T05:10:01.344Z] Fetching incident from database...
+[2025-04-28T05:10:01.433Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T05:10:01.434Z] Checking for cached analysis...
+[2025-04-28T05:10:01.541Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T05:10:01.542Z] Preparing Together AI API request...
+[2025-04-28T05:10:01.542Z] Sending request to Together AI API...
+[2025-04-28T05:10:09.250Z] Received response from Together AI API
+[2025-04-28T05:10:09.251Z] Extracted analysis - Cause: Unable to determine cause, Solution: No solution suggested
+[2025-04-28T05:10:09.251Z] Caching analysis in database...
+[2025-04-28T05:10:11.113Z] Received response from Together AI API
+[2025-04-28T05:10:11.113Z] Extracted analysis - Cause: Unable to determine cause, Solution: No solution suggested
+[2025-04-28T05:10:11.114Z] Caching analysis in database...
+[2025-04-28T05:14:22.859Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T05:14:22.859Z] Fetching incident from database...
+[2025-04-28T05:14:22.915Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T05:14:22.915Z] Checking for cached analysis...
+[2025-04-28T05:14:22.986Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T05:14:22.986Z] Preparing Together AI API request...
+[2025-04-28T05:14:22.986Z] Sending request to Together AI API...
+[2025-04-28T05:14:23.041Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T05:14:23.041Z] Fetching incident from database...
+[2025-04-28T05:14:23.096Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T05:14:23.096Z] Checking for cached analysis...
+[2025-04-28T05:14:23.168Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T05:14:23.168Z] Preparing Together AI API request...
+[2025-04-28T05:14:23.169Z] Sending request to Together AI API...
+[2025-04-28T05:14:26.680Z] Received response from Together AI API
+[2025-04-28T05:14:26.680Z] Extracted analysis - Cause: Unable to determine cause, Solution: No solution suggested
+[2025-04-28T05:14:26.681Z] Caching analysis in database...
+[2025-04-28T05:14:27.667Z] Received response from Together AI API
+[2025-04-28T05:14:27.667Z] Extracted analysis - Cause: Unable to determine cause, Solution: No solution suggested
+[2025-04-28T05:14:27.668Z] Caching analysis in database...
+[2025-04-28T05:17:14.450Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T05:17:14.450Z] Fetching incident from database...
+[2025-04-28T05:17:14.579Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T05:17:14.579Z] Checking for cached analysis...
+[2025-04-28T05:17:14.682Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T05:17:14.682Z] Preparing Together AI API request...
+[2025-04-28T05:17:14.682Z] Sending request to Together AI API...
+[2025-04-28T05:17:14.693Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T05:17:14.694Z] Fetching incident from database...
+[2025-04-28T05:17:14.768Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-25T06:19:33.409+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":1,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T05:17:14.768Z] Checking for cached analysis...
+[2025-04-28T05:17:14.875Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T05:17:14.875Z] Preparing Together AI API request...
+[2025-04-28T05:17:14.875Z] Sending request to Together AI API...
+[2025-04-28T05:17:21.648Z] Received response from Together AI API
+[2025-04-28T05:17:21.648Z] Extracted analysis - Cause: <think>
+Alright, so I have this incident where Service XYZ can't connect to the primary PostgreSQL database, and it's timing out after 30 seconds. There were three consecutive failures in two minutes. Hmm, I need to figure out why this is happening and what can be done to fix it., Solution: First, I remember that a timeout usually means the service isn't getting a response within the expected time frame. So, possible causes could be network issues, the database being down, or maybe the service itself is misconfigured.
+[2025-04-28T05:17:21.649Z] Caching analysis in database...
+[2025-04-28T05:17:21.779Z] Received response from Together AI API
+[2025-04-28T05:17:21.780Z] Extracted analysis - Cause: <think>
+Okay, so I've got this incident where Service XYZ can't connect to the primary PostgreSQL database. The error message says it's a timeout after 30 seconds, and there have been three consecutive failures in the last two minutes. I need to figure out what's going on here., Solution: First, I should think about what a timeout usually means. It often indicates that the service is trying to connect, but the database isn't responding within the expected time frame. So, why might the database not be responding?
+[2025-04-28T05:17:21.780Z] Caching analysis in database...
+[2025-04-28T05:18:34.504Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-28T05:18:34.505Z] Params: {"id":"6"}
+[2025-04-28T05:18:34.505Z] Body: {"assigned_to":8}
+[2025-04-28T05:18:34.713Z] === Telegram Notification Debug ===
+[2025-04-28T05:18:34.714Z] Bot token exists: true
+[2025-04-28T05:18:34.715Z] Bot token length: 46
+[2025-04-28T05:18:34.715Z] Team member Telegram chat ID: 811347209
+[2025-04-28T05:18:34.716Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-28T05:18:34.716Z] Message to send: 🚨 New Incident Assignment
+
+Title: Database Connection Failure 25-04
+Priority: Critical
+Status: In Progress
+
+You have been assigned to this incident.
+[2025-04-28T05:18:34.717Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-28T05:18:35.448Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 19,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745817515,
+    "text": "🚨 New Incident Assignment\n\nTitle: Database Connection Failure 25-04\nPriority: Critical\nStatus: In Progress\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-28T05:18:35.449Z] Telegram notification sent successfully
+[2025-04-28T06:49:27.758Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T06:49:27.758Z] Fetching incident from database...
+[2025-04-28T06:49:27.830Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T05:18:35.45+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":8,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T06:49:27.830Z] Checking for cached analysis...
+[2025-04-28T06:49:28.090Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T06:49:28.090Z] Fetching incident from database...
+[2025-04-28T06:49:28.110Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T06:49:28.110Z] Preparing Together AI API request...
+[2025-04-28T06:49:28.110Z] Sending request to Together AI API...
+[2025-04-28T06:49:28.155Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T05:18:35.45+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":8,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service"}
+[2025-04-28T06:49:28.155Z] Checking for cached analysis...
+[2025-04-28T06:49:28.602Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T06:49:28.602Z] Preparing Together AI API request...
+[2025-04-28T06:49:28.602Z] Sending request to Together AI API...
+[2025-04-28T06:49:34.653Z] Received response from Together AI API
+[2025-04-28T06:49:34.653Z] Extracted analysis - Cause: The PostgreSQL database server may be down, or there could be network connectivity issues between Service XYZ and the database. Alternatively, the database might be overloaded, causing it to not respond within the timeout period., Solution: Check the status of the PostgreSQL database server and verify network connectivity
+[2025-04-28T06:49:34.653Z] Caching analysis in database...
+[2025-04-28T06:49:35.004Z] Received response from Together AI API
+[2025-04-28T06:49:35.005Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to analyze this incident where Service XYZ couldn't connect to the primary PostgreSQL database. The error message says it timed out after 30 seconds, and there were three consecutive failures in two minutes. Hmm, I need to figure out what's going on here., Solution: First off, the timeout suggests that the service isn't getting a response from the database within the expected time frame. There could be several reasons for this. Maybe the database is down or not running. I should check if the PostgreSQL service is actually up and running. If it's stopped or crashed, that would definitely cause a connection timeout.
+[2025-04-28T06:49:35.005Z] Caching analysis in database...
+[2025-04-28T07:09:02.375Z] === Starting Analysis for Incident 5 ===
+[2025-04-28T07:09:02.375Z] Fetching incident from database...
+[2025-04-28T07:09:02.454Z] Successfully fetched incident: {"id":5,"created_at":"2025-04-24T13:30:54.699431+00:00","updated_at":"2025-04-24T13:30:54.699431+00:00","title":"Database Connection Failure","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:09:02.454Z] Checking for cached analysis...
+[2025-04-28T07:09:02.488Z] === Starting Analysis for Incident 5 ===
+[2025-04-28T07:09:02.488Z] Fetching incident from database...
+[2025-04-28T07:09:02.508Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:09:02.508Z] Preparing Together AI API request...
+[2025-04-28T07:09:02.508Z] Sending request to Together AI API...
+[2025-04-28T07:09:02.537Z] Successfully fetched incident: {"id":5,"created_at":"2025-04-24T13:30:54.699431+00:00","updated_at":"2025-04-24T13:30:54.699431+00:00","title":"Database Connection Failure","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:09:02.537Z] Checking for cached analysis...
+[2025-04-28T07:09:02.602Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:09:02.603Z] Preparing Together AI API request...
+[2025-04-28T07:09:02.603Z] Sending request to Together AI API...
+[2025-04-28T07:09:07.604Z] Received response from Together AI API
+[2025-04-28T07:09:07.605Z] Extracted analysis - Cause: The primary PostgreSQL database may be down, overloaded, or experiencing network connectivity issues, causing the connection timeout., Solution: 1. Check the PostgreSQL database server status to ensure it's running and accepting connections. 2. Verify network connectivity between Service XYZ and the database server. 3. Review recent database load and performance metrics to identify potential overload. 4. Check the connection string and credentials used by Service XYZ. 5. Consider failing over to a secondary database instance if available.
+[2025-04-28T07:09:07.606Z] Caching analysis in database...
+[2025-04-28T07:09:08.512Z] Received response from Together AI API
+[2025-04-28T07:09:08.513Z] Extracted analysis - Cause: [Network connectivity issues, PostgreSQL server overload, incorrect connection details, or database configuration errors.], Solution: [1. Check network connectivity between Service
+[2025-04-28T07:09:08.513Z] Caching analysis in database...
+[2025-04-28T07:10:20.435Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:10:20.435Z] Fetching incident from database...
+[2025-04-28T07:10:20.486Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T05:18:35.45+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":8,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:10:20.487Z] Checking for cached analysis...
+[2025-04-28T07:10:20.544Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:10:20.544Z] Fetching incident from database...
+[2025-04-28T07:10:20.559Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:10:20.559Z] Preparing Together AI API request...
+[2025-04-28T07:10:20.560Z] Sending request to Together AI API...
+[2025-04-28T07:10:20.590Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T05:18:35.45+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":8,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:10:20.591Z] Checking for cached analysis...
+[2025-04-28T07:10:20.654Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:10:20.655Z] Preparing Together AI API request...
+[2025-04-28T07:10:20.655Z] Sending request to Together AI API...
+[2025-04-28T07:10:26.160Z] Received response from Together AI API
+[2025-04-28T07:10:26.161Z] Extracted analysis - Cause: <think>
+Okay, so I need to figure out why the Service XYZ couldn't connect to the PostgreSQL database. The error message says it timed out after 30 seconds, and this happened three times in a row over two minutes. Hmm, let's break this down., Solution: First, I remember that database connection timeouts can be due to a few common issues. One possibility is network problems. Maybe the server where Service XYZ is running can't reach the database server. I should check things like firewall rules, network latency, or any connectivity issues between the two servers. It's possible that there's a firewall blocking the necessary ports, or maybe the network is just slow, causing the connection to take too long.
+[2025-04-28T07:10:26.162Z] Caching analysis in database...
+[2025-04-28T07:10:27.531Z] Received response from Together AI API
+[2025-04-28T07:10:27.532Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why Service XYZ can't connect to the primary PostgreSQL database. The error message says it timed out after 30 seconds, and there were three consecutive failures in two minutes. Hmm, I remember that connection timeouts often relate to network issues or the database being unresponsive. Let me break this down., Solution: First, I should consider network connectivity. Maybe there's a problem with the firewall settings. If the firewall is blocking the port that PostgreSQL uses, say port 5432, then Service XYZ can't reach the database. I should check the firewall rules on both the service and database sides to ensure that traffic is allowed.
+[2025-04-28T07:10:27.532Z] Caching analysis in database...
+[2025-04-28T07:18:23.885Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:18:23.886Z] Fetching incident from database...
+[2025-04-28T07:18:23.927Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T05:18:35.45+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":8,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:18:23.928Z] Checking for cached analysis...
+[2025-04-28T07:18:23.992Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:23.993Z] Preparing Together AI API request...
+[2025-04-28T07:18:23.994Z] Sending request to Together AI API...
+[2025-04-28T07:18:24.010Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:18:24.010Z] Fetching incident from database...
+[2025-04-28T07:18:24.045Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T05:18:35.45+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":8,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:18:24.046Z] Checking for cached analysis...
+[2025-04-28T07:18:24.081Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:24.081Z] Preparing Together AI API request...
+[2025-04-28T07:18:24.082Z] Sending request to Together AI API...
+[2025-04-28T07:18:29.660Z] Received response from Together AI API
+[2025-04-28T07:18:29.660Z] Extracted analysis - Cause: The service is experiencing a, Solution: First, I should consider what a timeout usually means. It's when the service tries to connect to the database but doesn't get a response within the expected time frame. So, possible causes could be network issues, the database being down, or configuration problems.
+[2025-04-28T07:18:29.661Z] Caching analysis in database...
+[2025-04-28T07:18:29.823Z] Received response from Together AI API
+[2025-04-28T07:18:29.824Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why Service XYZ can't connect to the primary PostgreSQL database. The error message says it timed out after 30 seconds with three consecutive failures in the last two minutes. Hmm., Solution: First, I should consider network issues. Maybe there's a problem with the connection between Service XYZ and the database server. It could be a firewall blocking the ports, or maybe the network is down or misconfigured. I should check if the database server is reachable from Service XYZ's host.
+[2025-04-28T07:18:29.824Z] Caching analysis in database...
+[2025-04-28T07:18:34.512Z] === Starting Analysis for Incident 5 ===
+[2025-04-28T07:18:34.512Z] Fetching incident from database...
+[2025-04-28T07:18:34.559Z] Successfully fetched incident: {"id":5,"created_at":"2025-04-24T13:30:54.699431+00:00","updated_at":"2025-04-24T13:30:54.699431+00:00","title":"Database Connection Failure","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:18:34.559Z] Checking for cached analysis...
+[2025-04-28T07:18:34.596Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:34.597Z] Preparing Together AI API request...
+[2025-04-28T07:18:34.597Z] Sending request to Together AI API...
+[2025-04-28T07:18:34.621Z] === Starting Analysis for Incident 5 ===
+[2025-04-28T07:18:34.621Z] Fetching incident from database...
+[2025-04-28T07:18:34.667Z] Successfully fetched incident: {"id":5,"created_at":"2025-04-24T13:30:54.699431+00:00","updated_at":"2025-04-24T13:30:54.699431+00:00","title":"Database Connection Failure","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"Open","priority":"Critical","assigned_to":null,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:18:34.668Z] Checking for cached analysis...
+[2025-04-28T07:18:34.718Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:34.719Z] Preparing Together AI API request...
+[2025-04-28T07:18:34.719Z] Sending request to Together AI API...
+[2025-04-28T07:18:39.998Z] === Starting Analysis for Incident 4 ===
+[2025-04-28T07:18:39.998Z] Fetching incident from database...
+[2025-04-28T07:18:40.038Z] Successfully fetched incident: {"id":4,"created_at":"2025-04-24T11:56:11.895205+00:00","updated_at":"2025-04-24T13:29:08.815+00:00","title":"API Latency Spike","description":"Latency on the /checkout endpoint exceeded 2s threshold for 5 minutes. Affected region: us-east-1.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"Datadog","client":"Ecommerce App - Checkout Service","domain":"Uncategorized"}
+[2025-04-28T07:18:40.038Z] Checking for cached analysis...
+[2025-04-28T07:18:40.106Z] === Starting Analysis for Incident 4 ===
+[2025-04-28T07:18:40.106Z] Fetching incident from database...
+[2025-04-28T07:18:40.108Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:40.108Z] Preparing Together AI API request...
+[2025-04-28T07:18:40.108Z] Sending request to Together AI API...
+[2025-04-28T07:18:40.173Z] Successfully fetched incident: {"id":4,"created_at":"2025-04-24T11:56:11.895205+00:00","updated_at":"2025-04-24T13:29:08.815+00:00","title":"API Latency Spike","description":"Latency on the /checkout endpoint exceeded 2s threshold for 5 minutes. Affected region: us-east-1.","status":"Open","priority":"High","assigned_to":10,"resolution":null,"source":"Datadog","client":"Ecommerce App - Checkout Service","domain":"Uncategorized"}
+[2025-04-28T07:18:40.173Z] Checking for cached analysis...
+[2025-04-28T07:18:40.232Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:40.232Z] Preparing Together AI API request...
+[2025-04-28T07:18:40.232Z] Sending request to Together AI API...
+[2025-04-28T07:18:40.837Z] Received response from Together AI API
+[2025-04-28T07:18:40.838Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why the Service XYZ can't connect to the primary PostgreSQL database. The error message says it's timing out after 30 seconds, and there have been three consecutive failures in the last two minutes. Hmm, where do I start?, Solution: First, I remember that connection timeouts often relate to network issues. Maybe the service isn't reaching the database because of a network problem. I should check things like firewall settings or network latency. Could there be a firewall blocking the port that PostgreSQL uses, which is usually 5432? Or perhaps the network connection is slow or unreliable, causing the timeout.
+[2025-04-28T07:18:40.838Z] Caching analysis in database...
+[2025-04-28T07:18:41.059Z] Received response from Together AI API
+[2025-04-28T07:18:41.059Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why Service XYZ can't connect to the primary PostgreSQL database. The error message says it timed out after 30 seconds, and this has happened three times in the last two minutes. Hmm, that's not good. Let me think about possible causes., Solution: First, maybe the database is just not running. If the PostgreSQL service is down, then Service XYZ can't connect, right? I should check the server's status. But how? Maybe through the service manager or logs.
+[2025-04-28T07:18:41.060Z] Caching analysis in database...
+[2025-04-28T07:18:45.829Z] === Starting Analysis for Incident 3 ===
+[2025-04-28T07:18:45.830Z] Fetching incident from database...
+[2025-04-28T07:18:46.204Z] === Starting Analysis for Incident 3 ===
+[2025-04-28T07:18:46.205Z] Fetching incident from database...
+[2025-04-28T07:18:46.251Z] Received response from Together AI API
+[2025-04-28T07:18:46.252Z] Extracted analysis - Cause: The /checkout endpoint experienced a spike in request volume, overwhelming the server's capacity and causing latency to exceed the 2-second threshold., Solution: Monitor traffic patterns and implement rate limiting or auto-scaling
+[2025-04-28T07:18:46.252Z] Caching analysis in database...
+[2025-04-28T07:18:46.307Z] Successfully fetched incident: {"id":3,"created_at":"2025-04-24T11:52:00.214027+00:00","updated_at":"2025-04-24T11:53:18.345+00:00","title":"Test Incident 3","description":"Testing source and client fields","status":"Open","priority":"Medium","assigned_to":5,"resolution":null,"source":"Email","client":"Acme Corp","domain":"Uncategorized"}
+[2025-04-28T07:18:46.307Z] Checking for cached analysis...
+[2025-04-28T07:18:46.344Z] Successfully fetched incident: {"id":3,"created_at":"2025-04-24T11:52:00.214027+00:00","updated_at":"2025-04-24T11:53:18.345+00:00","title":"Test Incident 3","description":"Testing source and client fields","status":"Open","priority":"Medium","assigned_to":5,"resolution":null,"source":"Email","client":"Acme Corp","domain":"Uncategorized"}
+[2025-04-28T07:18:46.345Z] Checking for cached analysis...
+[2025-04-28T07:18:46.421Z] Received response from Together AI API
+[2025-04-28T07:18:46.422Z] Extracted analysis - Cause: <think>
+Okay, I need to figure out why the /checkout endpoint in the us-east-1 region is experiencing high latency. Let me start by understanding what's happening. The latency spiked above 2 seconds for five minutes, which is a significant issue, especially for a checkout process where users expect quick responses., Solution: First, I should consider possible causes. One common issue could be a problem with the database. If the API is querying the database and it's taking too long, that could cause a delay. Maybe there's a slow query or a deadlock. I should check the database performance metrics to see if there were any spikes in query times or if connections were maxed out.
+[2025-04-28T07:18:46.423Z] Caching analysis in database...
+[2025-04-28T07:18:46.512Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:46.513Z] Preparing Together AI API request...
+[2025-04-28T07:18:46.513Z] Sending request to Together AI API...
+[2025-04-28T07:18:46.545Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:46.545Z] Preparing Together AI API request...
+[2025-04-28T07:18:46.545Z] Sending request to Together AI API...
+[2025-04-28T07:18:50.741Z] Received response from Together AI API
+[2025-04-28T07:18:50.741Z] Extracted analysis - Cause: The source or client fields may not be correctly capturing or displaying test data due to misconfiguration, invalid data formats, or system bugs., Solution: Verify the system logs for errors, check data input formats, and ensure the test environment is properly configured. Repeat the test with valid data and escalate to the development team if issues persist.
+[2025-04-28T07:18:50.742Z] Caching analysis in database...
+[2025-04-28T07:18:52.365Z] Received response from Together AI API
+[2025-04-28T07:18:52.366Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out this incident titled "Test Incident 3" where the description is "Testing source and client fields." Hmm, not a lot of detail here, but I'll try to break it down., Solution: First, the possible cause. The user mentioned testing source and client fields. That makes me think they're probably working on some kind of integration or data input where these fields are important. Maybe they're using an API or a form where 'source' and 'client' are inputs. If it's not working as expected, one common issue could be that the data isn't being captured correctly. Perhaps the fields aren't properly mapped or there's some validation issue. Another thought is that the test data might not be formatted correctly, causing the system to reject it or not process it as intended.
+[2025-04-28T07:18:52.366Z] Caching analysis in database...
+[2025-04-28T07:18:55.461Z] === Starting Analysis for Incident 2 ===
+[2025-04-28T07:18:55.461Z] Fetching incident from database...
+[2025-04-28T07:18:55.548Z] Successfully fetched incident: {"id":2,"created_at":"2025-04-24T11:47:28.935489+00:00","updated_at":"2025-04-24T11:48:37.646+00:00","title":"Test Incident with new source","description":"Testing to check if client and source is visible and getting into database","status":"Open","priority":"High","assigned_to":5,"resolution":null,"source":null,"client":null,"domain":"Uncategorized"}
+[2025-04-28T07:18:55.549Z] Checking for cached analysis...
+[2025-04-28T07:18:55.569Z] === Starting Analysis for Incident 2 ===
+[2025-04-28T07:18:55.570Z] Fetching incident from database...
+[2025-04-28T07:18:55.605Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:55.606Z] Preparing Together AI API request...
+[2025-04-28T07:18:55.606Z] Sending request to Together AI API...
+[2025-04-28T07:18:55.618Z] Successfully fetched incident: {"id":2,"created_at":"2025-04-24T11:47:28.935489+00:00","updated_at":"2025-04-24T11:48:37.646+00:00","title":"Test Incident with new source","description":"Testing to check if client and source is visible and getting into database","status":"Open","priority":"High","assigned_to":5,"resolution":null,"source":null,"client":null,"domain":"Uncategorized"}
+[2025-04-28T07:18:55.619Z] Checking for cached analysis...
+[2025-04-28T07:18:55.674Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:18:55.675Z] Preparing Together AI API request...
+[2025-04-28T07:18:55.675Z] Sending request to Together AI API...
+[2025-04-28T07:18:59.871Z] Received response from Together AI API
+[2025-04-28T07:18:59.872Z] Extracted analysis - Cause: The new source or client configuration may have incorrect settings, such as invalid API keys, wrong database credentials, or misconfigured connection strings., Solution: Verify the configuration settings for the new source or client, ensuring all credentials and connection details are correct. Test the connection manually to confirm it works, and check logs for any error messages indicating the specific issue. If the problem persists, contact the vendor or support team for further assistance.
+[2025-04-28T07:18:59.873Z] Caching analysis in database...
+[2025-04-28T07:19:00.544Z] === Starting Analysis for Incident 1 ===
+[2025-04-28T07:19:00.544Z] Fetching incident from database...
+[2025-04-28T07:19:00.603Z] Successfully fetched incident: {"id":1,"created_at":"2025-04-24T06:30:12.706885+00:00","updated_at":"2025-04-24T13:34:12.932+00:00","title":"Test Incident with Source","description":"Testing the new source and client fields","status":"Closed","priority":"High","assigned_to":2,"resolution":null,"source":null,"client":null,"domain":"Uncategorized"}
+[2025-04-28T07:19:00.603Z] Checking for cached analysis...
+[2025-04-28T07:19:00.626Z] === Starting Analysis for Incident 1 ===
+[2025-04-28T07:19:00.626Z] Fetching incident from database...
+[2025-04-28T07:19:00.654Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:19:00.654Z] Preparing Together AI API request...
+[2025-04-28T07:19:00.655Z] Sending request to Together AI API...
+[2025-04-28T07:19:00.679Z] Successfully fetched incident: {"id":1,"created_at":"2025-04-24T06:30:12.706885+00:00","updated_at":"2025-04-24T13:34:12.932+00:00","title":"Test Incident with Source","description":"Testing the new source and client fields","status":"Closed","priority":"High","assigned_to":2,"resolution":null,"source":null,"client":null,"domain":"Uncategorized"}
+[2025-04-28T07:19:00.679Z] Checking for cached analysis...
+[2025-04-28T07:19:00.731Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:19:00.732Z] Preparing Together AI API request...
+[2025-04-28T07:19:00.733Z] Sending request to Together AI API...
+[2025-04-28T07:19:01.154Z] Received response from Together AI API
+[2025-04-28T07:19:01.154Z] Extracted analysis - Cause: The new source or client configuration might have incorrect settings, such as improper credentials, misconfigured data formats, or insufficient permissions to access the database., Solution: Verify the configuration of the new source and client, ensuring correct credentials and proper permissions. Check network connectivity and database access logs for any errors indicating failed attempts to write data. Validate that the data format from the source matches the expected format in the database. If issues persist, test with an alternative source or use a backup configuration to isolate the problem.
+[2025-04-28T07:19:01.155Z] Caching analysis in database...
+[2025-04-28T07:19:04.611Z] Received response from Together AI API
+[2025-04-28T07:19:04.612Z] Extracted analysis - Cause: The new source and client fields may not be configured correctly, leading to unexpected behavior during testing., Solution: Verify the configuration of the source and client fields, ensure proper data mapping, and conduct thorough testing in a controlled environment to identify and resolve any issues.
+[2025-04-28T07:19:04.612Z] Caching analysis in database...
+[2025-04-28T07:19:06.988Z] Received response from Together AI API
+[2025-04-28T07:19:06.988Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out how to approach this IT incident. The incident is titled "Test Incident with Source" and the description says it's for testing the new source and client fields. Hmm, that's a bit vague, but I'll start breaking it down., Solution: First, I need to understand what the issue might be. Since it's a test incident, the problem could be related to the new features they're implementing, which are the source and client fields. Maybe during testing, something didn't work as expected.
+[2025-04-28T07:19:06.989Z] Caching analysis in database...
+[2025-04-28T07:19:08.506Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:19:08.507Z] Fetching incident from database...
+[2025-04-28T07:19:08.566Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T05:18:35.45+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":8,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:19:08.567Z] Checking for cached analysis...
+[2025-04-28T07:19:08.619Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:19:08.620Z] Preparing Together AI API request...
+[2025-04-28T07:19:08.620Z] Sending request to Together AI API...
+[2025-04-28T07:19:08.623Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:19:08.624Z] Fetching incident from database...
+[2025-04-28T07:19:09.320Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T05:18:35.45+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":8,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Uncategorized"}
+[2025-04-28T07:19:09.321Z] Checking for cached analysis...
+[2025-04-28T07:19:09.377Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:19:09.377Z] Preparing Together AI API request...
+[2025-04-28T07:19:09.377Z] Sending request to Together AI API...
+[2025-04-28T07:19:14.150Z] Received response from Together AI API
+[2025-04-28T07:19:14.151Z] Extracted analysis - Cause: The primary, Solution: First, let me think about what a timeout usually means. It could be that the database isn't responding at all, or maybe the network is having issues. So, possible causes: the database might be down, overloaded, or there's a network problem between the service and the database.
+[2025-04-28T07:19:14.151Z] Caching analysis in database...
+[2025-04-28T07:19:14.502Z] Received response from Together AI API
+[2025-04-28T07:19:14.503Z] Extracted analysis - Cause: The primary PostgreSQL database server may be down or unresponsive, or there may be network connectivity issues preventing Service XYZ from establishing a connection., Solution: Check the status of the PostgreSQL server, verify network connectivity between Service XYZ and the database, and ensure there are no firewall rules blocking the connection. If the primary database is confirmed to be down, fail over to a replica or backup database and investigate the root cause of the primary database failure.
+[2025-04-28T07:19:14.503Z] Caching analysis in database...
+[2025-04-28T07:24:11.796Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-28T07:24:11.796Z] Params: {"id":"6"}
+[2025-04-28T07:24:11.797Z] Body: {"assigned_to":6}
+[2025-04-28T07:24:11.914Z] === Telegram Notification Debug ===
+[2025-04-28T07:24:11.915Z] Bot token exists: true
+[2025-04-28T07:24:11.915Z] Bot token length: 46
+[2025-04-28T07:24:11.916Z] Team member Telegram chat ID: 811347209
+[2025-04-28T07:24:11.916Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-28T07:24:11.917Z] Message to send: 🚨 New Incident Assignment
+
+Title: Database Connection Failure 25-04
+Priority: Critical
+Status: In Progress
+
+You have been assigned to this incident.
+[2025-04-28T07:24:11.917Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-28T07:24:13.640Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 20,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745825053,
+    "text": "🚨 New Incident Assignment\n\nTitle: Database Connection Failure 25-04\nPriority: Critical\nStatus: In Progress\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-28T07:24:13.641Z] Telegram notification sent successfully
+[2025-04-28T07:39:37.006Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:39:37.006Z] Fetching incident from database...
+[2025-04-28T07:39:37.042Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:24:13.641+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Hardware"}
+[2025-04-28T07:39:37.042Z] Checking for cached analysis...
+[2025-04-28T07:39:37.077Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:39:37.077Z] Fetching incident from database...
+[2025-04-28T07:39:37.086Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:39:37.086Z] Preparing Together AI API request...
+[2025-04-28T07:39:37.086Z] Sending request to Together AI API...
+[2025-04-28T07:39:37.107Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:24:13.641+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","domain":"Hardware"}
+[2025-04-28T07:39:37.107Z] Checking for cached analysis...
+[2025-04-28T07:39:37.135Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:39:37.136Z] Preparing Together AI API request...
+[2025-04-28T07:39:37.136Z] Sending request to Together AI API...
+[2025-04-28T07:39:42.881Z] Received response from Together AI API
+[2025-04-28T07:39:42.881Z] Extracted analysis - Cause: <think>
+Okay, let's tackle this incident. The service XYZ couldn't connect to the primary PostgreSQL database and timed out after 30 seconds. There were three consecutive failures in two minutes. Hmm, I need to figure out what's causing this and how to fix it., Solution: First, possible causes. Well, network issues come to mind. Maybe the server where service XYZ is running can't reach the PostgreSQL database. Firewalls could be blocking the necessary ports, like 5432, which is the default for PostgreSQL. Or maybe the network connection itself is unstable or down, causing packets to drop or get lost.
+[2025-04-28T07:39:42.881Z] Caching analysis in database...
+[2025-04-28T07:39:42.955Z] Received response from Together AI API
+[2025-04-28T07:39:42.956Z] Extracted analysis - Cause: **, Solution: First, maybe the database server isn't running. If the PostgreSQL service is down, Service XYZ can't connect. I should check the server's status. But how? I can try to start the service if it's stopped or see if it's crashed. Logs would help here to spot any crash reports or error messages.
+[2025-04-28T07:39:42.956Z] Caching analysis in database...
+[2025-04-28T07:43:21.201Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:43:21.202Z] Fetching incident from database...
+[2025-04-28T07:43:21.252Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:24:13.641+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Software"}
+[2025-04-28T07:43:21.253Z] Checking for cached analysis...
+[2025-04-28T07:43:21.352Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:43:21.352Z] Fetching incident from database...
+[2025-04-28T07:43:21.381Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:43:21.381Z] Preparing Together AI API request...
+[2025-04-28T07:43:21.381Z] Sending request to Together AI API...
+[2025-04-28T07:43:21.458Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:24:13.641+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Software"}
+[2025-04-28T07:43:21.459Z] Checking for cached analysis...
+[2025-04-28T07:43:21.554Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:43:21.554Z] Preparing Together AI API request...
+[2025-04-28T07:43:21.554Z] Sending request to Together AI API...
+[2025-04-28T07:43:26.660Z] Received response from Together AI API
+[2025-04-28T07:43:26.661Z] Extracted analysis - Cause: The primary PostgreSQL database may be unreachable due to network connectivity issues, the database service being down, or a misconfiguration in connection settings., Solution: 1. Check network connectivity between Service XYZ and the PostgreSQL database server using tools like `ping` or `telnet`. 2. Verify the PostgreSQL service status on the database server to ensure it is running and listening on the expected port. 3. Review PostgreSQL logs for errors or high load indicators. 4. If the database is confirmed unavailable, initiate failover to a replica or backup database.
+[2025-04-28T07:43:26.661Z] Caching analysis in database...
+[2025-04-28T07:43:27.206Z] Received response from Together AI API
+[2025-04-28T07:43:27.207Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why the Service XYZ is having trouble connecting to the primary PostgreSQL database. The error message says it's timing out after 30 seconds, and this has happened three times in a row over the past two minutes., Solution: First, I need to think about what could cause a timeout. Well, a timeout usually means that the service is waiting for a response from the database but isn't getting one within the expected timeframe. So, the problem could be on the database side, the network, or maybe with the service itself.
+[2025-04-28T07:43:27.208Z] Caching analysis in database...
+[2025-04-28T07:43:37.761Z] Updating category for incident 6 to Hardware
+[2025-04-28T07:43:38.241Z] Successfully updated category for incident 6
+[2025-04-28T07:50:30.544Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:50:30.545Z] Fetching incident from database...
+[2025-04-28T07:50:30.613Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T07:50:30.614Z] Checking for cached analysis...
+[2025-04-28T07:50:30.666Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:50:30.666Z] Fetching incident from database...
+[2025-04-28T07:50:30.685Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:50:30.686Z] Preparing Together AI API request...
+[2025-04-28T07:50:30.686Z] Sending request to Together AI API...
+[2025-04-28T07:50:30.733Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T07:50:30.733Z] Checking for cached analysis...
+[2025-04-28T07:50:30.874Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:50:30.874Z] Preparing Together AI API request...
+[2025-04-28T07:50:30.874Z] Sending request to Together AI API...
+[2025-04-28T07:50:35.902Z] Received response from Together AI API
+[2025-04-28T07:50:35.903Z] Extracted analysis - Cause: Network connectivity issues between Service XYZ and the PostgreSQL database, such as high latency or packet loss, or the PostgreSQL server being unresponsive or overloaded., Solution: 1. Check network connectivity using tools like `ping` or `traceroute`. 2. Verify that the PostgreSQL service is running and listening on the expected port. 3. Investigate PostgreSQL logs for errors or high load indicators. 4. Restart the PostgreSQL service if it's down or not responding. 5. Consider scaling the database or redistributing the load if overload is confirmed. 6. Ensure firewall rules allow traffic on the necessary ports between Service XYZ and the database.
+[2025-04-28T07:50:35.903Z] Caching analysis in database...
+[2025-04-28T07:50:37.233Z] Received response from Together AI API
+[2025-04-28T07:50:37.234Z] Extracted analysis - Cause: <think>
+Okay, so I have this incident where Service XYZ can't connect to the primary PostgreSQL database. The error message says it timed out after 30 seconds, and there have been three failures in the last two minutes. I need to figure out what's causing this and how to fix it., Solution: First, I'm thinking about possible causes. The timeout suggests that the service isn't getting a response from the database within the expected time. Maybe the database is down or not running. If the PostgreSQL service isn't up, connections can't be established. I should check the database server's status.
+[2025-04-28T07:50:37.235Z] Caching analysis in database...
+[2025-04-28T07:50:51.129Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:50:51.129Z] Fetching incident from database...
+[2025-04-28T07:50:51.876Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T07:50:51.877Z] Checking for cached analysis...
+[2025-04-28T07:50:51.892Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:50:51.892Z] Fetching incident from database...
+[2025-04-28T07:50:52.168Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T07:50:52.169Z] Checking for cached analysis...
+[2025-04-28T07:50:52.481Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:50:52.482Z] Preparing Together AI API request...
+[2025-04-28T07:50:52.482Z] Sending request to Together AI API...
+[2025-04-28T07:50:52.604Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:50:52.604Z] Preparing Together AI API request...
+[2025-04-28T07:50:52.605Z] Sending request to Together AI API...
+[2025-04-28T07:50:58.648Z] Received response from Together AI API
+[2025-04-28T07:50:58.649Z] Extracted analysis - Cause: <think>
+Okay, I need to figure out why the Service XYZ is failing to connect to the primary PostgreSQL database. The error message says it's a timeout after 30 seconds, and there have been three consecutive failures in the last two minutes., Solution: First, I should consider possible causes. The timeout suggests that the service isn't getting a response within the expected time frame. This could be due to several reasons. One possibility is network connectivity issues. Maybe there's a problem with the firewall settings, which might be blocking the necessary ports between the service and the database. Alternatively, the network itself could be down or experiencing high latency, causing the delay.
+[2025-04-28T07:50:58.650Z] Caching analysis in database...
+[2025-04-28T07:50:58.740Z] Received response from Together AI API
+[2025-04-28T07:50:58.741Z] Extracted analysis - Cause: The failure could be due to network connectivity issues between Service XYZ and the PostgreSQL database, such as a firewall blocking the connection, network latency, or an incorrect configuration preventing the service from reaching the database., Solution: Check the network connectivity by pinging the database server from Service XYZ, verify that the PostgreSQL service is running and listening on the correct port, and ensure that
+[2025-04-28T07:50:58.741Z] Caching analysis in database...
+[2025-04-28T07:56:18.502Z] Fetching category analytics...
+[2025-04-28T07:56:18.502Z] Supabase URL:
+[2025-04-28T07:56:18.502Z] Has Supabase Anon Key:
+[2025-04-28T07:56:18.621Z] Successfully fetched incidents:
+[2025-04-28T07:56:18.621Z] Successfully fetched category analytics:
+[2025-04-28T07:56:18.623Z] Fetching category analytics...
+[2025-04-28T07:56:18.623Z] Supabase URL:
+[2025-04-28T07:56:18.623Z] Has Supabase Anon Key:
+[2025-04-28T07:56:18.820Z] Successfully fetched incidents:
+[2025-04-28T07:56:18.821Z] Successfully fetched category analytics:
+[2025-04-28T07:56:30.905Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:56:30.906Z] Fetching incident from database...
+[2025-04-28T07:56:30.966Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T07:56:30.967Z] Checking for cached analysis...
+[2025-04-28T07:56:31.009Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:56:31.010Z] Preparing Together AI API request...
+[2025-04-28T07:56:31.010Z] Sending request to Together AI API...
+[2025-04-28T07:56:31.044Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T07:56:31.044Z] Fetching incident from database...
+[2025-04-28T07:56:31.109Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T07:56:31.109Z] Checking for cached analysis...
+[2025-04-28T07:56:31.221Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T07:56:31.221Z] Preparing Together AI API request...
+[2025-04-28T07:56:31.221Z] Sending request to Together AI API...
+[2025-04-28T07:56:37.060Z] Received response from Together AI API
+[2025-04-28T07:56:37.060Z] Extracted analysis - Cause: The primary PostgreSQL database server may be down, experiencing high latency, or overloaded with requests, leading to connection timeouts., Solution: Check the PostgreSQL server status, verify network connectivity and firewall settings, monitor database performance metrics, and review connection pool configurations in Service XYZ.
+[2025-04-28T07:56:37.060Z] Caching analysis in database...
+[2025-04-28T07:56:37.684Z] Received response from Together AI API
+[2025-04-28T07:56:37.685Z] Extracted analysis - Cause: <think>
+Okay, let's see. I'm trying to figure out why Service XYZ can't connect to the primary PostgreSQL database. The error message says it timed out after 30 seconds, and this has happened three times in the last two minutes. So, first, I need to understand what a timeout means in this context. A timeout usually indicates that the service isn't getting a response within the expected time frame., Solution: I remember that database connections can fail for a few reasons. Maybe the database server is down or not running. If the PostgreSQL server isn't running, then obviously Service XYZ can't connect. But how can I check that? Well, I could try to see if the server is up by pinging it or checking the process list.
+[2025-04-28T07:56:37.685Z] Caching analysis in database...
+[2025-04-28T09:53:57.827Z] Fetching category analytics...
+[2025-04-28T09:53:57.827Z] Supabase URL:
+[2025-04-28T09:53:57.828Z] Has Supabase Anon Key:
+[2025-04-28T09:54:03.264Z] Successfully fetched incidents:
+[2025-04-28T09:54:03.265Z] Successfully fetched category analytics:
+[2025-04-28T09:54:03.266Z] Fetching category analytics...
+[2025-04-28T09:54:03.266Z] Supabase URL:
+[2025-04-28T09:54:03.267Z] Has Supabase Anon Key:
+[2025-04-28T09:54:03.864Z] Successfully fetched incidents:
+[2025-04-28T09:54:03.864Z] Successfully fetched category analytics:
+[2025-04-28T10:22:20.752Z] Fetching category analytics...
+[2025-04-28T10:22:20.752Z] Supabase URL:
+[2025-04-28T10:22:20.752Z] Has Supabase Anon Key:
+[2025-04-28T10:22:20.822Z] Successfully fetched incidents:
+[2025-04-28T10:22:20.822Z] Successfully fetched category analytics:
+[2025-04-28T10:22:20.823Z] Fetching category analytics...
+[2025-04-28T10:22:20.823Z] Supabase URL:
+[2025-04-28T10:22:20.823Z] Has Supabase Anon Key:
+[2025-04-28T10:22:20.870Z] Successfully fetched incidents:
+[2025-04-28T10:22:20.870Z] Successfully fetched category analytics:
+[2025-04-28T10:28:55.908Z] Fetching category analytics...
+[2025-04-28T10:28:55.909Z] Supabase URL:
+[2025-04-28T10:28:55.909Z] Has Supabase Anon Key:
+[2025-04-28T10:28:56.113Z] Successfully fetched incidents:
+[2025-04-28T10:28:56.113Z] Successfully fetched category analytics:
+[2025-04-28T10:28:56.114Z] Fetching category analytics...
+[2025-04-28T10:28:56.114Z] Supabase URL:
+[2025-04-28T10:28:56.114Z] Has Supabase Anon Key:
+[2025-04-28T10:28:56.175Z] Successfully fetched incidents:
+[2025-04-28T10:28:56.175Z] Successfully fetched category analytics:
+[2025-04-28T10:29:34.940Z] Incoming request: GET /api/comments
+[2025-04-28T10:29:35.300Z] Incoming request: GET /api/comments
+[2025-04-28T10:29:35.303Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:29:35.304Z] Fetching category analytics...
+[2025-04-28T10:29:35.304Z] Supabase URL:
+[2025-04-28T10:29:35.304Z] Has Supabase Anon Key:
+[2025-04-28T10:29:35.307Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:29:35.308Z] Fetching team member analytics...
+[2025-04-28T10:29:35.416Z] Successfully fetched incidents:
+[2025-04-28T10:29:35.417Z] Successfully fetched category analytics:
+[2025-04-28T10:29:35.418Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:29:35.419Z] Fetching category analytics...
+[2025-04-28T10:29:35.419Z] Supabase URL:
+[2025-04-28T10:29:35.419Z] Has Supabase Anon Key:
+[2025-04-28T10:29:35.470Z] Successfully fetched incidents:
+[2025-04-28T10:29:35.470Z] Successfully fetched category analytics:
+[2025-04-28T10:29:35.541Z] Successfully fetched team member analytics:
+[2025-04-28T10:29:35.543Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:29:35.544Z] Fetching team member analytics...
+[2025-04-28T10:29:36.077Z] Successfully fetched team member analytics:
+[2025-04-28T10:32:20.354Z] Incoming request: GET /api/comments
+[2025-04-28T10:32:20.847Z] Incoming request: GET /api/comments
+[2025-04-28T10:32:20.854Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:32:20.855Z] Fetching category analytics...
+[2025-04-28T10:32:20.855Z] Supabase URL:
+[2025-04-28T10:32:20.855Z] Has Supabase Anon Key:
+[2025-04-28T10:32:20.858Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:32:20.858Z] Fetching team member analytics...
+[2025-04-28T10:32:20.929Z] Successfully fetched incidents:
+[2025-04-28T10:32:20.930Z] Successfully fetched category analytics:
+[2025-04-28T10:32:20.934Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:32:20.935Z] Fetching category analytics...
+[2025-04-28T10:32:20.935Z] Supabase URL:
+[2025-04-28T10:32:20.935Z] Has Supabase Anon Key:
+[2025-04-28T10:32:20.977Z] Successfully fetched incidents:
+[2025-04-28T10:32:20.977Z] Successfully fetched category analytics:
+[2025-04-28T10:32:20.980Z] Successfully fetched team member analytics:
+[2025-04-28T10:32:20.981Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:32:20.981Z] Fetching team member analytics...
+[2025-04-28T10:32:21.061Z] Successfully fetched team member analytics:
+[2025-04-28T10:32:36.266Z] Incoming request: GET /api/incidents
+[2025-04-28T10:32:36.346Z] Incoming request: GET /api/incidents
+[2025-04-28T10:32:49.577Z] Incoming request: GET /api/incidents/new
+[2025-04-28T10:32:49.586Z] Incoming request: GET /api/team-members
+[2025-04-28T10:32:49.676Z] Incoming request: GET /api/incidents/new
+[2025-04-28T10:32:49.752Z] Incoming request: GET /api/team-members
+[2025-04-28T10:32:54.507Z] Incoming request: GET /api/incidents
+[2025-04-28T10:32:54.769Z] Incoming request: GET /api/incidents
+[2025-04-28T10:39:50.744Z] Incoming request: GET /api/incidents/6
+[2025-04-28T10:39:50.748Z] Incoming request: GET /api/team-members
+[2025-04-28T10:40:01.328Z] Incoming request: GET /api/incidents/6
+[2025-04-28T10:40:01.333Z] Incoming request: GET /api/team-members
+[2025-04-28T10:40:07.020Z] Incoming request: GET /api/incidents
+[2025-04-28T10:40:15.642Z] Incoming request: GET /api/incidents/6
+[2025-04-28T10:40:15.646Z] Incoming request: GET /api/team-members
+[2025-04-28T10:40:15.650Z] Incoming request: GET /api/incidents
+[2025-04-28T10:40:15.719Z] Incoming request: GET /api/incidents/6
+[2025-04-28T10:40:15.776Z] Incoming request: GET /api/team-members
+[2025-04-28T10:40:15.780Z] Incoming request: POST /api/incidents/6/analyze
+[2025-04-28T10:40:15.782Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T10:40:15.783Z] Fetching incident from database...
+[2025-04-28T10:40:15.824Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T10:40:15.824Z] Checking for cached analysis...
+[2025-04-28T10:40:15.857Z] Incoming request: POST /api/incidents/6/analyze
+[2025-04-28T10:40:15.858Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T10:40:15.859Z] Fetching incident from database...
+[2025-04-28T10:40:15.868Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:40:15.869Z] Preparing Together AI API request...
+[2025-04-28T10:40:15.869Z] Sending request to Together AI API...
+[2025-04-28T10:40:15.936Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T10:40:15.936Z] Checking for cached analysis...
+[2025-04-28T10:40:15.986Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:40:15.987Z] Preparing Together AI API request...
+[2025-04-28T10:40:15.987Z] Sending request to Together AI API...
+[2025-04-28T10:40:24.740Z] Received response from Together AI API
+[2025-04-28T10:40:24.741Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why the Service XYZ can't connect to the PostgreSQL database. The error message says it timed out after 30 seconds with three consecutive failures in two minutes. Hmm, where do I start?, Solution: First, I remember that connection issues can often be network-related. Maybe there's a problem with the network between Service XYZ and the database. I should check if the database server is reachable. Maybe the firewall is blocking the ports? PostgreSQL typically uses port 5432, so if that's not open, connections would fail. I should verify the firewall rules on both the service and the database server.
+[2025-04-28T10:40:24.741Z] Caching analysis in database...
+[2025-04-28T10:40:25.269Z] Received response from Together AI API
+[2025-04-28T10:40:25.269Z] Extracted analysis - Cause: Network connectivity issues between Service XYZ, Solution: First, I remember that when a database connection times out, it usually means that the service is trying to connect, but the database isn't responding within the expected time frame. So, what could cause that?
+[2025-04-28T10:40:25.270Z] Caching analysis in database...
+[2025-04-28T10:44:31.716Z] Incoming request: GET /api/incidents
+[2025-04-28T10:44:42.271Z] Incoming request: GET /api/incidents
+[2025-04-28T10:47:38.570Z] Incoming request: GET /api/comments
+[2025-04-28T10:47:38.994Z] Incoming request: GET /api/comments
+[2025-04-28T10:47:39.002Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:47:39.002Z] Fetching category analytics...
+[2025-04-28T10:47:39.003Z] Supabase URL:
+[2025-04-28T10:47:39.003Z] Has Supabase Anon Key:
+[2025-04-28T10:47:39.009Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:47:39.009Z] Fetching team member analytics...
+[2025-04-28T10:47:39.073Z] Successfully fetched incidents:
+[2025-04-28T10:47:39.073Z] Successfully fetched category analytics:
+[2025-04-28T10:47:39.076Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:47:39.076Z] Fetching category analytics...
+[2025-04-28T10:47:39.077Z] Supabase URL:
+[2025-04-28T10:47:39.077Z] Has Supabase Anon Key:
+[2025-04-28T10:47:39.132Z] Successfully fetched incidents:
+[2025-04-28T10:47:39.133Z] Successfully fetched category analytics:
+[2025-04-28T10:47:39.135Z] Successfully fetched team member analytics:
+[2025-04-28T10:47:39.136Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:47:39.137Z] Fetching team member analytics...
+[2025-04-28T10:47:39.240Z] Successfully fetched team member analytics:
+[2025-04-28T10:47:40.922Z] Incoming request: GET /api/incidents
+[2025-04-28T10:47:40.968Z] Incoming request: GET /api/incidents
+[2025-04-28T10:47:42.049Z] Incoming request: GET /api/incidents/6
+[2025-04-28T10:47:42.055Z] Incoming request: GET /api/team-members
+[2025-04-28T10:47:42.097Z] Incoming request: GET /api/incidents/6
+[2025-04-28T10:47:42.159Z] Incoming request: GET /api/team-members
+[2025-04-28T10:47:42.161Z] Incoming request: POST /api/incidents/6/analyze
+[2025-04-28T10:47:42.161Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T10:47:42.162Z] Fetching incident from database...
+[2025-04-28T10:47:42.245Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T10:47:42.245Z] Checking for cached analysis...
+[2025-04-28T10:47:42.290Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:47:42.290Z] Preparing Together AI API request...
+[2025-04-28T10:47:42.291Z] Sending request to Together AI API...
+[2025-04-28T10:47:42.308Z] Incoming request: POST /api/incidents/6/analyze
+[2025-04-28T10:47:42.309Z] === Starting Analysis for Incident 6 ===
+[2025-04-28T10:47:42.310Z] Fetching incident from database...
+[2025-04-28T10:47:42.359Z] Successfully fetched incident: {"id":6,"created_at":"2025-04-25T06:16:19.937713+00:00","updated_at":"2025-04-28T07:43:37.761+00:00","title":"Database Connection Failure 25-04","description":"Service XYZ failed to establish a connection with the primary PostgreSQL database. Error: timeout after 30s. Detected 3 consecutive failures in the last 2 minutes.","status":"In Progress","priority":"Critical","assigned_to":6,"resolution":null,"source":"Prometheus Alertmanager","client":"Internal Microservices Platform - Auth Service","category":"Hardware"}
+[2025-04-28T10:47:42.359Z] Checking for cached analysis...
+[2025-04-28T10:47:42.405Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:47:42.406Z] Preparing Together AI API request...
+[2025-04-28T10:47:42.406Z] Sending request to Together AI API...
+[2025-04-28T10:47:44.630Z] Incoming request: GET /api/incidents
+[2025-04-28T10:47:44.672Z] Incoming request: GET /api/incidents
+[2025-04-28T10:47:47.580Z] Received response from Together AI API
+[2025-04-28T10:47:47.580Z] Extracted analysis - Cause: The failure could be due to network connectivity issues, PostgreSQL database server being unresponsive, or high database load causing timeouts., Solution: Check if the PostgreSQL service is running and responsive. Verify network connectivity between Service XYZ and the database server. Review PostgreSQL logs for error messages and analyze database performance metrics for signs of overload. Ensure firewall rules allow necessary connections and consider optimizing queries or scaling the database if under heavy load.
+[2025-04-28T10:47:47.581Z] Caching analysis in database...
+[2025-04-28T10:47:47.751Z] Received response from Together AI API
+[2025-04-28T10:47:47.752Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why Service XYZ can't connect to the primary PostgreSQL database. The error message says it's a timeout after 30 seconds and there were three consecutive failures in two minutes. Hmm, where do I start?, Solution: First, maybe the database server isn't running. I know that if the PostgreSQL service is down, any connection attempts will fail. I should check the server's status. But how? I could log in to the server and run something like `systemctl status postgresql` to see if it's active and running. If it's not, that's probably the issue.
+[2025-04-28T10:47:47.752Z] Caching analysis in database...
+[2025-04-28T10:50:04.329Z] Incoming request: GET /api/comments
+[2025-04-28T10:50:04.731Z] Incoming request: GET /api/comments
+[2025-04-28T10:50:04.736Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:50:04.736Z] Fetching category analytics...
+[2025-04-28T10:50:04.736Z] Supabase URL:
+[2025-04-28T10:50:04.736Z] Has Supabase Anon Key:
+[2025-04-28T10:50:04.738Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:50:04.738Z] Fetching team member analytics...
+[2025-04-28T10:50:04.807Z] Successfully fetched incidents:
+[2025-04-28T10:50:04.807Z] Successfully fetched category analytics:
+[2025-04-28T10:50:04.808Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:50:04.809Z] Fetching category analytics...
+[2025-04-28T10:50:04.809Z] Supabase URL:
+[2025-04-28T10:50:04.809Z] Has Supabase Anon Key:
+[2025-04-28T10:50:04.876Z] Successfully fetched team member analytics:
+[2025-04-28T10:50:04.878Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:50:04.878Z] Fetching team member analytics...
+[2025-04-28T10:50:05.002Z] Successfully fetched team member analytics:
+[2025-04-28T10:50:05.031Z] Successfully fetched incidents:
+[2025-04-28T10:50:05.031Z] Successfully fetched category analytics:
+[2025-04-28T10:50:25.975Z] Incoming request: GET /api/comments
+[2025-04-28T10:50:26.062Z] Incoming request: GET /api/comments
+[2025-04-28T10:50:26.068Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:50:26.069Z] Fetching category analytics...
+[2025-04-28T10:50:26.069Z] Supabase URL:
+[2025-04-28T10:50:26.069Z] Has Supabase Anon Key:
+[2025-04-28T10:50:26.071Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:50:26.072Z] Fetching team member analytics...
+[2025-04-28T10:50:26.146Z] Successfully fetched incidents:
+[2025-04-28T10:50:26.146Z] Successfully fetched category analytics:
+[2025-04-28T10:50:26.147Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:50:26.147Z] Fetching category analytics...
+[2025-04-28T10:50:26.147Z] Supabase URL:
+[2025-04-28T10:50:26.147Z] Has Supabase Anon Key:
+[2025-04-28T10:50:26.191Z] Successfully fetched incidents:
+[2025-04-28T10:50:26.191Z] Successfully fetched category analytics:
+[2025-04-28T10:50:26.210Z] Successfully fetched team member analytics:
+[2025-04-28T10:50:26.211Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:50:26.211Z] Fetching team member analytics...
+[2025-04-28T10:50:26.287Z] Successfully fetched team member analytics:
+[2025-04-28T10:50:29.271Z] Incoming request: GET /api/incidents
+[2025-04-28T10:50:29.336Z] Incoming request: GET /api/incidents
+[2025-04-28T10:52:29.883Z] Incoming request: POST /api/incidents
+[2025-04-28T10:52:34.429Z] Incoming request: GET /api/incidents/7
+[2025-04-28T10:52:34.435Z] Incoming request: GET /api/team-members
+[2025-04-28T10:52:34.528Z] Incoming request: GET /api/incidents/7
+[2025-04-28T10:52:34.584Z] Incoming request: GET /api/team-members
+[2025-04-28T10:52:34.588Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T10:52:34.589Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T10:52:34.590Z] Fetching incident from database...
+[2025-04-28T10:52:34.677Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:30.495374+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":null,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T10:52:34.678Z] Checking for cached analysis...
+[2025-04-28T10:52:34.716Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T10:52:34.717Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T10:52:34.717Z] Fetching incident from database...
+[2025-04-28T10:52:34.734Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:52:34.735Z] Preparing Together AI API request...
+[2025-04-28T10:52:34.735Z] Sending request to Together AI API...
+[2025-04-28T10:52:34.764Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:30.495374+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":null,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T10:52:34.765Z] Checking for cached analysis...
+[2025-04-28T10:52:34.818Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:52:34.819Z] Preparing Together AI API request...
+[2025-04-28T10:52:34.820Z] Sending request to Together AI API...
+[2025-04-28T10:52:40.757Z] Received response from Together AI API
+[2025-04-28T10:52:40.757Z] Extracted analysis - Cause: <think>
+Okay, so I have this incident where the memory usage on three production web servers went over 90% for more than 10 minutes. That's a pretty high threshold, so it's definitely a cause for concern. I need to figure out what might be causing this and how to fix it., Solution: First, I should consider possible causes. High memory usage could be due to a few things. One thought is a memory leak in the web applications running on these servers. Memory leaks happen when applications allocate memory but don't release it properly, causing memory usage to creep up over time. If this is the case, the servers might eventually run out of memory, leading to crashes or slow performance.
+[2025-04-28T10:52:40.758Z] Caching analysis in database...
+[2025-04-28T10:52:40.949Z] Received response from Together AI API
+[2025-04-28T10:52:40.949Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why the memory usage on our three production web servers spiked to over 90% and stayed there for more than 10 minutes. That's a pretty high threshold, and it's definitely a cause for concern because it could lead to application crashes or slower performance for our users., Solution: First, I should consider possible causes. One common issue could be a memory leak in the web applications running on these servers. If the applications aren't properly releasing memory after use, over time, the memory usage will keep increasing until it hits the limit. That would explain the sustained high usage.
+[2025-04-28T10:52:40.950Z] Caching analysis in database...
+[2025-04-28T10:52:52.381Z] Incoming request: PUT /api/incidents/7/assign
+[2025-04-28T10:52:52.382Z] PUT /api/incidents/:id/assign - Request received
+[2025-04-28T10:52:52.382Z] Params: {"id":"7"}
+[2025-04-28T10:52:52.382Z] Body: {"assigned_to":2}
+[2025-04-28T10:52:52.503Z] === Telegram Notification Debug ===
+[2025-04-28T10:52:52.503Z] Bot token exists: true
+[2025-04-28T10:52:52.504Z] Bot token length: 46
+[2025-04-28T10:52:52.505Z] Team member Telegram chat ID: 811347209
+[2025-04-28T10:52:52.505Z] Sending Telegram notification to chat ID: 811347209
+[2025-04-28T10:52:52.506Z] Message to send: 🚨 New Incident Assignment
+
+Title: High Memory Usage on Web Servers
+Priority: High
+Status: Open
+
+You have been assigned to this incident.
+[2025-04-28T10:52:52.506Z] Telegram API URL: https://api.telegram.org/bot7977316034:AAHBL2gnvLxmADLkjjc8BMODVAcW-YI1qJw/sendMessage
+[2025-04-28T10:52:53.145Z] Telegram API Response: {
+  "ok": true,
+  "result": {
+    "message_id": 21,
+    "from": {
+      "id": 7977316034,
+      "is_bot": true,
+      "first_name": "Upkeeper",
+      "username": "Upkeeper_bot"
+    },
+    "chat": {
+      "id": 811347209,
+      "first_name": "Abhishek",
+      "last_name": "Songirkar",
+      "username": "Assassin396",
+      "type": "private"
+    },
+    "date": 1745837573,
+    "text": "🚨 New Incident Assignment\n\nTitle: High Memory Usage on Web Servers\nPriority: High\nStatus: Open\n\nYou have been assigned to this incident."
+  }
+}
+[2025-04-28T10:52:53.146Z] Telegram notification sent successfully
+[2025-04-28T10:53:03.945Z] Incoming request: GET /api/incidents
+[2025-04-28T10:53:04.050Z] Incoming request: GET /api/incidents
+[2025-04-28T10:54:41.376Z] Incoming request: GET /api/comments
+[2025-04-28T10:54:41.775Z] Incoming request: GET /api/comments
+[2025-04-28T10:54:41.784Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:54:41.785Z] Fetching category analytics...
+[2025-04-28T10:54:41.785Z] Supabase URL:
+[2025-04-28T10:54:41.785Z] Has Supabase Anon Key:
+[2025-04-28T10:54:41.789Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:54:41.790Z] Fetching team member analytics...
+[2025-04-28T10:54:41.854Z] Successfully fetched incidents:
+[2025-04-28T10:54:41.854Z] Successfully fetched category analytics:
+[2025-04-28T10:54:41.856Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:54:41.856Z] Fetching category analytics...
+[2025-04-28T10:54:41.857Z] Supabase URL:
+[2025-04-28T10:54:41.857Z] Has Supabase Anon Key:
+[2025-04-28T10:54:41.898Z] Successfully fetched incidents:
+[2025-04-28T10:54:41.898Z] Successfully fetched category analytics:
+[2025-04-28T10:54:41.914Z] Successfully fetched team member analytics:
+[2025-04-28T10:54:41.916Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:54:41.916Z] Fetching team member analytics...
+[2025-04-28T10:54:41.997Z] Successfully fetched team member analytics:
+[2025-04-28T10:55:02.509Z] Incoming request: GET /api/incidents
+[2025-04-28T10:55:02.602Z] Incoming request: GET /api/incidents
+[2025-04-28T10:55:07.400Z] Incoming request: GET /api/incidents/7
+[2025-04-28T10:55:07.403Z] Incoming request: GET /api/team-members
+[2025-04-28T10:55:08.122Z] Incoming request: GET /api/incidents/7
+[2025-04-28T10:55:08.215Z] Incoming request: GET /api/team-members
+[2025-04-28T10:55:08.217Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T10:55:08.217Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T10:55:08.217Z] Fetching incident from database...
+[2025-04-28T10:55:08.378Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T10:55:08.379Z] Checking for cached analysis...
+[2025-04-28T10:55:08.430Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T10:55:08.431Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T10:55:08.431Z] Fetching incident from database...
+[2025-04-28T10:55:08.524Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:55:08.524Z] Preparing Together AI API request...
+[2025-04-28T10:55:08.525Z] Sending request to Together AI API...
+[2025-04-28T10:55:08.572Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T10:55:08.572Z] Checking for cached analysis...
+[2025-04-28T10:55:08.660Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:55:08.660Z] Preparing Together AI API request...
+[2025-04-28T10:55:08.661Z] Sending request to Together AI API...
+[2025-04-28T10:55:12.383Z] Incoming request: GET /api/incidents
+[2025-04-28T10:55:12.429Z] Incoming request: GET /api/incidents
+[2025-04-28T10:55:14.984Z] Received response from Together AI API
+[2025-04-28T10:55:14.984Z] Extracted analysis - Cause: Memory leak in application code, increased traffic, or inefficient resource utilization., Solution: Restart affected servers, investigate application logs for errors, profile memory usage to identify leaks, optimize server configuration, and consider scaling infrastructure if needed.
+[2025-04-28T10:55:14.985Z] Caching analysis in database...
+[2025-04-28T10:55:15.112Z] Received response from Together AI API
+[2025-04-28T10:55:15.113Z] Extracted analysis - Cause: <think>
+Okay, so I need to analyze this incident where the memory usage on three production web servers went over 90% for more than 10 minutes. The user is worried about application crashes and performance issues. Hmm, where do I start?, Solution: First, I should think about possible causes for high memory usage. One common issue could be a memory leak in the applications running on those servers. If the apps aren't releasing memory properly after use, over time the memory usage will keep increasing, leading to high usage like this.
+[2025-04-28T10:55:15.113Z] Caching analysis in database...
+[2025-04-28T10:56:02.376Z] Incoming request: GET /api/comments
+[2025-04-28T10:56:02.476Z] Incoming request: GET /api/comments
+[2025-04-28T10:56:02.482Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:56:02.482Z] Fetching category analytics...
+[2025-04-28T10:56:02.482Z] Supabase URL:
+[2025-04-28T10:56:02.482Z] Has Supabase Anon Key:
+[2025-04-28T10:56:02.485Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:56:02.486Z] Fetching team member analytics...
+[2025-04-28T10:56:02.564Z] Successfully fetched incidents:
+[2025-04-28T10:56:02.565Z] Successfully fetched category analytics:
+[2025-04-28T10:56:02.566Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:56:02.566Z] Fetching category analytics...
+[2025-04-28T10:56:02.566Z] Supabase URL:
+[2025-04-28T10:56:02.566Z] Has Supabase Anon Key:
+[2025-04-28T10:56:02.612Z] Successfully fetched incidents:
+[2025-04-28T10:56:02.612Z] Successfully fetched category analytics:
+[2025-04-28T10:56:02.621Z] Successfully fetched team member analytics:
+[2025-04-28T10:56:02.623Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:56:02.623Z] Fetching team member analytics...
+[2025-04-28T10:56:02.729Z] Successfully fetched team member analytics:
+[2025-04-28T10:56:37.951Z] Incoming request: GET /api/comments
+[2025-04-28T10:56:38.792Z] Incoming request: GET /api/comments
+[2025-04-28T10:56:38.801Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:56:38.801Z] Fetching category analytics...
+[2025-04-28T10:56:38.802Z] Supabase URL:
+[2025-04-28T10:56:38.802Z] Has Supabase Anon Key:
+[2025-04-28T10:56:38.806Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:56:38.807Z] Fetching team member analytics...
+[2025-04-28T10:56:38.936Z] Successfully fetched incidents:
+[2025-04-28T10:56:38.937Z] Successfully fetched category analytics:
+[2025-04-28T10:56:38.940Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T10:56:38.940Z] Fetching category analytics...
+[2025-04-28T10:56:38.940Z] Supabase URL:
+[2025-04-28T10:56:38.940Z] Has Supabase Anon Key:
+[2025-04-28T10:56:38.943Z] Successfully fetched team member analytics:
+[2025-04-28T10:56:38.945Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T10:56:38.946Z] Fetching team member analytics...
+[2025-04-28T10:56:38.986Z] Successfully fetched incidents:
+[2025-04-28T10:56:38.986Z] Successfully fetched category analytics:
+[2025-04-28T10:56:39.028Z] Successfully fetched team member analytics:
+[2025-04-28T10:57:02.677Z] Incoming request: GET /api/incidents
+[2025-04-28T10:57:02.776Z] Incoming request: GET /api/incidents
+[2025-04-28T10:57:06.393Z] Incoming request: GET /api/incidents/7
+[2025-04-28T10:57:06.396Z] Incoming request: GET /api/team-members
+[2025-04-28T10:57:06.442Z] Incoming request: GET /api/incidents/7
+[2025-04-28T10:57:06.534Z] Incoming request: GET /api/team-members
+[2025-04-28T10:57:06.536Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T10:57:06.536Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T10:57:06.536Z] Fetching incident from database...
+[2025-04-28T10:57:06.591Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T10:57:06.591Z] Checking for cached analysis...
+[2025-04-28T10:57:06.611Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T10:57:06.612Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T10:57:06.612Z] Fetching incident from database...
+[2025-04-28T10:57:06.639Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:57:06.639Z] Preparing Together AI API request...
+[2025-04-28T10:57:06.639Z] Sending request to Together AI API...
+[2025-04-28T10:57:06.648Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T10:57:06.648Z] Checking for cached analysis...
+[2025-04-28T10:57:06.683Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T10:57:06.683Z] Preparing Together AI API request...
+[2025-04-28T10:57:06.683Z] Sending request to Together AI API...
+[2025-04-28T10:57:12.416Z] Received response from Together AI API
+[2025-04-28T10:57:12.417Z] Extracted analysis - Cause: <think>
+Okay, so I need to figure out the possible cause and suggested solution for this incident where the memory usage on three production web servers went over 90% for more than 10 minutes. Hmm, high memory usage can be a tricky issue. Let me break it down., Solution: First, possible causes. I remember that memory leaks in applications are a common issue. If the web servers are running applications that aren't releasing memory properly after use, over time, the memory usage could creep up, especially if the servers are handling a lot of requests. That makes sense because consistent high usage over 10 minutes suggests a gradual increase rather than a sudden spike.
+[2025-04-28T10:57:12.418Z] Caching analysis in database...
+[2025-04-28T10:57:12.765Z] Received response from Together AI API
+[2025-04-28T10:57:12.766Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why the memory usage on our production web servers spiked to over 90% for more than 10 minutes. That's a serious issue because high memory usage can lead to application crashes and slow performance, which would be bad for our users. Let me break this down step by step., Solution: First, I should consider what could cause such high memory consumption. One possibility is a memory leak in the application. Memory leaks happen when the application doesn't properly release memory after it's done using it, so over time, the memory usage just keeps increasing. If the application is leaking memory, it could explain why the usage went up and stayed high.
+[2025-04-28T10:57:12.766Z] Caching analysis in database...
+[2025-04-28T10:57:17.733Z] Incoming request: GET /api/incidents
+[2025-04-28T10:57:17.827Z] Incoming request: GET /api/incidents
+[2025-04-28T11:07:15.567Z] Incoming request: GET /api/comments
+[2025-04-28T11:07:16.385Z] Incoming request: GET /api/comments
+[2025-04-28T11:07:16.391Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T11:07:16.391Z] Fetching team member analytics...
+[2025-04-28T11:07:16.394Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T11:07:16.395Z] Fetching category analytics...
+[2025-04-28T11:07:16.395Z] Supabase URL:
+[2025-04-28T11:07:16.395Z] Has Supabase Anon Key:
+[2025-04-28T11:07:16.462Z] Successfully fetched incidents:
+[2025-04-28T11:07:16.463Z] Successfully fetched category analytics:
+[2025-04-28T11:07:16.464Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T11:07:16.465Z] Fetching category analytics...
+[2025-04-28T11:07:16.465Z] Supabase URL:
+[2025-04-28T11:07:16.465Z] Has Supabase Anon Key:
+[2025-04-28T11:07:16.503Z] Successfully fetched incidents:
+[2025-04-28T11:07:16.503Z] Successfully fetched category analytics:
+[2025-04-28T11:07:16.512Z] Successfully fetched team member analytics:
+[2025-04-28T11:07:16.515Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T11:07:16.515Z] Fetching team member analytics...
+[2025-04-28T11:07:16.630Z] Successfully fetched team member analytics:
+[2025-04-28T11:07:18.794Z] Incoming request: GET /api/incidents
+[2025-04-28T11:07:18.836Z] Incoming request: GET /api/incidents
+[2025-04-28T11:07:22.840Z] Incoming request: GET /api/team-members
+[2025-04-28T11:07:22.843Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:07:22.925Z] Incoming request: GET /api/team-members
+[2025-04-28T11:07:22.937Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:07:22.943Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:07:22.943Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:07:22.944Z] Fetching incident from database...
+[2025-04-28T11:07:23.021Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:07:23.021Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:07:23.022Z] Fetching incident from database...
+[2025-04-28T11:07:23.039Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:07:23.040Z] Checking for cached analysis...
+[2025-04-28T11:07:23.067Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:07:23.068Z] Checking for cached analysis...
+[2025-04-28T11:07:23.088Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T11:07:23.089Z] Preparing Together AI API request...
+[2025-04-28T11:07:23.089Z] Sending request to Together AI API...
+[2025-04-28T11:07:23.111Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T11:07:23.111Z] Preparing Together AI API request...
+[2025-04-28T11:07:23.112Z] Sending request to Together AI API...
+[2025-04-28T11:07:28.920Z] Received response from Together AI API
+[2025-04-28T11:07:28.921Z] Extracted analysis - Cause: High memory usage on the web servers could be due to a memory leak in the application, increased traffic load, or misconfiguration of server settings., Solution: Check for memory leaks by analyzing application logs and using memory profiling tools. Adjust server configurations such as JVM heap size or connection pools. Consider implementing load balancing or scaling solutions to handle increased traffic. Monitor server performance closely using tools like Grafana or Prometheus.
+[2025-04-28T11:07:28.921Z] Caching analysis in database...
+[2025-04-28T11:07:29.230Z] Received response from Together AI API
+[2025-04-28T11:07:29.231Z] Extracted analysis - Cause: <think>
+Okay, so I've got this incident where three production web servers are showing high memory usage, over 90% for more than 10 minutes. That's a problem because if the memory gets maxed out, the applications might crash or performance could degrade, which isn't good for users. I need to figure out what's causing this and how to fix it., Solution: First, I'll think about possible causes. High memory usage on web servers can be due to several things. One common issue is a memory leak in the applications running on the servers. If the apps aren't releasing memory properly after they use it, over time the memory usage keeps climbing. Another possibility is increased traffic. If the servers are handling more requests than usual, they might be using more memory to process all those requests. Misconfiguration of the server settings could also be a culprit. Maybe the server isn't configured to handle the load efficiently, leading to higher memory consumption. Additionally, inefficient resource usage by the applications, like not using connection pooling correctly or keeping too many connections open, could be eating up memory.
+[2025-04-28T11:07:29.232Z] Caching analysis in database...
+[2025-04-28T11:07:36.592Z] Incoming request: GET /api/incidents
+[2025-04-28T11:07:36.679Z] Incoming request: GET /api/incidents
+[2025-04-28T11:07:37.875Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:07:37.882Z] Incoming request: GET /api/team-members
+[2025-04-28T11:07:37.934Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:07:38.068Z] Incoming request: GET /api/team-members
+[2025-04-28T11:07:38.072Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:07:38.073Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:07:38.073Z] Fetching incident from database...
+[2025-04-28T11:07:38.119Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:07:38.120Z] Checking for cached analysis...
+[2025-04-28T11:07:38.174Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T11:07:38.175Z] Preparing Together AI API request...
+[2025-04-28T11:07:38.175Z] Sending request to Together AI API...
+[2025-04-28T11:07:38.193Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:07:38.193Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:07:38.194Z] Fetching incident from database...
+[2025-04-28T11:07:38.244Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:07:38.244Z] Checking for cached analysis...
+[2025-04-28T11:07:38.302Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T11:07:38.302Z] Preparing Together AI API request...
+[2025-04-28T11:07:38.303Z] Sending request to Together AI API...
+[2025-04-28T11:07:43.140Z] Incoming request: GET /api/incidents
+[2025-04-28T11:07:43.236Z] Incoming request: GET /api/incidents
+[2025-04-28T11:07:43.614Z] Received response from Together AI API
+[2025-04-28T11:07:43.614Z] Extracted analysis - Cause: <think>
+Okay, so I'm looking at this incident where the memory usage on three production web servers went over 90% for more than 10 minutes. That's a pretty high threshold, so I need to figure out what's causing it. Let me start by brainstorming possible causes., Solution: First off, high memory usage could be due to a memory leak. I remember that memory leaks happen when applications allocate memory but don't release it properly, so over time, the used memory keeps increasing. If the web servers are running applications that have such leaks, they could gradually consume more and more memory, leading to this issue.
+[2025-04-28T11:07:43.616Z] Caching analysis in database...
+[2025-04-28T11:07:43.967Z] Received response from Together AI API
+[2025-04-28T11:07:43.967Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why the memory usage on our web servers spiked to over 90%. That's really high and could cause some serious issues like crashes or slow performance. Let me think through this step by step., Solution: First, I remember that high memory usage can be due to a lot of things. Maybe the applications running on the servers are using more memory than usual. Could there be a memory leak somewhere? A memory leak is when a program doesn't release memory back to the system after it's done using it, so over time, the memory gets eaten up. That would definitely cause the usage to climb steadily.
+[2025-04-28T11:07:43.968Z] Caching analysis in database...
+[2025-04-28T11:11:29.072Z] Incoming request: GET /api/comments
+[2025-04-28T11:11:29.473Z] Incoming request: GET /api/comments
+[2025-04-28T11:11:29.481Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T11:11:29.481Z] Fetching category analytics...
+[2025-04-28T11:11:29.481Z] Supabase URL:
+[2025-04-28T11:11:29.481Z] Has Supabase Anon Key:
+[2025-04-28T11:11:29.485Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T11:11:29.486Z] Fetching team member analytics...
+[2025-04-28T11:11:29.563Z] Successfully fetched incidents:
+[2025-04-28T11:11:29.563Z] Successfully fetched category analytics:
+[2025-04-28T11:11:29.565Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T11:11:29.565Z] Fetching category analytics...
+[2025-04-28T11:11:29.565Z] Supabase URL:
+[2025-04-28T11:11:29.565Z] Has Supabase Anon Key:
+[2025-04-28T11:11:29.610Z] Successfully fetched team member analytics:
+[2025-04-28T11:11:29.612Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T11:11:29.612Z] Fetching team member analytics...
+[2025-04-28T11:11:29.616Z] Successfully fetched incidents:
+[2025-04-28T11:11:29.616Z] Successfully fetched category analytics:
+[2025-04-28T11:11:29.722Z] Successfully fetched team member analytics:
+[2025-04-28T11:11:31.362Z] Incoming request: GET /api/incidents
+[2025-04-28T11:11:31.413Z] Incoming request: GET /api/incidents
+[2025-04-28T11:11:33.918Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:11:33.920Z] Incoming request: GET /api/team-members
+[2025-04-28T11:11:33.968Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:11:34.105Z] Incoming request: GET /api/team-members
+[2025-04-28T11:11:34.107Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:11:34.107Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:11:34.107Z] Fetching incident from database...
+[2025-04-28T11:11:34.179Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:11:34.179Z] Checking for cached analysis...
+[2025-04-28T11:11:34.210Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:11:34.211Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:11:34.211Z] Fetching incident from database...
+[2025-04-28T11:11:34.240Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T11:11:34.240Z] Preparing Together AI API request...
+[2025-04-28T11:11:34.241Z] Sending request to Together AI API...
+[2025-04-28T11:11:34.261Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:11:34.261Z] Checking for cached analysis...
+[2025-04-28T11:11:34.311Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T11:11:34.312Z] Preparing Together AI API request...
+[2025-04-28T11:11:34.312Z] Sending request to Together AI API...
+[2025-04-28T11:11:40.240Z] Received response from Together AI API
+[2025-04-28T11:11:40.240Z] Extracted analysis - Cause: memory leaks, increased traffic, caching issues, or misconfigured resource limits., Solution: First, I need to figure out what's causing this high memory usage. There are a few possibilities that come to mind. One common issue could be a memory leak in the applications running on these servers. Memory leaks happen when processes allocate memory but don't release it back, so over time, the memory usage just keeps climbing. If the web servers are running applications that aren't managing memory properly, that could explain the spike.
+[2025-04-28T11:11:40.241Z] Caching analysis in database...
+[2025-04-28T11:11:40.349Z] Received response from Together AI API
+[2025-04-28T11:11:40.350Z] Extracted analysis - Cause: Memory, Solution: First, possible causes. Well, high memory usage could be due to a few things. Maybe there's a memory leak in the applications running on these servers. If the code isn't releasing memory properly after use, over time, the memory usage just keeps climbing. That would definitely cause the servers to slow down or crash.
+[2025-04-28T11:11:40.350Z] Caching analysis in database...
+[2025-04-28T11:12:11.392Z] Incoming request: GET /api/incidents
+[2025-04-28T11:12:11.497Z] Incoming request: GET /api/incidents
+[2025-04-28T11:12:12.934Z] Incoming request: GET /api/team-members
+[2025-04-28T11:12:12.937Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:12:13.015Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:12:13.046Z] Incoming request: GET /api/team-members
+[2025-04-28T11:12:13.050Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:12:13.051Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:12:13.051Z] Fetching incident from database...
+[2025-04-28T11:12:13.133Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:12:13.134Z] Checking for cached analysis...
+[2025-04-28T11:12:13.173Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T11:12:13.174Z] Preparing Together AI API request...
+[2025-04-28T11:12:13.174Z] Sending request to Together AI API...
+[2025-04-28T11:12:13.181Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:12:13.181Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:12:13.182Z] Fetching incident from database...
+[2025-04-28T11:12:13.236Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:12:13.236Z] Checking for cached analysis...
+[2025-04-28T11:12:13.290Z] Error checking cache: JSON object requested, multiple (or no) rows returned
+[2025-04-28T11:12:13.291Z] Preparing Together AI API request...
+[2025-04-28T11:12:13.291Z] Sending request to Together AI API...
+[2025-04-28T11:12:18.746Z] Received response from Together AI API
+[2025-04-28T11:12:18.746Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why the memory usage on these web servers is so high. Let me start by understanding the problem better. The memory usage went over 90% for more than 10 minutes, which is a significant period. That could definitely lead to application crashes and slower performance, which is bad for users and the business., Solution: First, I think about possible causes. One common issue could be a memory leak in the applications running on the servers. If the code isn't managing memory properly, it could be holding onto memory longer than needed, causing usage to creep up over time. Another possibility is increased traffic. If the servers are handling more requests than usual, they might need more memory to process everything, leading to high usage.
+[2025-04-28T11:12:18.747Z] Caching analysis in database...
+[2025-04-28T11:12:18.801Z] Received response from Together AI API
+[2025-04-28T11:12:18.801Z] Extracted analysis - Cause: <think>
+Okay, so I'm trying to figure out why the memory usage on our web servers spiked to over 90%. That's pretty high and definitely not normal. Let me start by recalling what I know about server performance., Solution: First off, high memory usage can lead to application crashes and slow performance, which is exactly what the incident described. So, I need to think about what could cause such a spike. There are a few possibilities that come to mind.
+[2025-04-28T11:12:18.802Z] Caching analysis in database...
+[2025-04-28T11:12:40.193Z] Incoming request: GET /api/comments
+[2025-04-28T11:12:40.320Z] Incoming request: GET /api/comments
+[2025-04-28T11:12:40.325Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T11:12:40.326Z] Fetching team member analytics...
+[2025-04-28T11:12:40.329Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T11:12:40.329Z] Fetching category analytics...
+[2025-04-28T11:12:40.329Z] Supabase URL:
+[2025-04-28T11:12:40.329Z] Has Supabase Anon Key:
+[2025-04-28T11:12:40.403Z] Successfully fetched incidents:
+[2025-04-28T11:12:40.404Z] Successfully fetched category analytics:
+[2025-04-28T11:12:40.405Z] Incoming request: GET /api/incidents/analytics/category
+[2025-04-28T11:12:40.405Z] Fetching category analytics...
+[2025-04-28T11:12:40.405Z] Supabase URL:
+[2025-04-28T11:12:40.406Z] Has Supabase Anon Key:
+[2025-04-28T11:12:40.440Z] Successfully fetched team member analytics:
+[2025-04-28T11:12:40.441Z] Incoming request: GET /api/incidents/analytics/team-member
+[2025-04-28T11:12:40.442Z] Fetching team member analytics...
+[2025-04-28T11:12:40.465Z] Successfully fetched incidents:
+[2025-04-28T11:12:40.465Z] Successfully fetched category analytics:
+[2025-04-28T11:12:40.538Z] Successfully fetched team member analytics:
+[2025-04-28T11:12:41.998Z] Incoming request: GET /api/incidents
+[2025-04-28T11:12:42.077Z] Incoming request: GET /api/incidents
+[2025-04-28T11:12:43.122Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:12:43.130Z] Incoming request: GET /api/team-members
+[2025-04-28T11:12:43.179Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:12:43.224Z] Incoming request: GET /api/team-members
+[2025-04-28T11:12:43.226Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:12:43.227Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:12:43.227Z] Fetching incident from database...
+[2025-04-28T11:12:43.268Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:12:43.268Z] Checking for cached analysis...
+[2025-04-28T11:12:43.307Z] Incident title or description has changed. Will reanalyze.
+[2025-04-28T11:12:43.334Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:12:43.334Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:12:43.335Z] Fetching incident from database...
+[2025-04-28T11:12:43.345Z] Preparing Together AI API request...
+[2025-04-28T11:12:43.345Z] Sending request to Together AI API...
+[2025-04-28T11:12:43.391Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:12:43.391Z] Checking for cached analysis...
+[2025-04-28T11:12:43.444Z] Incident title or description has changed. Will reanalyze.
+[2025-04-28T11:12:43.490Z] Preparing Together AI API request...
+[2025-04-28T11:12:43.490Z] Sending request to Together AI API...
+[2025-04-28T11:12:49.273Z] Received response from Together AI API
+[2025-04-28T11:12:49.274Z] Extracted analysis - Cause: <think>
+Okay, so I've got this incident where the memory usage on three production web servers is really high, over 90% for more than 10 minutes. That's a problem because it could lead to application crashes and slower performance. I need to figure out what's causing this and how to fix it., Solution: Review and adjust server configuration; increase JVM heap size if necessary; enable garbage collection logging to monitor performance.
+[2025-04-28T11:12:49.275Z] Caching analysis in database...
+[2025-04-28T11:12:49.415Z] Received response from Together AI API
+[2025-04-28T11:12:49.416Z] Extracted analysis - Cause: Memory leak in, Solution: First, I should think about common reasons why a web server's memory usage would spike. One possibility is a memory leak in the applications running on the servers. If the apps aren't releasing memory properly after use, over time, the memory usage keeps increasing until it hits a limit. This can definitely cause the servers to slow down or crash.
+[2025-04-28T11:12:49.417Z] Caching analysis in database...
+[2025-04-28T11:12:58.566Z] Incoming request: GET /api/incidents
+[2025-04-28T11:12:58.692Z] Incoming request: GET /api/incidents
+[2025-04-28T11:13:00.375Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:13:00.382Z] Incoming request: GET /api/team-members
+[2025-04-28T11:13:00.450Z] Incoming request: GET /api/incidents/7
+[2025-04-28T11:13:00.549Z] Incoming request: GET /api/team-members
+[2025-04-28T11:13:00.552Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:13:00.553Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:13:00.553Z] Fetching incident from database...
+[2025-04-28T11:13:00.622Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:13:00.623Z] Checking for cached analysis...
+[2025-04-28T11:13:00.651Z] Incoming request: POST /api/incidents/7/analyze
+[2025-04-28T11:13:00.652Z] === Starting Analysis for Incident 7 ===
+[2025-04-28T11:13:00.652Z] Fetching incident from database...
+[2025-04-28T11:13:00.667Z] Using cached analysis for incident 7
+[2025-04-28T11:13:00.698Z] Successfully fetched incident: {"id":7,"created_at":"2025-04-28T10:52:30.495374+00:00","updated_at":"2025-04-28T10:52:53.146+00:00","title":"High Memory Usage on Web Servers","description":"Memory usage on 3 production web servers exceeded 90% for over 10 minutes. Potential risk of application crashes and degraded performance detected.","status":"Open","priority":"High","assigned_to":2,"resolution":null,"source":"AWS CloudWatch","client":"Customer Portal - Web Tier","category":"Software"}
+[2025-04-28T11:13:00.698Z] Checking for cached analysis...
+[2025-04-28T11:13:00.744Z] Using cached analysis for incident 7

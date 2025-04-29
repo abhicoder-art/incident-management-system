@@ -35,7 +35,7 @@ values
   ('robert.wilson@example.com', 'Robert Wilson', 'Engineer', 'Development'),
   ('lisa.moore@example.com', 'Lisa Moore', 'Analyst', 'Business'),
   ('james.taylor@example.com', 'James Taylor', 'Engineer', 'Development'),
-  ('patricia.anderson@example.com', 'Patricia Anderson', 'Manager', 'Operations');
+  ('patricia.anderson@example.com', 'Patricia Anderson', 'Manager', 'Operations'); 
 
 -- Update all team members with the Telegram chat ID
 update public.team_members

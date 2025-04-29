@@ -9,12 +9,30 @@ interface Incident {
   status: string
   priority: string
   created_at: string
+  source?: string
+  client?: string
+  category?: string
 }
+
+const priorities = ['Critical','High', 'Medium', 'Low']
+const categories = ['Hardware', 'Software', 'Services']
 
 export default function IncidentList() {
   const [incidents, setIncidents] = useState<Incident[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [showModal, setShowModal] = useState(false)
+  const [form, setForm] = useState({
+    title: '',
+    description: '',
+    status: 'Open',
+    priority: 'Medium',
+    source: '',
+    client: '',
+    category: 'Software',
+  })
+  const [formError, setFormError] = useState<string | null>(null)
+  const [submitting, setSubmitting] = useState(false)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -29,12 +47,43 @@ export default function IncidentList() {
         setLoading(false)
       }
     }
-
     fetchIncidents()
   }, [])
 
   const handleIncidentClick = (incidentId: number) => {
     navigate(`/incidents/${incidentId}`)
+  }
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
+
+  const handleCreateIncident = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setFormError(null)
+    if (!form.title.trim() || !form.description.trim()) {
+      setFormError('Title and Description are required.')
+      return
+    }
+    setSubmitting(true)
+    try {
+      const response = await axios.post('http://localhost:3001/api/incidents', form)
+      setIncidents([response.data, ...incidents])
+      setShowModal(false)
+      setForm({
+        title: '',
+        description: '',
+        status: 'Open',
+        priority: 'Medium',
+        source: '',
+        client: '',
+        category: 'Software',
+      })
+    } catch (err) {
+      setFormError('Failed to create incident. Please try again.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   if (loading) {
@@ -58,12 +107,117 @@ export default function IncidentList() {
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">Incidents</h1>
         <button
-          onClick={() => navigate('/incidents/new')}
+          onClick={() => setShowModal(true)}
           className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700"
         >
           Create New Incident
         </button>
       </div>
+      {/* Modal for creating incident */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
+          <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-lg relative">
+            <button
+              className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+              onClick={() => setShowModal(false)}
+              disabled={submitting}
+            >
+              &times;
+            </button>
+            <h2 className="text-2xl font-bold mb-4">Create New Incident</h2>
+            <form onSubmit={handleCreateIncident} className="space-y-4">
+              <div>
+                <label className="block font-medium mb-1">Title</label>
+                <input
+                  type="text"
+                  name="title"
+                  value={form.title}
+                  onChange={handleInputChange}
+                  className="w-full border rounded px-3 py-2"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block font-medium mb-1">Description</label>
+                <textarea
+                  name="description"
+                  value={form.description}
+                  onChange={handleInputChange}
+                  className="w-full border rounded px-3 py-2"
+                  rows={3}
+                  required
+                />
+              </div>
+              <div>
+                <label className="block font-medium mb-1">Status</label>
+                <input
+                  type="text"
+                  name="status"
+                  value={form.status}
+                  readOnly
+                  className="w-full border rounded px-3 py-2 bg-gray-100 cursor-not-allowed"
+                />
+              </div>
+              <div>
+                <label className="block font-medium mb-1">Priority</label>
+                <select
+                  name="priority"
+                  value={form.priority}
+                  onChange={handleInputChange}
+                  className="w-full border rounded px-3 py-2"
+                >
+                  {priorities.map((p) => (
+                    <option key={p} value={p}>{p}</option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label className="block font-medium mb-1">Source</label>
+                <input
+                  type="text"
+                  name="source"
+                  value={form.source}
+                  onChange={handleInputChange}
+                  className="w-full border rounded px-3 py-2"
+                />
+              </div>
+              <div>
+                <label className="block font-medium mb-1">Client</label>
+                <input
+                  type="text"
+                  name="client"
+                  value={form.client}
+                  onChange={handleInputChange}
+                  className="w-full border rounded px-3 py-2"
+                />
+              </div>
+              <div>
+                <label className="block font-medium mb-1">Category</label>
+                <select
+                  name="category"
+                  value={form.category}
+                  onChange={handleInputChange}
+                  className="w-full border rounded px-3 py-2"
+                >
+                  {categories.map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+              </div>
+              {formError && <div className="text-red-600 text-sm">{formError}</div>}
+              <div className="flex justify-end">
+                <button
+                  type="submit"
+                  className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 disabled:opacity-50"
+                  disabled={submitting}
+                >
+                  {submitting ? 'Creating...' : 'Create Incident'}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
       <div className="grid gap-6">
         {incidents.map((incident) => (
           <div
