@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import CategoryAnalytics from './CategoryAnalytics'
 import AnalyticsCards from './AnalyticsCards'
@@ -17,7 +17,7 @@ export default function DataDisplay() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/comments')
+        const response = await axios.get('/api/comments')
         setData(response.data)
       } catch (err) {
         setError('Failed to fetch data')

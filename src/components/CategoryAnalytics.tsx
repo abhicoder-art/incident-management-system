@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
+import api from '../lib/api'
 
 interface CategoryStats {
   category: string
@@ -20,7 +21,7 @@ export default function CategoryAnalytics() {
     const fetchAnalytics = async () => {
       try {
         console.log('Fetching category analytics...')
-        const response = await axios.get('http://localhost:3001/api/incidents/analytics/category')
+        const response = await api.get('/incidents/analytics/category')
         console.log('Category analytics response:', response.data)
         setStats(response.data)
       } catch (err) {
@@ -60,7 +61,7 @@ export default function CategoryAnalytics() {
   useEffect(() => {
     const fetchTeamStats = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/incidents/analytics/team-member')
+        const response = await api.get('/incidents/analytics/team-member')
         setTeamStats(response.data)
       } catch (err) {
         // Optionally handle error
@@ -215,4 +216,4 @@ export default function CategoryAnalytics() {
       </div>
     </div>
   )
-} 
+}

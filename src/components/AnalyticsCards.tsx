@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 
 interface AnalyticsData {
   activeIncidents: {
@@ -29,7 +29,7 @@ const AnalyticsCards: React.FC = () => {
     const fetchAnalytics = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('http://localhost:3001/api/analytics/dashboard');
+        const response = await api.get('/analytics/dashboard');
         setAnalyticsData(response.data);
         setError(null);
       } catch (err) {
@@ -161,4 +161,4 @@ const AnalyticsCards: React.FC = () => {
   );
 };
 
-export default AnalyticsCards; 
+export default AnalyticsCards;

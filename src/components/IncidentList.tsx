@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import api from '../lib/api'
+import axios from 'axios'
 
 interface Incident {
   id: number
@@ -56,16 +58,29 @@ const IncidentList: React.FC = () => {
       setIsLoading(true)
       setError(null)
       console.log('Fetching incidents...')
-      const response = await fetch('http://localhost:3001/api/incidents')
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`)
+      const response = await api.get('/api/incidents')
+      console.log('Fetched incidents:', response.data)
+      setIncidents(response.data || [])
+    } catch (err: any) {
+      console.error('Error fetching incidents:', err)
+      if (axios.isAxiosError(err) && err.response) {
+        // The request was made and the server responded with a status code
+        // that falls out of the range of 2xx
+        console.error('Server responded with error:', {
+          status: err.response.status,
+          data: err.response.data,
+          headers: err.response.headers
+        })
+        setError(err.response.data?.details || err.response.data?.error || 'Failed to fetch incidents')
+      } else if (axios.isAxiosError(err) && err.request) {
+        // The request was made but no response was received
+        console.error('No response received:', err.request)
+        setError('No response received from server')
+      } else {
+        // Something happened in setting up the request that triggered an Error
+        console.error('Error setting up request:', err.message)
+        setError(err.message || 'An unexpected error occurred')
       }
-      const data = await response.json()
-      console.log('Fetched incidents:', data)
-      setIncidents(data)
-    } catch (error) {
-      console.error('Error fetching incidents:', error)
-      setError(error instanceof Error ? error.message : 'Failed to fetch incidents')
     } finally {
       setIsLoading(false)
     }
@@ -84,7 +99,7 @@ const IncidentList: React.FC = () => {
     }
     setSubmitting(true)
     try {
-      const response = await fetch('http://localhost:3001/api/incidents', {
+      const response = await fetch('/api/incidents', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -453,4 +468,4 @@ const IncidentList: React.FC = () => {
   )
 }
 
-export default IncidentList 
+export default IncidentList

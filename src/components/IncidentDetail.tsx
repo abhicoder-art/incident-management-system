@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import api from '../lib/api'
 
 interface TeamMember {
   id: number
@@ -30,19 +31,6 @@ interface AISolution {
   suggested_solution: string
 }
 
-interface OpenAIError {
-  error?: {
-    message?: string
-  }
-  response?: {
-    status?: number
-    data?: {
-      error?: {
-        message?: string
-      }
-    }
-  }
-}
 
 export default function IncidentDetail() {
   const { id } = useParams()
@@ -98,8 +86,8 @@ export default function IncidentDetail() {
       try {
         console.log('Fetching incident and team members...');
         const [incidentResponse, teamMembersResponse] = await Promise.all([
-          axios.get(`http://localhost:3001/api/incidents/${id}`),
-          axios.get('http://localhost:3001/api/team-members')
+          api.get(`/incidents/${id}`),
+          api.get('/team-members')
         ]);
         
         console.log('Incident response:', incidentResponse.data);
@@ -127,19 +115,6 @@ export default function IncidentDetail() {
 
     fetchData();
   }, [id]);
-
-  const getNextStatus = (currentStatus: string): string => {
-    switch (currentStatus) {
-      case 'Open':
-        return 'In Progress'
-      case 'In Progress':
-        return 'Closed'
-      case 'Closed':
-        return 'Open'
-      default:
-        return 'Open'
-    }
-  }
 
   const handleStatusChange = async (newStatus: string) => {
     if (!incident || newStatus === incident.status) return
@@ -275,19 +250,6 @@ export default function IncidentDetail() {
       hour: '2-digit',
       minute: '2-digit'
     })
-  }
-
-  const getStatusColor = (status: string) => {
-    switch (status.toLowerCase()) {
-      case 'open':
-        return 'bg-red-100 text-red-800'
-      case 'in progress':
-        return 'bg-yellow-100 text-yellow-800'
-      case 'closed':
-        return 'bg-green-100 text-green-800'
-      default:
-        return 'bg-gray-100 text-gray-800'
-    }
   }
 
   const getPriorityColor = (priority: string) => {
@@ -530,4 +492,4 @@ export default function IncidentDetail() {
       </div>
     </div>
   )
-} 
+}
